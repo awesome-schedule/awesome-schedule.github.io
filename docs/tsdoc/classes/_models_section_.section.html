@@ -130,7 +130,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#combinedtime" class="tsd-kind-icon">combined<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#equals" class="tsd-kind-icon">equals</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#getroomtime" class="tsd-kind-icon">get<wbr>Room<wbr>Time</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#gettimeroom" class="tsd-kind-icon">get<wbr>Time<wbr>Room</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#hash" class="tsd-kind-icon">hash</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_models_section_.section.html#sametimeas" class="tsd-kind-icon">same<wbr>Time<wbr>As</a></li>
@@ -152,7 +152,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L58">models/Section.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L67">models/Section.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -180,7 +180,7 @@
 					<div class="tsd-signature tsd-kind-icon">course<span class="tsd-signature-symbol">:</span> <a href="_models_course_.course.html" class="tsd-signature-type">Course</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L46">models/Section.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L49">models/Section.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -196,7 +196,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#department">department</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L30">models/Section.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L30">models/Section.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -207,7 +207,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#description">description</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L35">models/Section.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L35">models/Section.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">enrollment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L54">models/Section.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L63">models/Section.ts:63</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">enrollment_<wbr>limit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L55">models/Section.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L64">models/Section.ts:64</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,9 +237,14 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L47">models/Section.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L53">models/Section.ts:53</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the id of the section recorded in sis</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="instructors" class="tsd-anchor"></a>
@@ -247,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">instructors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L57">models/Section.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L66">models/Section.ts:66</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -258,12 +263,12 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_hashable_.hashable.html">Hashable</a>.<a href="../interfaces/_models_hashable_.hashable.html#key">key</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L41">models/Section.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L44">models/Section.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Key of a course; same for all sections.</p>
+							<p>Key of the course that this section belongs to; same for all sections.</p>
 						</div>
 					</div>
 				</section>
@@ -273,7 +278,7 @@
 					<div class="tsd-signature tsd-kind-icon">meetings<span class="tsd-signature-symbol">:</span> <a href="_models_meeting_.meeting.html" class="tsd-signature-type">Meeting</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L58">models/Section.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L67">models/Section.ts:67</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -284,7 +289,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#number">number</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L31">models/Section.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L31">models/Section.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -294,9 +299,14 @@
 					<div class="tsd-signature tsd-kind-icon">section<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L48">models/Section.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L57">models/Section.ts:57</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the section number recorded in sis</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sid" class="tsd-anchor"></a>
@@ -304,9 +314,14 @@
 					<div class="tsd-signature tsd-kind-icon">sid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L37">models/Section.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L40">models/Section.ts:40</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the index of the section</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="status" class="tsd-anchor"></a>
@@ -314,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L53">models/Section.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L62">models/Section.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -330,7 +345,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#title">title</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L34">models/Section.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L34">models/Section.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -340,7 +355,7 @@
 					<div class="tsd-signature tsd-kind-icon">topic<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L49">models/Section.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L58">models/Section.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -351,7 +366,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L32">models/Section.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L32">models/Section.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -362,7 +377,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#units">units</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L33">models/Section.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L33">models/Section.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -372,7 +387,7 @@
 					<div class="tsd-signature tsd-kind-icon">wait_<wbr>list<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L56">models/Section.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L65">models/Section.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -389,7 +404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L96">models/Section.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L105">models/Section.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -409,7 +424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L144">models/Section.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L156">models/Section.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -423,18 +438,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getroomtime" class="tsd-anchor"></a>
-					<h3>get<wbr>Room<wbr>Time</h3>
+					<a name="gettimeroom" class="tsd-anchor"></a>
+					<h3>get<wbr>Time<wbr>Room</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Room<wbr>Time<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_algorithm_schedulegenerator_.timedict.html" class="tsd-signature-type">TimeDict</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_algorithm_schedulegenerator_.roomdict.html" class="tsd-signature-type">RoomDict</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Time<wbr>Room<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/_algorithm_schedulegenerator_.timedict.html" class="tsd-signature-type">TimeDict</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_algorithm_schedulegenerator_.roomdict.html" class="tsd-signature-type">RoomDict</a><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L108">models/Section.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L120">models/Section.ts:120</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get the time and room of this section&#39;s meetings as <a href="../interfaces/_algorithm_schedulegenerator_.timedict.html">TimeDict</a> and <a href="../interfaces/_algorithm_schedulegenerator_.roomdict.html">RoomDict</a></p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/_algorithm_schedulegenerator_.timedict.html" class="tsd-signature-type">TimeDict</a><span class="tsd-signature-symbol">, </span><a href="../interfaces/_algorithm_schedulegenerator_.roomdict.html" class="tsd-signature-type">RoomDict</a><span class="tsd-signature-symbol">]</span>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">null</span>
@@ -453,7 +473,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L155">models/Section.ts:155</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L167">models/Section.ts:167</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -472,7 +492,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L161">models/Section.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L173">models/Section.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -505,7 +525,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L104">models/Section.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L113">models/Section.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -530,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L87">models/Section.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L96">models/Section.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -553,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/25e3f0f/src/models/Section.ts#L25">models/Section.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/829d253/src/models/Section.ts#L25">models/Section.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -657,7 +677,7 @@
 								<a href="_models_section_.section.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_models_section_.section.html#getroomtime" class="tsd-kind-icon">get<wbr>Room<wbr>Time</a>
+								<a href="_models_section_.section.html#gettimeroom" class="tsd-kind-icon">get<wbr>Time<wbr>Room</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_models_section_.section.html#has" class="tsd-kind-icon">has</a>
