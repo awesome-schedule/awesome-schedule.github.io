@@ -72,11 +72,14 @@
 					<a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
 					<a href="https://travis-ci.org/awesome-schedule/"><img src="https://travis-ci.org/awesome-schedule/Awesome-SchedulAR.svg?branch=master" alt="Build Status"></a>
 					<a href="https://codecov.io/gh/awesome-schedule/Awesome-SchedulAR"><img src="https://codecov.io/gh/awesome-schedule/Awesome-SchedulAR/branch/master/graph/badge.svg" alt="codecov"></a>
-				<a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a></p>
+					<a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+				<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fawesome-schedule%2FAwesome-SchedulAR?ref=badge_shield"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fawesome-schedule%2FAwesome-SchedulAR.svg?type=shield" alt="FOSSA Status"></a></p>
 				<p>A website which helps UVa students to schedule their classes more efficiently. Get your class selection done with the searching field and customize them with filters and sorting options. Once you&#39;ve finalized your class selection, hit &quot;Generate&quot; button and get all the possible schedules satisfying to your requirements.</p>
-				<h2 id="demo">Demo</h2>
-				<p><a href="https://awesome-schedule.github.io/">https://awesome-schedule.github.io/</a></p>
-				<p>Our website consists of only front-end components, i.e. all the scripts run in your browser and data are stored locally. It fetches data from <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou&#39;s list</a> on page load.</p>
+				<h2 id="website">Website</h2>
+				<p><a href="https://plannable.org/">https://plannable.org/</a></p>
+				<p>Our website consists of only front-end components, i.e. all the scripts run in your browser and data are stored locally. It fetches data from <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou&#39;s list</a> on page load and store it in browser cache.</p>
+				<h2 id="mirror">Mirror</h2>
+				<p>To facilitate access in China, we provide a mirror: <a href="https://cn.plannable.org/">https://cn.plannable.org/</a>. It is synchronized with <a href="https://plannable.org/">https://plannable.org/</a> once per hour.</p>
 				<h2 id="development">Development</h2>
 				<blockquote>
 					<p>Note: We recommend <a href="https://code.visualstudio.com/">VS Code</a> for development</p>
@@ -95,6 +98,7 @@ git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule
 				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
 				<pre><code class="language-bash">npm install -g @vue/cli
 npm install
+patch-package <span class="hljs-comment"># for better type safety, we need to patch some type definitions</span>
 npm run serve</code></pre>
 				<p>Then you can view the development server at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>.</p>
 				<p>You probably need to serve the static files in backend/data. To do so, we recommend using <code>http-server</code>. If it is not installed, you can run <code>npm install -g http-server</code></p>
@@ -112,7 +116,7 @@ npm run serve</code></pre>
 				<h2 id="contributing">Contributing</h2>
 				<p>Please refer to <a href="docs/CONTRIBUTING.md">our contribution guide</a>.</p>
 				<h2 id="license">License</h2>
-				<p>This project is licensed under the GPL-3.0 - see the <a href="LICENSE">LICENSE</a> file for details</p>
+				<p>This project is licensed under GPL-3.0 - see the <a href="LICENSE">LICENSE</a> file for details</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -207,6 +211,9 @@ npm run serve</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_store_modal_.html">"store/modal"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_store_notification_.html">"store/notification"</a>
