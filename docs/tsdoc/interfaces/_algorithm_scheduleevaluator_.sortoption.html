@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A <code>SortOption</code> represents a single sort option</p>
+						<p>representation of a single sort option</p>
 					</div>
 				</div>
 			</section>
@@ -81,6 +81,11 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">SortOption</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_store_filter_.detailedsortoption.html" class="tsd-signature-type">DetailedSortOption</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,12 +96,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#enabled" class="tsd-kind-icon">enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#exclusive" class="tsd-kind-icon">exclusive</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#reverse" class="tsd-kind-icon">reverse</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_algorithm_scheduleevaluator_.sortoption.html#title" class="tsd-kind-icon">title</a></li>
 							</ul>
 						</section>
 					</div>
@@ -105,49 +107,14 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L76">algorithm/ScheduleEvaluator.ts:76</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>text displayed in tooltip</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="enabled" class="tsd-anchor"></a>
 					<h3>enabled</h3>
 					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L60">algorithm/ScheduleEvaluator.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/caeabec/src/algorithm/ScheduleEvaluator.ts#L43">algorithm/ScheduleEvaluator.ts:43</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>whether or not this option is enabled</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="exclusive" class="tsd-anchor"></a>
-					<h3>exclusive</h3>
-					<div class="tsd-signature tsd-kind-icon">exclusive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L68">algorithm/ScheduleEvaluator.ts:68</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>the names of the sorting options that cannot be applied when this option is enabled</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
@@ -155,14 +122,9 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L56">algorithm/ScheduleEvaluator.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/caeabec/src/algorithm/ScheduleEvaluator.ts#L42">algorithm/ScheduleEvaluator.ts:42</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>name of this sorting option</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="reverse" class="tsd-anchor"></a>
@@ -170,29 +132,9 @@
 					<div class="tsd-signature tsd-kind-icon">reverse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L64">algorithm/ScheduleEvaluator.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/caeabec/src/algorithm/ScheduleEvaluator.ts#L44">algorithm/ScheduleEvaluator.ts:44</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>whether to sort in reverse</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="title" class="tsd-anchor"></a>
-					<h3>title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/dfa4aac/src/algorithm/ScheduleEvaluator.ts#L72">algorithm/ScheduleEvaluator.ts:72</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>text displayed next to the checkbox</p>
-						</div>
-					</div>
 				</section>
 			</section>
 		</div>
@@ -210,7 +152,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_algorithm_scheduleevaluator_.mode.html" class="tsd-kind-icon">Mode</a>
+						<a href="../enums/_algorithm_scheduleevaluator_.sortmode.html" class="tsd-kind-icon">Sort<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_algorithm_scheduleevaluator_.scheduleevaluator.html" class="tsd-kind-icon">Schedule<wbr>Evaluator</a>
@@ -219,10 +161,10 @@
 						<a href="_algorithm_scheduleevaluator_.cmpschedule.html" class="tsd-kind-icon">Cmp<wbr>Schedule</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_algorithm_scheduleevaluator_.sortfunctions.html" class="tsd-kind-icon">Sort<wbr>Functions</a>
+						<a href="_algorithm_scheduleevaluator_.evaluatoroptions.html" class="tsd-kind-icon">Evaluator<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_algorithm_scheduleevaluator_.sortmode.html" class="tsd-kind-icon">Sort<wbr>Mode</a>
+						<a href="_algorithm_scheduleevaluator_.sortfunctions.html" class="tsd-kind-icon">Sort<wbr>Functions</a>
 					</li>
 				</ul>
 				<ul class="current">
@@ -230,13 +172,7 @@
 						<a href="_algorithm_scheduleevaluator_.sortoption.html" class="tsd-kind-icon">Sort<wbr>Option</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_algorithm_scheduleevaluator_.sortoption.html#description" class="tsd-kind-icon">description</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_algorithm_scheduleevaluator_.sortoption.html#enabled" class="tsd-kind-icon">enabled</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_algorithm_scheduleevaluator_.sortoption.html#exclusive" class="tsd-kind-icon">exclusive</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_algorithm_scheduleevaluator_.sortoption.html#name" class="tsd-kind-icon">name</a>
@@ -244,19 +180,10 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="_algorithm_scheduleevaluator_.sortoption.html#reverse" class="tsd-kind-icon">reverse</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_algorithm_scheduleevaluator_.sortoption.html#title" class="tsd-kind-icon">title</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_algorithm_scheduleevaluator_.sortoptionjson.html" class="tsd-kind-icon">Sort<wbr>OptionJSON</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_algorithm_scheduleevaluator_.sortoptions.html" class="tsd-kind-icon">Sort<wbr>Options</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_algorithm_scheduleevaluator_.html#orderedblocks" class="tsd-kind-icon">Ordered<wbr>Blocks</a>
 					</li>
