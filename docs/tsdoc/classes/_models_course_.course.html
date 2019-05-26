@@ -117,6 +117,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#department" class="tsd-kind-icon">department</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#hasfakesections" class="tsd-kind-icon">has<wbr>Fake<wbr>Sections</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#isfake" class="tsd-kind-icon">is<wbr>Fake</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#key" class="tsd-kind-icon">key</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#number" class="tsd-kind-icon">number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_models_course_.course.html#raw" class="tsd-kind-icon">raw</a></li>
@@ -150,13 +152,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Course<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sids<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_models_course_.course.html" class="tsd-signature-type">Course</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Course<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sids<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_models_course_.course.html" class="tsd-signature-type">Course</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L68">models/Course.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L71">models/Course.ts:71</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -164,7 +166,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>raw: <a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a></h5>
+									<h5>raw: <a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>the raw representation of this course</p>
@@ -202,7 +204,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#department">department</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L55">models/Course.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L55">models/Course.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -213,7 +215,27 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#description">description</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L60">models/Course.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L60">models/Course.ts:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="hasfakesections" class="tsd-anchor"></a>
+					<h3>has<wbr>Fake<wbr>Sections</h3>
+					<div class="tsd-signature tsd-kind-icon">has<wbr>Fake<wbr>Sections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L71">models/Course.ts:71</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="isfake" class="tsd-anchor"></a>
+					<h3>is<wbr>Fake</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Fake<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L70">models/Course.ts:70</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -224,7 +246,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_hashable_.hashable.html">Hashable</a>.<a href="../interfaces/_models_hashable_.hashable.html#key">key</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L54">models/Course.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L54">models/Course.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -245,17 +267,17 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#number">number</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L56">models/Course.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L56">models/Course.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="raw" class="tsd-anchor"></a>
 					<h3>raw</h3>
-					<div class="tsd-signature tsd-kind-icon">raw<span class="tsd-signature-symbol">:</span> <a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a></div>
+					<div class="tsd-signature tsd-kind-icon">raw<span class="tsd-signature-symbol">:</span> <a href="../modules/_models_meta_.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L62">models/Course.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L62">models/Course.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">sections<span class="tsd-signature-symbol">:</span> <a href="_models_section_.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L68">models/Course.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L68">models/Course.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -275,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">sids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L67">models/Course.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L67">models/Course.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -292,7 +314,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#title">title</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L59">models/Course.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L59">models/Course.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -303,7 +325,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L57">models/Course.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L57">models/Course.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -314,7 +336,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_models_course_.coursefields.html">CourseFields</a>.<a href="../interfaces/_models_course_.coursefields.html#units">units</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L58">models/Course.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L58">models/Course.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -331,7 +353,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L123">models/Course.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L152">models/Course.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L157">models/Course.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L186">models/Course.ts:186</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_models_course_.course.html" class="tsd-signature-type">Course</a></h4>
@@ -370,7 +392,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L161">models/Course.ts:161</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L190">models/Course.ts:190</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -393,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L139">models/Course.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L168">models/Course.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,7 +445,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L116">models/Course.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L145">models/Course.ts:145</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -451,9 +473,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L109">models/Course.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L138">models/Course.ts:138</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get the first section <strong>contained</strong> in this course</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_models_section_.section.html" class="tsd-signature-type">Section</a></h4>
 						</li>
 					</ul>
@@ -468,7 +495,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L101">models/Course.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L126">models/Course.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -504,7 +531,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L171">models/Course.ts:171</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L200">models/Course.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L178">models/Course.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L207">models/Course.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -561,7 +588,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/704de40/src/models/Course.ts#L153">models/Course.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/models/Course.ts#L182">models/Course.ts:182</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -602,6 +629,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_models_course_.course.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_models_course_.course.html#hasfakesections" class="tsd-kind-icon">has<wbr>Fake<wbr>Sections</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_models_course_.course.html#isfake" class="tsd-kind-icon">is<wbr>Fake</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_models_course_.course.html#key" class="tsd-kind-icon">key</a>
