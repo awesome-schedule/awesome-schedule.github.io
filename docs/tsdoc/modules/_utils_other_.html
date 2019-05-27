@@ -82,6 +82,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_other_.html#errtostr" class="tsd-kind-icon">err<wbr>ToStr</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_other_.html#hashcode" class="tsd-kind-icon">hash<wbr>Code</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_utils_other_.html#highlightmatch" class="tsd-kind-icon">highlight<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_other_.html#openlouslist" class="tsd-kind-icon">open<wbr>Lous<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_other_.html#openvagrade" class="tsd-kind-icon">openVAGrade</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_other_.html#saveplain" class="tsd-kind-icon">save<wbr>Plain</a></li>
@@ -103,7 +104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L95">utils/other.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L111">utils/other.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -133,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L45">utils/other.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L61">utils/other.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,6 +164,60 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="highlightmatch" class="tsd-anchor"></a>
+					<h3>highlight<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">highlight<wbr>Match&lt;T&gt;<span class="tsd-signature-symbol">(</span>str<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, expMatch<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, match<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_models_course_.match.html" class="tsd-signature-type">Match</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L45">utils/other.ts:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>highlight a matched part of a short string given that <code>match</code> is not undefined and <code>match.match === expMatch</code></p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>author</dt>
+									<dd><p>Hanzhi Zhou</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>str: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the string to inject highlight</p>
+									</div>
+								</li>
+								<li>
+									<h5>expMatch: <span class="tsd-signature-type">T</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the expected matched field in match.match</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> match: <a href="../interfaces/_models_course_.match.html" class="tsd-signature-type">Match</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the match object</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="openlouslist" class="tsd-anchor"></a>
 					<h3>open<wbr>Lous<wbr>List</h3>
@@ -173,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L16">utils/other.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L16">utils/other.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -209,7 +264,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L30">utils/other.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L30">utils/other.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L87">utils/other.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L103">utils/other.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -283,7 +338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/566563e/src/utils/other.ts#L63">utils/other.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/utils/other.ts#L79">utils/other.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -347,6 +402,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_other_.html#hashcode" class="tsd-kind-icon">hash<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_utils_other_.html#highlightmatch" class="tsd-kind-icon">highlight<wbr>Match</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_other_.html#openlouslist" class="tsd-kind-icon">open<wbr>Lous<wbr>List</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TimeMatrixJSON | awesome-schedule</title>
+	<title>NotiItem | awesome-schedule</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,27 +56,34 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_data_buildingloader_.html">&quot;data/BuildingLoader&quot;</a>
+					<a href="../modules/_store_notification_.html">&quot;store/notification&quot;</a>
 				</li>
 				<li>
-					<a href="_data_buildingloader_.timematrixjson.html">TimeMatrixJSON</a>
+					<a href="_store_notification_.notiitem.html">NotiItem</a>
 				</li>
 			</ul>
-			<h1>Interface TimeMatrixJSON</h1>
+			<h1>Interface NotiItem</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A notification item represents a notification state in the past</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="_data_expirable_.expirable.html" class="tsd-signature-type">Expirable</a>
+						<a href="_store_notification_.notistate.html" class="tsd-signature-type">NotiState</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">TimeMatrixJSON</span>
+								<span class="target">NotiItem</span>
 							</li>
 						</ul>
 					</li>
@@ -86,43 +93,68 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_data_buildingloader_.timematrixjson.html#modified" class="tsd-kind-icon">modified</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_data_buildingloader_.timematrixjson.html#timematrix" class="tsd-kind-icon">time<wbr>Matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_store_notification_.notiitem.html#cls" class="tsd-kind-icon">cls</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="_store_notification_.notiitem.html#msg" class="tsd-kind-icon">msg</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_store_notification_.notiitem.html#stamp" class="tsd-kind-icon">stamp</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="modified" class="tsd-anchor"></a>
-					<h3>modified</h3>
-					<div class="tsd-signature tsd-kind-icon">modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="cls" class="tsd-anchor"></a>
+					<h3>cls</h3>
+					<div class="tsd-signature tsd-kind-icon">cls<span class="tsd-signature-symbol">:</span> <a href="../modules/_store_notification_.html#noticlass" class="tsd-signature-type">NotiClass</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;&quot;</span></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="_data_expirable_.expirable.html">Expirable</a>.<a href="_data_expirable_.expirable.html#modified">modified</a></p>
+						<p>Inherited from <a href="_store_notification_.notistate.html">NotiState</a>.<a href="_store_notification_.notistate.html#cls">cls</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/data/Expirable.ts#L9">data/Expirable.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/store/notification.ts#L38">store/notification.ts:38</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p><a href="../modules/_store_notification_.html#noticlass">NotiClass</a></p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="msg" class="tsd-anchor"></a>
+					<h3>msg</h3>
+					<div class="tsd-signature tsd-kind-icon">msg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="_store_notification_.notistate.html">NotiState</a>.<a href="_store_notification_.notistate.html#msg">msg</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/store/notification.ts#L34">store/notification.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the JSON representation of a Date object, representing the time when this expirable object is created</p>
+							<p>the notification message</p>
 						</div>
 					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="timematrix" class="tsd-anchor"></a>
-					<h3>time<wbr>Matrix</h3>
-					<div class="tsd-signature tsd-kind-icon">time<wbr>Matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+					<a name="stamp" class="tsd-anchor"></a>
+					<h3>stamp</h3>
+					<div class="tsd-signature tsd-kind-icon">stamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/data/BuildingLoader.ts#L21">data/BuildingLoader.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/c5a882c/src/store/notification.ts#L51">store/notification.ts:51</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>time stamp created by</p>
+							<pre><code class="language-js"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().toLocaleTimeString()</code></pre>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -133,44 +165,56 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="../modules/_store_notification_.html">"store/notification"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_data_buildingloader_.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../classes/_store_notification_.notification.html" class="tsd-kind-icon">Notification</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_data_buildingloader_.timematrixjson.html" class="tsd-kind-icon">Time<wbr>MatrixJSON</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_store_notification_.notiitem.html" class="tsd-kind-icon">Noti<wbr>Item</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_data_buildingloader_.timematrixjson.html#modified" class="tsd-kind-icon">modified</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_store_notification_.notiitem.html#cls" class="tsd-kind-icon">cls</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_data_buildingloader_.timematrixjson.html#timematrix" class="tsd-kind-icon">time<wbr>Matrix</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="_store_notification_.notiitem.html#msg" class="tsd-kind-icon">msg</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
+								<a href="_store_notification_.notiitem.html#stamp" class="tsd-kind-icon">stamp</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_store_notification_.notimsg.html" class="tsd-kind-icon">Noti<wbr>Msg</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_store_notification_.notistate.html" class="tsd-kind-icon">Noti<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_store_notification_.html#noticlass" class="tsd-kind-icon">Noti<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_store_notification_.html#notilevel" class="tsd-kind-icon">Noti<wbr>Level</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_data_buildingloader_.html#api" class="tsd-kind-icon">api</a>
+						<a href="../modules/_store_notification_.html#clas" class="tsd-kind-icon">CLAS</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html#loadbuildinglist" class="tsd-kind-icon">load<wbr>Building<wbr>List</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_store_notification_.html#cons" class="tsd-kind-icon">CONS</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html#loadtimematrix" class="tsd-kind-icon">load<wbr>Time<wbr>Matrix</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_store_notification_.html#levels" class="tsd-kind-icon">LEVELS</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_data_buildingloader_.html#requestbuildinglist" class="tsd-kind-icon">request<wbr>Building<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_data_buildingloader_.html#requesttimematrix" class="tsd-kind-icon">request<wbr>Time<wbr>Matrix</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_store_notification_.html#noti" class="tsd-kind-icon">noti</a>
 					</li>
 				</ul>
 			</nav>
