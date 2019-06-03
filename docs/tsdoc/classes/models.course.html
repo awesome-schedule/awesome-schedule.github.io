@@ -92,16 +92,6 @@
 					<li><a href="../interfaces/models.hashable.html" class="tsd-signature-type">Hashable</a></li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-kind-class tsd-parent-kind-external-module">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>x: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>the model of a Course that has multiple sections. A Course object may have all or a subset of the sections,
-						depending on the array of section indices passed to its constructor.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -117,12 +107,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#department" class="tsd-kind-icon">department</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#hasfakesections" class="tsd-kind-icon">has<wbr>Fake<wbr>Sections</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#isfake" class="tsd-kind-icon">is<wbr>Fake</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#key" class="tsd-kind-icon">key</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#match" class="tsd-kind-icon">match</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#matches" class="tsd-kind-icon">matches</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#number" class="tsd-kind-icon">number</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#raw" class="tsd-kind-icon">raw</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#secmatches" class="tsd-kind-icon">sec<wbr>Matches</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#sections" class="tsd-kind-icon">sections</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#sids" class="tsd-kind-icon">sids</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.course.html#title" class="tsd-kind-icon">title</a></li>
@@ -131,15 +120,22 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="models.course.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#addmatch" class="tsd-kind-icon">add<wbr>Match</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#addsectionmatches" class="tsd-kind-icon">add<wbr>Section<wbr>Matches</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#allsametime" class="tsd-kind-icon">all<wbr>Same<wbr>Time</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#copy" class="tsd-kind-icon">copy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#equals" class="tsd-kind-icon">equals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#getcombined" class="tsd-kind-icon">get<wbr>Combined</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#getcourse" class="tsd-kind-icon">get<wbr>Course</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#getfirstsection" class="tsd-kind-icon">get<wbr>First<wbr>Section</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#getsection" class="tsd-kind-icon">get<wbr>Section</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.course.html#hash" class="tsd-kind-icon">hash</a></li>
 							</ul>
@@ -153,13 +149,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Course<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sids<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, match<span class="tsd-signature-symbol">?: </span><a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a>, secMatches<span class="tsd-signature-symbol">?: </span><a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.course.html" class="tsd-signature-type">Course</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Course<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a>, key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sids<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, matches<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a><span class="tsd-signature-symbol">&gt;</span>, secMatches<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.course.html" class="tsd-signature-type">Course</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L80">models/Course.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L80">models/Course.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -167,7 +163,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>raw: <a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>raw: <a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>the raw representation of this course</p>
@@ -178,12 +174,13 @@
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>the key of this course, e.g. cs11105</p>
+											<p>the key of this course, e.g. cs11105
+											equal to (department + number + <code>Meta.TYPES_PARSE</code>[type]). see [[Meta.TYPES_PARSE]]</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sids: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sids: <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>A list of section indices</p>
@@ -191,10 +188,20 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> match: <a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> matches: <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>matches for this course</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> secMatches: <a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> secMatches: <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>matches for the sections contained in this course</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.course.html" class="tsd-signature-type">Course</a></h4>
@@ -211,7 +218,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#department">department</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L63">models/Course.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L68">models/Course.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,27 +229,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#description">description</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L68">models/Course.ts:68</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="hasfakesections" class="tsd-anchor"></a>
-					<h3>has<wbr>Fake<wbr>Sections</h3>
-					<div class="tsd-signature tsd-kind-icon">has<wbr>Fake<wbr>Sections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L79">models/Course.ts:79</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isfake" class="tsd-anchor"></a>
-					<h3>is<wbr>Fake</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Fake<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L78">models/Course.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L73">models/Course.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -253,29 +240,30 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.hashable.html">Hashable</a>.<a href="../interfaces/models.hashable.html#key">key</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L62">models/Course.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L92">models/Course.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>key of this in Catalog, equal to (department + number + <code>Meta.TYPES_PARSE</code>[type])</p>
+							<p>the key of this course, e.g. cs11105
+							equal to (department + number + <code>Meta.TYPES_PARSE</code>[type]). see [[Meta.TYPES_PARSE]]</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>see</dt>
-							<dd><p>[[Meta.TYPES_PARSE]]</p>
-							</dd>
-						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="match" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> match</h3>
-					<div class="tsd-signature tsd-kind-icon">match<span class="tsd-signature-symbol">:</span> <a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a></div>
+					<a name="matches" class="tsd-anchor"></a>
+					<h3>matches</h3>
+					<div class="tsd-signature tsd-kind-icon">matches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L80">models/Course.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L94">models/Course.ts:94</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>matches for this course</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="number" class="tsd-anchor"></a>
@@ -284,37 +272,57 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#number">number</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L64">models/Course.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L69">models/Course.ts:69</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="raw" class="tsd-anchor"></a>
 					<h3>raw</h3>
-					<div class="tsd-signature tsd-kind-icon">raw<span class="tsd-signature-symbol">:</span> <a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">raw<span class="tsd-signature-symbol">:</span> <a href="../modules/models.html#rawcourse" class="tsd-signature-type">RawCourse</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L70">models/Course.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L91">models/Course.ts:91</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the raw representation of this course</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="secmatches" class="tsd-anchor"></a>
+					<h3>sec<wbr>Matches</h3>
+					<div class="tsd-signature tsd-kind-icon">sec<wbr>Matches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L95">models/Course.ts:95</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>matches for the sections contained in this course</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sections" class="tsd-anchor"></a>
 					<h3>sections</h3>
-					<div class="tsd-signature tsd-kind-icon">sections<span class="tsd-signature-symbol">:</span> <a href="models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">sections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><a href="models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L76">models/Course.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L80">models/Course.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sids" class="tsd-anchor"></a>
 					<h3>sids</h3>
-					<div class="tsd-signature tsd-kind-icon">sids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">sids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L75">models/Course.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L79">models/Course.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +339,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#title">title</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L67">models/Course.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L72">models/Course.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -342,7 +350,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L65">models/Course.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L70">models/Course.ts:70</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -353,13 +361,82 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/models.coursefields.html">CourseFields</a>.<a href="../interfaces/models.coursefields.html#units">units</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L66">models/Course.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L71">models/Course.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="displayname" class="tsd-anchor"></a>
+					<h3>display<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> displayName<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L118">models/Course.ts:118</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addmatch" class="tsd-anchor"></a>
+					<h3>add<wbr>Match</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Match<span class="tsd-signature-symbol">(</span>match<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.course.html" class="tsd-signature-type">Course</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L129">models/Course.ts:129</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>match: <a href="../modules/models.html#coursematch" class="tsd-signature-type">CourseMatch</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="models.course.html" class="tsd-signature-type">Course</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addsectionmatches" class="tsd-anchor"></a>
+					<h3>add<wbr>Section<wbr>Matches</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Section<wbr>Matches<span class="tsd-signature-symbol">(</span>sids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, secMatches<span class="tsd-signature-symbol">: </span><a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.course.html" class="tsd-signature-type">Course</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L135">models/Course.ts:135</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sids: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>secMatches: <a href="../modules/models.html#sectionmatch" class="tsd-signature-type">SectionMatch</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="models.course.html" class="tsd-signature-type">Course</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="allsametime" class="tsd-anchor"></a>
 					<h3>all<wbr>Same<wbr>Time</h3>
@@ -370,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L176">models/Course.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L170">models/Course.ts:170</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -392,9 +469,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L210">models/Course.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L207">models/Course.ts:207</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get copy of this course, with no match contained</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <a href="models.course.html" class="tsd-signature-type">Course</a></h4>
 						</li>
 					</ul>
@@ -409,7 +491,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L214">models/Course.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L211">models/Course.ts:211</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -432,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L192">models/Course.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L186">models/Course.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +544,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L169">models/Course.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L163">models/Course.ts:163</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -490,7 +572,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L162">models/Course.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L125">models/Course.ts:125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,41 +580,6 @@
 									<p>get the first section <strong>contained</strong> in this course</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="models.section.html" class="tsd-signature-type">Section</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getsection" class="tsd-anchor"></a>
-					<h3>get<wbr>Section</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Section<span class="tsd-signature-symbol">(</span>sid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, contained<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.section.html" class="tsd-signature-type">Section</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L150">models/Course.ts:150</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Get the course of a given section.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>sid: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> contained: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>By letting contained = false, <strong>it will be possible</strong> to get a Course whose section index
-										is not in the subset of sections contained in this instance</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="models.section.html" class="tsd-signature-type">Section</a></h4>
 						</li>
 					</ul>
@@ -548,7 +595,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L224">models/Course.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L221">models/Course.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -567,7 +614,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L231">models/Course.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L228">models/Course.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -605,7 +652,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/e542fdf/src/models/Course.ts#L206">models/Course.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/models/Course.ts#L200">models/Course.ts:200</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -631,6 +678,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/algorithm.html">algorithm</a>
@@ -675,22 +725,19 @@
 								<a href="models.course.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.course.html#hasfakesections" class="tsd-kind-icon">has<wbr>Fake<wbr>Sections</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.course.html#isfake" class="tsd-kind-icon">is<wbr>Fake</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.course.html#key" class="tsd-kind-icon">key</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.course.html#match" class="tsd-kind-icon">match</a>
+								<a href="models.course.html#matches" class="tsd-kind-icon">matches</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.course.html#number" class="tsd-kind-icon">number</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.course.html#raw" class="tsd-kind-icon">raw</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="models.course.html#secmatches" class="tsd-kind-icon">sec<wbr>Matches</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.course.html#sections" class="tsd-kind-icon">sections</a>
@@ -706,6 +753,15 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.course.html#units" class="tsd-kind-icon">units</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="models.course.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.course.html#addmatch" class="tsd-kind-icon">add<wbr>Match</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.course.html#addsectionmatches" class="tsd-kind-icon">add<wbr>Section<wbr>Matches</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.course.html#allsametime" class="tsd-kind-icon">all<wbr>Same<wbr>Time</a>
@@ -724,9 +780,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.course.html#getfirstsection" class="tsd-kind-icon">get<wbr>First<wbr>Section</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.course.html#getsection" class="tsd-kind-icon">get<wbr>Section</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.course.html#has" class="tsd-kind-icon">has</a>
@@ -774,8 +827,17 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/models.scheduleoptions.html" class="tsd-kind-icon">Schedule<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/models.searchworker.html" class="tsd-kind-icon">Search<wbr>Worker</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../interfaces/models.searchworkeronmessage.html" class="tsd-kind-icon">Search<wbr>Worker<wbr>OnMessage</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/models.semesterjson.html" class="tsd-kind-icon">SemesterJSON</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="../modules/models.html#courseconstructorarguments" class="tsd-kind-icon">Course<wbr>Constructor<wbr>Arguments</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/models.html#coursematch" class="tsd-kind-icon">Course<wbr>Match</a>
