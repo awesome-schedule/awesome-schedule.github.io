@@ -66,6 +66,28 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Search worker is used to perform fuzzy search (which is very expensive)
+						in a separate, non-blocking process.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Hanzhi Zhou</p>
+						</dd>
+						<dt>requires</dt>
+						<dd><p>optimization</p>
+						</dd>
+						<dt>requires</dt>
+						<dd><p>fast-fuzzy</p>
+						</dd>
+						<dt>see</dt>
+						<dd><p><a href="https://github.com/EthanRutherford/fast-fuzzy">https://github.com/EthanRutherford/fast-fuzzy</a></p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -76,8 +98,13 @@
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#count" class="tsd-kind-icon">count</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#coursedict" class="tsd-kind-icon">course<wbr>Dict</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#coursesearcher" class="tsd-kind-icon">course<wbr>Searcher</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#sectionsearcher" class="tsd-kind-icon">section<wbr>Searcher</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_workers_searchworker_.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/workers/SearchWorker.ts#L10">workers/SearchWorker.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/ca5cf24/src/workers/SearchWorker.ts#L22">workers/SearchWorker.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -101,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">course<wbr>Dict<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/workers/SearchWorker.ts#L9">workers/SearchWorker.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/ca5cf24/src/workers/SearchWorker.ts#L21">workers/SearchWorker.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -119,17 +146,7 @@
 					<div class="tsd-signature tsd-kind-icon">course<wbr>Searcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Searcher</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/workers/SearchWorker.ts#L7">workers/SearchWorker.ts:7</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="postmessage" class="tsd-anchor"></a>
-					<h3>post<wbr>Message</h3>
-					<div class="tsd-signature tsd-kind-icon">post<wbr>Message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/workers/SearchWorker.ts#L5">workers/SearchWorker.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/ca5cf24/src/workers/SearchWorker.ts#L19">workers/SearchWorker.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -139,9 +156,35 @@
 					<div class="tsd-signature tsd-kind-icon">section<wbr>Searcher<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Searcher</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/949571e/src/workers/SearchWorker.ts#L8">workers/SearchWorker.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/ca5cf24/src/workers/SearchWorker.ts#L20">workers/SearchWorker.ts:20</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="postmessage" class="tsd-anchor"></a>
+					<h3>post<wbr>Message</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">post<wbr>Message<span class="tsd-signature-symbol">(</span>msg<span class="tsd-signature-symbol">: </span><a href="models.html#courseconstructorarguments" class="tsd-signature-type">CourseConstructorArguments</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ready"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/ca5cf24/src/workers/SearchWorker.ts#L17">workers/SearchWorker.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>msg: <a href="models.html#courseconstructorarguments" class="tsd-signature-type">CourseConstructorArguments</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"ready"</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -195,10 +238,10 @@
 						<a href="_workers_searchworker_.html#coursesearcher" class="tsd-kind-icon">course<wbr>Searcher</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_workers_searchworker_.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_workers_searchworker_.html#sectionsearcher" class="tsd-kind-icon">section<wbr>Searcher</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workers_searchworker_.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
 					</li>
 				</ul>
 			</nav>
