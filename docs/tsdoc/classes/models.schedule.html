@@ -123,7 +123,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#calculatewidth" class="tsd-kind-icon">calculate<wbr>Width</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#clean" class="tsd-kind-icon">clean</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#cleanschedule" class="tsd-kind-icon">clean<wbr>Schedule</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#computeconflict" class="tsd-kind-icon">compute<wbr>Conflict</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#computeschedule" class="tsd-kind-icon">compute<wbr>Schedule</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#constructadjlist" class="tsd-kind-icon">construct<wbr>Adj<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#copy" class="tsd-kind-icon">copy</a></li>
@@ -160,7 +159,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L194">models/Schedule.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L193">models/Schedule.ts:193</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L160">models/Schedule.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L160">models/Schedule.ts:160</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -226,7 +225,7 @@
 					<div class="tsd-signature tsd-kind-icon">_preview<span class="tsd-signature-symbol">:</span> <a href="models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L194">models/Schedule.ts:194</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L193">models/Schedule.ts:193</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -241,7 +240,7 @@
 					<div class="tsd-signature tsd-kind-icon">color<wbr>Slots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L188">models/Schedule.ts:188</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L187">models/Schedule.ts:187</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -256,7 +255,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Courses<span class="tsd-signature-symbol">:</span> <a href="models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L172">models/Schedule.ts:172</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L172">models/Schedule.ts:172</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,20 +270,16 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L183">models/Schedule.ts:183</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L182">models/Schedule.ts:182</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>a computed dictionary that&#39;s updated by the <code>computeSchedule</code> method</p>
+							<p>a computed dictionary that&#39;s updated by the <code>computeSchedule</code> method.
+							If a Course has multiple sections selected, a <code>+x</code> will be appended.</p>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>remarks</dt>
-							<dd><p>If a Course has multiple sections selected, a <code>+x</code> will be appended</p>
-								<p>Example:</p>
-								<pre><code class="language-js">{<span class="hljs-string">"CS 2110 Lecture"</span>: <span class="hljs-string">"16436"</span>, <span class="hljs-string">"Chem 1410 Laboratory"</span>: <span class="hljs-string">"13424+2"</span>}</code></pre>
-							</dd>
-						</dl>
+						<p>Example:</p>
+						<pre><code class="language-js">{<span class="hljs-string">"CS 2110 Lecture"</span>: <span class="hljs-string">"16436"</span>, <span class="hljs-string">"Chem 1410 Laboratory"</span>: <span class="hljs-string">"13424+2"</span>}</code></pre>
 					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
@@ -301,7 +296,7 @@
 					<div class="tsd-signature tsd-kind-icon">days<span class="tsd-signature-symbol">:</span> <a href="../modules/models.html#week" class="tsd-signature-type">Week</a><span class="tsd-signature-symbol">&lt;</span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L164">models/Schedule.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L164">models/Schedule.ts:164</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,7 +311,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <a href="models.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L203">models/Schedule.ts:203</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L202">models/Schedule.ts:202</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -326,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L202">models/Schedule.ts:202</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L201">models/Schedule.ts:201</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -336,7 +331,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Compute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L189">models/Schedule.ts:189</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L188">models/Schedule.ts:188</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -346,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L201">models/Schedule.ts:201</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L200">models/Schedule.ts:200</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -356,7 +351,7 @@
 					<div class="tsd-signature tsd-kind-icon">total<wbr>Credit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L168">models/Schedule.ts:168</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L168">models/Schedule.ts:168</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -371,7 +366,7 @@
 					<div class="tsd-signature tsd-kind-icon">bg<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyArray</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;#f7867e&#x27;,&#x27;#ffb74c&#x27;,&#x27;#82677E&#x27;,&#x27;#2C577C&#x27;,&#x27;#6D838A&#x27;,&#x27;#00a0a0&#x27;,&#x27;#355dff&#x27;,&#x27;#7790ff&#x27;,&#x27;#9B5656&#x27;,&#x27;#CC9393&#x27;,&#x27;#993D5F&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L53">models/Schedule.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L53">models/Schedule.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -381,7 +376,7 @@
 					<div class="tsd-signature tsd-kind-icon">day<wbr>ToInt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;Object.freeze({Mo: 0,Tu: 1,We: 2,Th: 3,Fr: 4}) as { readonly [key in Day]: number }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L45">models/Schedule.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L45">models/Schedule.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -396,7 +391,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="../interfaces/models.scheduleoptions.html" class="tsd-signature-type">ScheduleOptions</a><span class="tsd-signature-symbol"> =&nbsp;Object.seal({combineSections: true,multiSelect: true})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L40">models/Schedule.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L40">models/Schedule.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -406,7 +401,7 @@
 					<div class="tsd-signature tsd-kind-icon">saved<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L67">models/Schedule.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L67">models/Schedule.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -431,7 +426,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L348">models/Schedule.ts:348</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L347">models/Schedule.ts:347</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -453,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L276">models/Schedule.ts:276</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L275">models/Schedule.ts:275</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -488,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L480">models/Schedule.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L435">models/Schedule.ts:435</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -514,7 +509,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L682">models/Schedule.ts:682</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L637">models/Schedule.ts:637</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -531,46 +526,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L601">models/Schedule.ts:601</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L556">models/Schedule.ts:556</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="computeconflict" class="tsd-anchor"></a>
-					<h3>compute<wbr>Conflict</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">compute<wbr>Conflict<span class="tsd-signature-symbol">(</span>countEvent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L445">models/Schedule.ts:445</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Construct an undirected graph for the scheduleBlocks in each day.
-										Perform DFS on that graph to determine the
-									maximum number of conflicting schedules that need to be rendered &quot;in parallel&quot;.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>deprecated</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> countEvent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>whether to include events in this graph</p>
-									</div>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -585,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L334">models/Schedule.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L333">models/Schedule.ts:333</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -624,7 +582,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L510">models/Schedule.ts:510</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L465">models/Schedule.ts:465</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -641,7 +599,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L643">models/Schedule.ts:643</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L598">models/Schedule.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -669,7 +627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L296">models/Schedule.ts:296</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L295">models/Schedule.ts:295</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -692,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L688">models/Schedule.ts:688</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L643">models/Schedule.ts:643</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -709,7 +667,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L612">models/Schedule.ts:612</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L567">models/Schedule.ts:567</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -740,7 +698,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L225">models/Schedule.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L224">models/Schedule.ts:224</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -774,7 +732,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L671">models/Schedule.ts:671</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L626">models/Schedule.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -809,7 +767,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L306">models/Schedule.ts:306</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L305">models/Schedule.ts:305</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -835,7 +793,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L539">models/Schedule.ts:539</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L494">models/Schedule.ts:494</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -868,7 +826,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L576">models/Schedule.ts:576</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L531">models/Schedule.ts:531</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -897,7 +855,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L271">models/Schedule.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L270">models/Schedule.ts:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -920,7 +878,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L596">models/Schedule.ts:596</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L551">models/Schedule.ts:551</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -948,7 +906,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L266">models/Schedule.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L265">models/Schedule.ts:265</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -970,7 +928,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L619">models/Schedule.ts:619</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L574">models/Schedule.ts:574</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -992,7 +950,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L320">models/Schedule.ts:320</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L319">models/Schedule.ts:319</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1015,12 +973,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L241">models/Schedule.ts:241</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L240">models/Schedule.ts:240</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Update a course in the schedule</p>
+									<p>Update a section in the schedule</p>
 									<ul>
 										<li>If the section is <strong>already in</strong> the schedule, delete it from the schedule</li>
 										<li>If the section is <strong>not</strong> in the schedule, add it to the schedule</li>
@@ -1056,7 +1014,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L77">models/Schedule.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L77">models/Schedule.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1088,7 +1046,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/2086e93/src/models/Schedule.ts#L69">models/Schedule.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/4ea40aa/src/models/Schedule.ts#L69">models/Schedule.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1222,9 +1180,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#cleanschedule" class="tsd-kind-icon">clean<wbr>Schedule</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#computeconflict" class="tsd-kind-icon">compute<wbr>Conflict</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#computeschedule" class="tsd-kind-icon">compute<wbr>Schedule</a>
