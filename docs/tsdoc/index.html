@@ -99,13 +99,11 @@ mkdir -p backend
 git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/data
 <span class="hljs-built_in">cd</span> ..</code></pre>
 				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
-				<pre><code class="language-bash">npm install -g @vue/cli
+				<pre><code class="language-bash">npm install -g @vue/cli http-server
 npm install
-patch-package <span class="hljs-comment"># for better type safety, we need to patch some type definitions</span>
 npm run serve</code></pre>
-				<p>Then you can view the development server at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>.</p>
-				<p>You probably need to serve the static files in backend/data. To do so, we recommend using <code>http-server</code>. If it is not installed, you can run <code>npm install -g http-server</code></p>
-				<p>Then, you can run <code>sh run.sh</code> in the project root to launch the static file server.</p>
+				<p>You need to serve the static files in backend/data. To do so, you can run <code>sh run.sh</code> in the project root, which will basically open a static http server listening to port <code>8000</code> with cross origin header.</p>
+				<p>Then you can visit the development server at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>.</p>
 				<h2 id="built-with">Built With</h2>
 				<ul>
 					<li><a href="https://vuejs.org">Vue.js</a> - Front-end framework</li>
