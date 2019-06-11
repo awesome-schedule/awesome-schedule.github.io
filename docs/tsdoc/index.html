@@ -93,16 +93,14 @@
 				</ul>
 				<p>Clone the repository and data</p>
 				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/Awesome-SchedulAR
-<span class="hljs-built_in">cd</span> Awesome-SchedulAR
-mkdir -p backend
-<span class="hljs-built_in">cd</span> backend
+<span class="hljs-built_in">cd</span> Awesome-SchedulAR/scripts
 git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/data
 <span class="hljs-built_in">cd</span> ..</code></pre>
 				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
 				<pre><code class="language-bash">npm install -g @vue/cli http-server
 npm install
 npm run serve</code></pre>
-				<p>You need to serve the static files in backend/data. To do so, you can run <code>sh run.sh</code> in the project root, which will basically open a static http server listening to port <code>8000</code> with cross origin header.</p>
+				<p>You need to serve the static files in scripts/data. To do so, you can run <code>sh run.sh</code> in the project root, which will basically open a static http server listening to port <code>8000</code> with cross origin header.</p>
 				<p>Then you can visit the development server at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>.</p>
 				<h2 id="built-with">Built With</h2>
 				<ul>
@@ -128,6 +126,12 @@ npm run serve</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_app_.html">"<wbr>App"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_config_.html">"config"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_main_.html">"main"</a>

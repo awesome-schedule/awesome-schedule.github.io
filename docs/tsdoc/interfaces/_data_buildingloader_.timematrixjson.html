@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ScheduleOptions | awesome-schedule</title>
+	<title>TimeMatrixJSON | awesome-schedule</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/models.html">models</a>
+					<a href="../modules/_data_buildingloader_.html">&quot;data/BuildingLoader&quot;</a>
 				</li>
 				<li>
-					<a href="models.scheduleoptions.html">ScheduleOptions</a>
+					<a href="_data_buildingloader_.timematrixjson.html">TimeMatrixJSON</a>
 				</li>
 			</ul>
-			<h1>Interface ScheduleOptions</h1>
+			<h1>Interface TimeMatrixJSON</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +73,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ScheduleOptions</span>
+						<a href="data.expirable.html" class="tsd-signature-type">Expirable</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">TimeMatrixJSON</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -84,8 +89,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models.scheduleoptions.html#combinesections" class="tsd-kind-icon">combine<wbr>Sections</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="models.scheduleoptions.html#multiselect" class="tsd-kind-icon">multi<wbr>Select</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_data_buildingloader_.timematrixjson.html#modified" class="tsd-kind-icon">modified</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_data_buildingloader_.timematrixjson.html#timematrix" class="tsd-kind-icon">time<wbr>Matrix</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,23 +98,29 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="combinesections" class="tsd-anchor"></a>
-					<h3>combine<wbr>Sections</h3>
-					<div class="tsd-signature tsd-kind-icon">combine<wbr>Sections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="modified" class="tsd-anchor"></a>
+					<h3>modified</h3>
+					<div class="tsd-signature tsd-kind-icon">modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="data.expirable.html">Expirable</a>.<a href="data.expirable.html#modified">modified</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/be5bdee/src/models/Schedule.ts#L31">models/Schedule.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/be5bdee/src/data/Expirable.ts#L13">data/Expirable.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the JSON representation of a Date object, representing the time when this expirable object is created</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="multiselect" class="tsd-anchor"></a>
-					<h3>multi<wbr>Select</h3>
-					<div class="tsd-signature tsd-kind-icon">multi<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="timematrix" class="tsd-anchor"></a>
+					<h3>time<wbr>Matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>Matrix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/be5bdee/src/models/Schedule.ts#L30">models/Schedule.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/be5bdee/src/data/BuildingLoader.ts#L16">data/BuildingLoader.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +138,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -148,7 +159,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/data.html">data</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/models.html">models</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -161,122 +172,35 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.catalog.html" class="tsd-kind-icon">Catalog</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.course.html" class="tsd-kind-icon">Course</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.event.html" class="tsd-kind-icon">Event</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.meeting.html" class="tsd-kind-icon">Meeting</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.schedule.html" class="tsd-kind-icon">Schedule</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.scheduleblock.html" class="tsd-kind-icon">Schedule<wbr>Block</a>
-					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/models.section.html" class="tsd-kind-icon">Section</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.catalogjson.html" class="tsd-kind-icon">CatalogJSON</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.coursefields.html" class="tsd-kind-icon">Course<wbr>Fields</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.hashable.html" class="tsd-kind-icon">Hashable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="models.match.html" class="tsd-kind-icon">Match</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.rawcatalog.html" class="tsd-kind-icon">Raw<wbr>Catalog</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.schedulejson.html" class="tsd-kind-icon">ScheduleJSON</a>
+						<a href="_data_buildingloader_.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.scheduleoptions.html" class="tsd-kind-icon">Schedule<wbr>Options</a>
+						<a href="_data_buildingloader_.timematrixjson.html" class="tsd-kind-icon">Time<wbr>MatrixJSON</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models.scheduleoptions.html#combinesections" class="tsd-kind-icon">combine<wbr>Sections</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="_data_buildingloader_.timematrixjson.html#modified" class="tsd-kind-icon">modified</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="models.scheduleoptions.html#multiselect" class="tsd-kind-icon">multi<wbr>Select</a>
+								<a href="_data_buildingloader_.timematrixjson.html#timematrix" class="tsd-kind-icon">time<wbr>Matrix</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="models.searchworker.html" class="tsd-kind-icon">Search<wbr>Worker</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_data_buildingloader_.html#loadbuildinglist" class="tsd-kind-icon">load<wbr>Building<wbr>List</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="models.searchworkeronmessage.html" class="tsd-kind-icon">Search<wbr>Worker<wbr>OnMessage</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_data_buildingloader_.html#loadtimematrix" class="tsd-kind-icon">load<wbr>Time<wbr>Matrix</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="models.semesterjson.html" class="tsd-kind-icon">SemesterJSON</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_data_buildingloader_.html#requestbuildinglist" class="tsd-kind-icon">request<wbr>Building<wbr>List</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#courseconstructorarguments" class="tsd-kind-icon">Course<wbr>Constructor<wbr>Arguments</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#coursematch" class="tsd-kind-icon">Course<wbr>Match</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#coursestatus" class="tsd-kind-icon">Course<wbr>Status</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#coursetype" class="tsd-kind-icon">Course<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#day" class="tsd-kind-icon">Day</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#rawcourse" class="tsd-kind-icon">Raw<wbr>Course</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#rawmeeting" class="tsd-kind-icon">Raw<wbr>Meeting</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#rawsection" class="tsd-kind-icon">Raw<wbr>Section</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#sectionmatch" class="tsd-kind-icon">Section<wbr>Match</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/models.html#week" class="tsd-kind-icon">Week</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#days" class="tsd-kind-icon">DAYS</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#statuses" class="tsd-kind-icon">STATUSES</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#statuses_parse" class="tsd-kind-icon">STATUSES_<wbr>PARSE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#types" class="tsd-kind-icon">TYPES</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#types_parse" class="tsd-kind-icon">TYPES_<wbr>PARSE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#daytoint" class="tsd-kind-icon">day<wbr>ToInt</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#semesterdataexpirationtime" class="tsd-kind-icon">semester<wbr>Data<wbr>Expiration<wbr>Time</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#semesterlistexpirationtime" class="tsd-kind-icon">semester<wbr>List<wbr>Expiration<wbr>Time</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_data_buildingloader_.html#requesttimematrix" class="tsd-kind-icon">request<wbr>Time<wbr>Matrix</a>
 					</li>
 				</ul>
 			</nav>
