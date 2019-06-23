@@ -104,7 +104,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#display" class="tsd-kind-icon">display</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#inputcourses" class="tsd-kind-icon">input<wbr>Courses</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#isentering" class="tsd-kind-icon">is<wbr>Entering</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#loading" class="tsd-kind-icon">loading</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#modal" class="tsd-kind-icon">modal</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#noti" class="tsd-kind-icon">noti</a></li>
@@ -112,6 +111,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#schedule" class="tsd-kind-icon">schedule</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#semester" class="tsd-kind-icon">semester</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#workerloaded" class="tsd-kind-icon">worker<wbr>Loaded</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -119,10 +119,11 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#closeclasslist" class="tsd-kind-icon">close<wbr>Class<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#computefilter" class="tsd-kind-icon">compute<wbr>Filter</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#created" class="tsd-kind-icon">created</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#disposeworker" class="tsd-kind-icon">dispose<wbr>Worker</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#generateschedules" class="tsd-kind-icon">generate<wbr>Schedules</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#getclass" class="tsd-kind-icon">get<wbr>Class</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#getgeneratoroptions" class="tsd-kind-icon">get<wbr>Generator<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="components_tabs.fuzzyview.html#initworker" class="tsd-kind-icon">init<wbr>Worker</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#loadingwatch" class="tsd-kind-icon">loading<wbr>Watch</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#parsestatus" class="tsd-kind-icon">parse<wbr>Status</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="components_tabs.fuzzyview.html#savestatus" class="tsd-kind-icon">save<wbr>Status</a></li>
@@ -143,7 +144,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#display">display</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L154">store/index.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L154">store/index.ts:154</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -154,27 +155,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#filter">filter</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L153">store/index.ts:153</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L153">store/index.ts:153</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="inputcourses" class="tsd-anchor"></a>
 					<h3>input<wbr>Courses</h3>
-					<div class="tsd-signature tsd-kind-icon">input<wbr>Courses<span class="tsd-signature-symbol">:</span> <a href="models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<div class="tsd-signature tsd-kind-icon">input<wbr>Courses<span class="tsd-signature-symbol">:</span> <a href="models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L20">components/tabs/FuzzyView.ts:20</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="isentering" class="tsd-anchor"></a>
-					<h3>is<wbr>Entering</h3>
-					<div class="tsd-signature tsd-kind-icon">is<wbr>Entering<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L19">components/tabs/FuzzyView.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L19">components/tabs/FuzzyView.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,14 +175,14 @@
 					<div class="tsd-signature tsd-kind-icon">loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L27">components/tabs/FuzzyView.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L25">components/tabs/FuzzyView.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>represent the current state of the fuzzy search component.</p>
+							<p>represent the current state of the fuzzy search component.
+							disable the input box if true</p>
 						</div>
-						<p>disable the input box if true</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -201,7 +192,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#modal">modal</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L156">store/index.ts:156</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L156">store/index.ts:156</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +203,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#noti">noti</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L160">store/index.ts:160</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L160">store/index.ts:160</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,7 +214,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#palette">palette</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L159">store/index.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L159">store/index.ts:159</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +225,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#schedule">schedule</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L157">store/index.ts:157</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L157">store/index.ts:157</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -245,7 +236,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#semester">semester</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L158">store/index.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L158">store/index.ts:158</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,7 +247,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#status">status</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L155">store/index.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L155">store/index.ts:155</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="workerloaded" class="tsd-anchor"></a>
+					<h3>worker<wbr>Loaded</h3>
+					<div class="tsd-signature tsd-kind-icon">worker<wbr>Loaded<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;!!window.catalog.worker</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L27">components/tabs/FuzzyView.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -273,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L70">components/tabs/FuzzyView.ts:70</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L79">components/tabs/FuzzyView.ts:79</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -291,7 +292,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#computefilter">computeFilter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L238">store/index.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L238">store/index.ts:238</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,24 +309,19 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="created" class="tsd-anchor"></a>
-					<h3>created</h3>
+					<a name="disposeworker" class="tsd-anchor"></a>
+					<h3>dispose<wbr>Worker</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">created<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">dispose<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L32">components/tabs/FuzzyView.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L43">components/tabs/FuzzyView.ts:43</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>initialize catalog&#39;s search worker if it is not yet initialized</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -340,7 +336,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#generateschedules">generateSchedules</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L295">store/index.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L295">store/index.ts:295</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -357,13 +353,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L51">components/tabs/FuzzyView.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L57">components/tabs/FuzzyView.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>get classes that match the input query.
-									Exit &quot;entering&quot; mode on falsy parameter (set <code>isEntering</code> to false)</p>
+									clear search results on falsy parameter.</p>
 								</div>
 								<p>if a generated schedule is displayed, switch to proposed schedule,
 								because we&#39;re adding stuff to the proposed schedule</p>
@@ -394,13 +390,35 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#getgeneratoroptions">getGeneratorOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L270">store/index.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L270">store/index.ts:270</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/algorithm.generatoroptions.html" class="tsd-signature-type">GeneratorOptions</a>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
 							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initworker" class="tsd-anchor"></a>
+					<h3>init<wbr>Worker</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Worker<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L32">components/tabs/FuzzyView.ts:32</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>initialize catalog&#39;s search worker if it is not yet initialized</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -415,7 +433,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#loadingwatch">loadingWatch</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L350">store/index.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L351">store/index.ts:351</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -433,7 +451,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#parsestatus">parseStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L176">store/index.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L176">store/index.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -465,7 +483,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#savestatus">saveStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L165">store/index.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L165">store/index.ts:165</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -488,7 +506,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#selectsemester">selectSemester</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L331">store/index.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L331">store/index.ts:331</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -527,7 +545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/components/tabs/FuzzyView.ts#L78">components/tabs/FuzzyView.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/components/tabs/FuzzyView.ts#L87">components/tabs/FuzzyView.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,7 +582,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.store-1.html">Store</a>.<a href="store.store-1.html#validatesortoptions">validateSortOptions</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/3403da3/src/store/index.ts#L218">store/index.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L218">store/index.ts:218</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -653,9 +671,6 @@
 								<a href="components_tabs.fuzzyview.html#inputcourses" class="tsd-kind-icon">input<wbr>Courses</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="components_tabs.fuzzyview.html#isentering" class="tsd-kind-icon">is<wbr>Entering</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="components_tabs.fuzzyview.html#loading" class="tsd-kind-icon">loading</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -676,6 +691,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="components_tabs.fuzzyview.html#status" class="tsd-kind-icon">status</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="components_tabs.fuzzyview.html#workerloaded" class="tsd-kind-icon">worker<wbr>Loaded</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="components_tabs.fuzzyview.html#closeclasslist" class="tsd-kind-icon">close<wbr>Class<wbr>List</a>
 							</li>
@@ -683,7 +701,7 @@
 								<a href="components_tabs.fuzzyview.html#computefilter" class="tsd-kind-icon">compute<wbr>Filter</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="components_tabs.fuzzyview.html#created" class="tsd-kind-icon">created</a>
+								<a href="components_tabs.fuzzyview.html#disposeworker" class="tsd-kind-icon">dispose<wbr>Worker</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components_tabs.fuzzyview.html#generateschedules" class="tsd-kind-icon">generate<wbr>Schedules</a>
@@ -693,6 +711,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components_tabs.fuzzyview.html#getgeneratoroptions" class="tsd-kind-icon">get<wbr>Generator<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="components_tabs.fuzzyview.html#initworker" class="tsd-kind-icon">init<wbr>Worker</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="components_tabs.fuzzyview.html#loadingwatch" class="tsd-kind-icon">loading<wbr>Watch</a>
