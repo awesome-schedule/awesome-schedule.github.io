@@ -112,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/algorithm/ScheduleEvaluator.ts#L40">algorithm/ScheduleEvaluator.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/algorithm/ScheduleEvaluator.ts#L36">algorithm/ScheduleEvaluator.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -127,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof SortFunctions</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/algorithm/ScheduleEvaluator.ts#L36">algorithm/ScheduleEvaluator.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/algorithm/ScheduleEvaluator.ts#L32">algorithm/ScheduleEvaluator.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">reverse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/algorithm/ScheduleEvaluator.ts#L44">algorithm/ScheduleEvaluator.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/algorithm/ScheduleEvaluator.ts#L40">algorithm/ScheduleEvaluator.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -163,13 +163,25 @@
 						<a href="../modules/_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="../modules/_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -220,12 +232,6 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="algorithm.generatoroptions.html" class="tsd-kind-icon">Generator<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="algorithm.roomarray.html" class="tsd-kind-icon">Room<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="algorithm.roomnumberarray.html" class="tsd-kind-icon">Room<wbr>Number<wbr>Array</a>
-					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
@@ -250,12 +256,6 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/algorithm.html#graph" class="tsd-kind-icon">Graph</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/algorithm.html#orderedblocks" class="tsd-kind-icon">Ordered<wbr>Blocks</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/algorithm.html#orderedrooms" class="tsd-kind-icon">Ordered<wbr>Rooms</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#rawalgocourse" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Course</a>
 					</li>
@@ -268,25 +268,22 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#timeblock" class="tsd-kind-icon">Time<wbr>Block</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/algorithm.html#typedintarray" class="tsd-kind-icon">Typed<wbr>Int<wbr>Array</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/algorithm.html#depthfirstsearchrec" class="tsd-kind-icon">depth<wbr>First<wbr>Search<wbr>Rec</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#dsatur" class="tsd-kind-icon">dsatur</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/algorithm.html#graphcolorbacktrack" class="tsd-kind-icon">graph<wbr>Color<wbr>Back<wbr>Track</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#graphcoloringexact" class="tsd-kind-icon">graph<wbr>Coloring<wbr>Exact</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#recursivelargestfirst" class="tsd-kind-icon">recursive<wbr>Largest<wbr>First</a>
 					</li>
 				</ul>

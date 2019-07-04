@@ -82,16 +82,16 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#blockunion" class="tsd-kind-icon">block<wbr>Union</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#calcoverlap" class="tsd-kind-icon">calc<wbr>Overlap</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#checktimeblockconflict" class="tsd-kind-icon">check<wbr>Time<wbr>Block<wbr>Conflict</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#checktimeconflict" class="tsd-kind-icon">check<wbr>Time<wbr>Conflict</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="utils.html#datetoicalstring" class="tsd-kind-icon">date<wbr>ToICal<wbr>String</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#errtostr" class="tsd-kind-icon">err<wbr>ToStr</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#hashcode" class="tsd-kind-icon">hash<wbr>Code</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="utils.html#highlightmatch" class="tsd-kind-icon">highlight<wbr>Match</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#hr12toint" class="tsd-kind-icon">hr12to<wbr>Int</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#hr24toint" class="tsd-kind-icon">hr24to<wbr>Int</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#openlouslist" class="tsd-kind-icon">open<wbr>Lous<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#openvagrade" class="tsd-kind-icon">openVAGrade</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#parsetimeall" class="tsd-kind-icon">parse<wbr>Time<wbr>All</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#parsetimeasint" class="tsd-kind-icon">parse<wbr>Time<wbr>AsInt</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#parsetimeastimearray" class="tsd-kind-icon">parse<wbr>Time<wbr>AsTime<wbr>Array</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#saveplain" class="tsd-kind-icon">save<wbr>Plain</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="utils.html#timetonum" class="tsd-kind-icon">time<wbr>ToNum</a></li>
@@ -116,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L178">utils/time.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L130">utils/time.ts:130</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,14 +151,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L170">utils/time.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L122">utils/time.ts:122</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>calculate the overlap between time block [a, b] and [c, d].</p>
 								</div>
-								<p>Return 0 when no overlap or zero overlap.</p>
 								<dl class="tsd-comment-tags">
 									<dt>author</dt>
 									<dd><p>Hanzhi Zhou</p>
@@ -178,56 +177,14 @@
 								</li>
 								<li>
 									<h5>d: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="checktimeblockconflict" class="tsd-anchor"></a>
-					<h3>check<wbr>Time<wbr>Block<wbr>Conflict</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Time<wbr>Block<wbr>Conflict<span class="tsd-signature-symbol">(</span>start1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, end1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, start2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, end2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, includeEnd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L140">utils/time.ts:140</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<dl class="tsd-comment-tags">
-									<dt>author</dt>
-									<dd><p>Hanzhi Zhou</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start1: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>end1: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>start2: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>end2: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeEnd: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>whether return <code>true</code> (conflict) if only the end points touch each other</p>
-									</div>
-								</li>
+							<ul>
+								<li>0 if only end points touch</li>
+								<li>-1 if no overlap</li>
+								<li>the area of overlapping region if overlap</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -235,13 +192,13 @@
 					<a name="checktimeconflict" class="tsd-anchor"></a>
 					<h3>check<wbr>Time<wbr>Conflict</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">check<wbr>Time<wbr>Conflict<span class="tsd-signature-symbol">(</span>timeDict1<span class="tsd-signature-symbol">: </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a>, timeDict2<span class="tsd-signature-symbol">: </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Time<wbr>Conflict<span class="tsd-signature-symbol">(</span>timeArray1<span class="tsd-signature-symbol">: </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a>, timeArray2<span class="tsd-signature-symbol">: </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a>, step1<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, step2<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L105">utils/time.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L80">utils/time.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,18 +207,31 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>author</dt>
-									<dd><p>Zichao Hu, Hanzhi Zhou</p>
+									<dd><p>Hanzhi Zhou</p>
+									</dd>
+									<dt>note</dt>
+									<dd><p>use step=2 for time only array, use step=3 for time-room combined array</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>timeDict1: <a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a></h5>
+									<h5>timeArray1: <a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a></h5>
 								</li>
 								<li>
-									<h5>timeDict2: <a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a></h5>
+									<h5>timeArray2: <a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> step1: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2</span></h5>
 									<div class="tsd-comment tsd-typography">
+										<p>the increment step for array 1</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> step2: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the increment step for array 2</p>
 									</div>
 								</li>
 							</ul>
@@ -279,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/ICal.ts#L134">utils/ICal.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/ICal.ts#L136">utils/ICal.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -302,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L124">utils/other.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L123">utils/other.ts:123</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -332,7 +302,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L74">utils/other.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L73">utils/other.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +342,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L46">utils/other.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L46">utils/other.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -417,6 +387,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="hr12toint" class="tsd-anchor"></a>
+					<h3>hr12to<wbr>Int</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">hr12to<wbr>Int<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L67">utils/time.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>time: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="hr24toint" class="tsd-anchor"></a>
+					<h3>hr24to<wbr>Int</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">hr24to<wbr>Int<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L62">utils/time.ts:62</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>time: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="openlouslist" class="tsd-anchor"></a>
 					<h3>open<wbr>Lous<wbr>List</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -426,7 +442,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L17">utils/other.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L17">utils/other.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -462,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L31">utils/other.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L31">utils/other.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -495,7 +511,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L21">utils/time.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L21">utils/time.ts:21</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -522,51 +538,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parsetimeasint" class="tsd-anchor"></a>
-					<h3>parse<wbr>Time<wbr>AsInt</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Time<wbr>AsInt<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="algorithm.html#timeblock" class="tsd-signature-type">TimeBlock</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L73">utils/time.ts:73</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Parse time in 12h format to number of minutes from 0:00,
-									assuming that the start time is <strong>always smaller (earlier)</strong> than end time</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>author</dt>
-									<dd><p>Hanzhi Zhou</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>start: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>start time such as <code>10:00AM</code></p>
-									</div>
-								</li>
-								<li>
-									<h5>end: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>end time such as <code>11:00AM</code></p>
-										<p>Example usage:</p>
-										<pre><code class="language-js">parseTimeAsInt(<span class="hljs-string">'10:00AM'</span>, <span class="hljs-string">'11:00AM'</span>) =&gt; [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>]</code></pre>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="algorithm.html#timeblock" class="tsd-signature-type">TimeBlock</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="parsetimeastimearray" class="tsd-anchor"></a>
 					<h3>parse<wbr>Time<wbr>AsTime<wbr>Array</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -576,7 +547,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L47">utils/time.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L49">utils/time.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -598,11 +569,13 @@
 							</h4>
 							<p>null when fail to parse</p>
 							<p>Example:</p>
-							<pre><code class="language-js">expect(parseTimeAll(<span class="hljs-string">'MoWeFr 10:00AM - 11:00AM'</span>)).toEqual({
-    <span class="hljs-attr">Mo</span>: [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
-    <span class="hljs-attr">We</span>: [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
-    <span class="hljs-attr">Fr</span>: [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
-})</code></pre>
+							<pre><code class="language-js">expect(parseTimeAsTimeArray(<span class="hljs-string">'MoWeFr 10:00AM - 11:00AM'</span>)).toEqual([
+    [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
+    [],
+    [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
+    [],
+    [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>],
+])</code></pre>
 						</li>
 					</ul>
 				</section>
@@ -616,7 +589,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L116">utils/other.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L115">utils/other.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -657,7 +630,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L245">utils/time.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L203">utils/time.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -698,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/other.ts#L92">utils/other.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/other.ts#L91">utils/other.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -752,7 +725,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L201">utils/time.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L153">utils/time.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -790,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/time.ts#L224">utils/time.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/time.ts#L176">utils/time.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -799,7 +772,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>author</dt>
-									<dd><p>Kaiying Shan</p>
+									<dd><p>Hanzhi Zhou</p>
 									</dd>
 								</dl>
 							</div>
@@ -827,7 +800,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/utils/ICal.ts#L24">utils/ICal.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/utils/ICal.ts#L24">utils/ICal.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -866,13 +839,25 @@
 						<a href="_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_main_.html">"main"</a>
+						<a href="_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -909,9 +894,6 @@
 						<a href="utils.html#calcoverlap" class="tsd-kind-icon">calc<wbr>Overlap</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="utils.html#checktimeblockconflict" class="tsd-kind-icon">check<wbr>Time<wbr>Block<wbr>Conflict</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="utils.html#checktimeconflict" class="tsd-kind-icon">check<wbr>Time<wbr>Conflict</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
@@ -927,6 +909,12 @@
 						<a href="utils.html#highlightmatch" class="tsd-kind-icon">highlight<wbr>Match</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="utils.html#hr12toint" class="tsd-kind-icon">hr12to<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="utils.html#hr24toint" class="tsd-kind-icon">hr24to<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="utils.html#openlouslist" class="tsd-kind-icon">open<wbr>Lous<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -934,9 +922,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="utils.html#parsetimeall" class="tsd-kind-icon">parse<wbr>Time<wbr>All</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="utils.html#parsetimeasint" class="tsd-kind-icon">parse<wbr>Time<wbr>AsInt</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="utils.html#parsetimeastimearray" class="tsd-kind-icon">parse<wbr>Time<wbr>AsTime<wbr>Array</a>

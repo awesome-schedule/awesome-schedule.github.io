@@ -72,24 +72,22 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p><code>TimeArray</code> is a data structure used to store the time blocks in a week
-						that a certain <code>Section</code> or <code>Event</code> will take place.</p>
+						<p>The blocks is a iliffe vector storing the time and room information of the an entity at each day.
+							Index from 0 to 4 represents days from Monday to Friday.
+						Example:</p>
+						<pre><code class="language-js"><span class="hljs-keyword">const</span> timeDict = [ [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>, <span class="hljs-number">11</span>, <span class="hljs-number">900</span>, <span class="hljs-number">960</span>, <span class="hljs-number">2</span>], [], [], [],  [<span class="hljs-number">1200</span>, <span class="hljs-number">1260</span>, <span class="hljs-number">12</span>] ]</code></pre>
+						<p>represents that this entity will take place
+							every Monday 10:00 to 11:00 at room index 11, 15:00 to 16:00 at room 2,
+						and Friday 20:00 to 21:00 at room 12</p>
 					</div>
-					<p>Index from 0 to 4 represent days from Monday to Friday.
-					The values are <strong>flattened</strong> arrays of <code>TimeBlock</code>s, e.g. <code>[100, 200, 300, 400]</code>.</p>
-					<dl class="tsd-comment-tags">
-						<dt>remarks</dt>
-						<dd><p>The values are not simply <code>TimeBlock</code>s
-							because it is possible for a single section to have multiple meetings in a day</p>
-							<p>Example:</p>
-							<pre><code class="language-js"><span class="hljs-keyword">const</span> timeDict = [ [<span class="hljs-number">600</span>, <span class="hljs-number">660</span>, <span class="hljs-number">900</span>, <span class="hljs-number">960</span>], [], [], [],  [<span class="hljs-number">1200</span>, <span class="hljs-number">1260</span>] ]</code></pre>
-							<p>represents that this <code>Section</code> or <code>Event</code> will take place
-							every Monday 10:00 to 11:00 and 15:00 to 16:00 and Friday 20:00 to 21:00</p>
-						</dd>
-						<dt>see</dt>
-						<dd><p><a href="../modules/algorithm.html#timeblock">TimeBlock</a></p>
-						</dd>
-					</dl>
+					<p>a typical loop that visits these info is shown below</p>
+					<pre><code class="language-js"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> day <span class="hljs-keyword">of</span> blocks) {
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; day.length; i += <span class="hljs-number">3</span>) {
+        <span class="hljs-keyword">const</span> start = day[i]; <span class="hljs-comment">// start time of the `i / 3`th class</span>
+        <span class="hljs-keyword">const</span> end = day[i + <span class="hljs-number">1</span>]; <span class="hljs-comment">// end time of the `i / 3`th class</span>
+        <span class="hljs-keyword">const</span> roomNumber = day[i + <span class="hljs-number">2</span>]; <span class="hljs-comment">// room index of the `i / 3`th class</span>
+    }
+}</code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -116,13 +114,25 @@
 						<a href="../modules/_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="../modules/_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -174,12 +184,6 @@
 						<a href="algorithm.generatoroptions.html" class="tsd-kind-icon">Generator<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="algorithm.roomarray.html" class="tsd-kind-icon">Room<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="algorithm.roomnumberarray.html" class="tsd-kind-icon">Room<wbr>Number<wbr>Array</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="algorithm.sortoption.html" class="tsd-kind-icon">Sort<wbr>Option</a>
 					</li>
 				</ul>
@@ -191,12 +195,6 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/algorithm.html#graph" class="tsd-kind-icon">Graph</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/algorithm.html#orderedblocks" class="tsd-kind-icon">Ordered<wbr>Blocks</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/algorithm.html#orderedrooms" class="tsd-kind-icon">Ordered<wbr>Rooms</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#rawalgocourse" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Course</a>
@@ -210,25 +208,22 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#timeblock" class="tsd-kind-icon">Time<wbr>Block</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/algorithm.html#typedintarray" class="tsd-kind-icon">Typed<wbr>Int<wbr>Array</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/algorithm.html#depthfirstsearchrec" class="tsd-kind-icon">depth<wbr>First<wbr>Search<wbr>Rec</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#dsatur" class="tsd-kind-icon">dsatur</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/algorithm.html#graphcolorbacktrack" class="tsd-kind-icon">graph<wbr>Color<wbr>Back<wbr>Track</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#graphcoloringexact" class="tsd-kind-icon">graph<wbr>Coloring<wbr>Exact</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#recursivelargestfirst" class="tsd-kind-icon">recursive<wbr>Largest<wbr>First</a>
 					</li>
 				</ul>

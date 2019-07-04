@@ -82,10 +82,6 @@
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel tsd-kind-interface tsd-parent-kind-external-module">
-				<h3 class="tsd-before-signature">Indexable</h3>
-				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>x: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">any</span></div>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -94,11 +90,10 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.schedulestatejson.html#cpindex" class="tsd-kind-icon">cp<wbr>Index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.schedulestatejson.html#currentschedule" class="tsd-kind-icon">current<wbr>Schedule</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.schedulestatejson.html#currentscheduleindex" class="tsd-kind-icon">current<wbr>Schedule<wbr>Index</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.schedulestatejson.html#generated" class="tsd-kind-icon">generated</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.schedulestatejson.html#proposedscheduleindex" class="tsd-kind-icon">proposed<wbr>Schedule<wbr>Index</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.schedulestatejson.html#proposedschedules" class="tsd-kind-icon">proposed<wbr>Schedules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite"><a href="store.schedulestatejson.html#proposedschedules" class="tsd-kind-icon">proposed<wbr>Schedules</a></li>
 							</ul>
 						</section>
 					</div>
@@ -113,19 +108,15 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.schedulestatebase.html">ScheduleStateBase</a>.<a href="store.schedulestatebase.html#cpindex">cpIndex</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L15">store/schedule.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/schedule.ts#L25">store/schedule.ts:25</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="currentschedule" class="tsd-anchor"></a>
-					<h3>current<wbr>Schedule</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Schedule<span class="tsd-signature-symbol">:</span> <a href="models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L25">store/schedule.ts:25</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The index of the proposed schedule corresponding to the generated schedules contained in
+							<code>window.scheduleEvaluator</code></p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="currentscheduleindex" class="tsd-anchor"></a>
@@ -134,9 +125,15 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.schedulestatebase.html">ScheduleStateBase</a>.<a href="store.schedulestatebase.html#currentscheduleindex">currentScheduleIndex</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L13">store/schedule.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/schedule.ts#L16">store/schedule.ts:16</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the index of the current schedule in the scheduleEvaluator.schedules array,
+							only applicable when generated=true</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="generated" class="tsd-anchor"></a>
@@ -145,9 +142,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.schedulestatebase.html">ScheduleStateBase</a>.<a href="store.schedulestatebase.html#generated">generated</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L16">store/schedule.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/schedule.ts#L29">store/schedule.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>indicates whether the currently showing schedule is the generated schedule</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="proposedscheduleindex" class="tsd-anchor"></a>
@@ -156,17 +158,23 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.schedulestatebase.html">ScheduleStateBase</a>.<a href="store.schedulestatebase.html#proposedscheduleindex">proposedScheduleIndex</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L14">store/schedule.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/schedule.ts#L20">store/schedule.ts:20</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the index of the active proposed</p>
+						</div>
+					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 					<a name="proposedschedules" class="tsd-anchor"></a>
 					<h3>proposed<wbr>Schedules</h3>
 					<div class="tsd-signature tsd-kind-icon">proposed<wbr>Schedules<span class="tsd-signature-symbol">:</span> <a href="models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Overrides <a href="store.schedulestatebase.html">ScheduleStateBase</a>.<a href="store.schedulestatebase.html#proposedschedules">proposedSchedules</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/schedule.ts#L26">store/schedule.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/schedule.ts#L50">store/schedule.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -182,13 +190,25 @@
 						<a href="../modules/_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="../modules/_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -226,9 +246,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="store.schedulestatejson.html#cpindex" class="tsd-kind-icon">cp<wbr>Index</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="store.schedulestatejson.html#currentschedule" class="tsd-kind-icon">current<wbr>Schedule</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="store.schedulestatejson.html#currentscheduleindex" class="tsd-kind-icon">current<wbr>Schedule<wbr>Index</a>
 							</li>
@@ -238,7 +255,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 								<a href="store.schedulestatejson.html#proposedscheduleindex" class="tsd-kind-icon">proposed<wbr>Schedule<wbr>Index</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite">
 								<a href="store.schedulestatejson.html#proposedschedules" class="tsd-kind-icon">proposed<wbr>Schedules</a>
 							</li>
 						</ul>

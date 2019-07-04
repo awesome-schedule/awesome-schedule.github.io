@@ -73,7 +73,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">SemesterStorage</span>
+						<a href="data.expirable.html" class="tsd-signature-type">Expirable</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">SemesterStorage</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -87,6 +92,8 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#currentsemester" class="tsd-kind-icon">current<wbr>Semester</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#display" class="tsd-kind-icon">display</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#filter" class="tsd-kind-icon">filter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.semesterstorage.html#modified" class="tsd-kind-icon">modified</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#palette" class="tsd-kind-icon">palette</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.semesterstorage.html#schedule" class="tsd-kind-icon">schedule</a></li>
 							</ul>
@@ -102,7 +109,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Semester<span class="tsd-signature-symbol">:</span> <a href="models.semesterjson.html" class="tsd-signature-type">SemesterJSON</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L31">store/index.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L31">store/store.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">display<span class="tsd-signature-symbol">:</span> <a href="store.displaystate.html" class="tsd-signature-type">DisplayState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L32">store/index.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L32">store/store.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -122,7 +129,33 @@
 					<div class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">:</span> <a href="store.filterstatejson.html" class="tsd-signature-type">FilterStateJSON</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L33">store/index.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L33">store/store.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="modified" class="tsd-anchor"></a>
+					<h3>modified</h3>
+					<div class="tsd-signature tsd-kind-icon">modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="data.expirable.html">Expirable</a>.<a href="data.expirable.html#modified">modified</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Expirable.ts#L13">data/Expirable.ts:13</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the JSON representation of a Date object, representing the time when this expirable object is created</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L30">store/store.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -132,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">palette<span class="tsd-signature-symbol">:</span> <a href="store.palettestate.html" class="tsd-signature-type">PaletteState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L35">store/index.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L35">store/store.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -142,7 +175,7 @@
 					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> <a href="store.schedulestatejson.html" class="tsd-signature-type">ScheduleStateJSON</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/store/index.ts#L34">store/index.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/store/store.ts#L34">store/store.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -158,13 +191,25 @@
 						<a href="../modules/_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="../modules/_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -207,6 +252,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="store.semesterstorage.html#filter" class="tsd-kind-icon">filter</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="store.semesterstorage.html#modified" class="tsd-kind-icon">modified</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="store.semesterstorage.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="store.semesterstorage.html#palette" class="tsd-kind-icon">palette</a>

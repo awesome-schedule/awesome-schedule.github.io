@@ -80,9 +80,11 @@
 						<section class="tsd-index-section ">
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/data.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/data.expirable.html" class="tsd-kind-icon">Expirable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/data.loaderoptions.html" class="tsd-kind-icon">Loader<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported"><a href="../interfaces/data.semesterlistjson.html" class="tsd-kind-icon">Semester<wbr>ListJSON</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/data.timematrixjson.html" class="tsd-kind-icon">Time<wbr>MatrixJSON</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -90,12 +92,16 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="data.html#defaultvalidator" class="tsd-kind-icon">default<wbr>Validator</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#getapi" class="tsd-kind-icon">get<wbr>Api</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#loadbuildinglist" class="tsd-kind-icon">load<wbr>Building<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="data.html#loadfromcache" class="tsd-kind-icon">load<wbr>From<wbr>Cache</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#loadsemesterdata" class="tsd-kind-icon">load<wbr>Semester<wbr>Data</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#loadsemesterlist" class="tsd-kind-icon">load<wbr>Semester<wbr>List</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#loadtimematrix" class="tsd-kind-icon">load<wbr>Time<wbr>Matrix</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#parsesemesterdata" class="tsd-kind-icon">parse<wbr>Semester<wbr>Data</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#requestbuildinglist" class="tsd-kind-icon">request<wbr>Building<wbr>List</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#requestsemesterdata" class="tsd-kind-icon">request<wbr>Semester<wbr>Data</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#requestsemesterlist" class="tsd-kind-icon">request<wbr>Semester<wbr>List</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="data.html#requesttimematrix" class="tsd-kind-icon">request<wbr>Time<wbr>Matrix</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="data.html#savecatalog" class="tsd-kind-icon">save<wbr>Catalog</a></li>
 							</ul>
 						</section>
@@ -114,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/Loader.ts#L123">data/Loader.ts:123</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Loader.ts#L123">data/Loader.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -143,7 +149,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/index.ts#L10">data/index.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/index.ts#L10">data/index.ts:10</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -152,6 +158,37 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="loadbuildinglist" class="tsd-anchor"></a>
+					<h3>load<wbr>Building<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Building<wbr>List<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/BuildingLoader.ts#L54">data/BuildingLoader.ts:54</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Try to load the array of the names of buildings from localStorage.
+										If it expires or does not exist,
+									load a fresh one from the data backend and store it in localStorage.</p>
+								</div>
+								<p>storage key: &quot;buildingList&quot;</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> force: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -165,7 +202,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/Loader.ts#L65">data/Loader.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Loader.ts#L65">data/Loader.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,7 +212,7 @@
 								<p>Example usage:</p>
 								<dl class="tsd-comment-tags">
 									<dt>see</dt>
-									<dd><p><a href="_data_buildingloader_.html#loadtimematrix">loadTimeMatrix</a>,<a href="_data_buildingloader_.html#loadbuildinglist">loadBuildingList</a>,<a href="data.html#loadsemesterlist">loadSemesterList</a>,<a href="data.html#loadsemesterdata">loadSemesterData</a></p>
+									<dd><p><a href="data.html#loadtimematrix">loadTimeMatrix</a>,<a href="data.html#loadbuildinglist">loadBuildingList</a>,<a href="data.html#loadsemesterlist">loadSemesterList</a>,<a href="data.html#loadsemesterdata">loadSemesterData</a></p>
 									</dd>
 								</dl>
 							</div>
@@ -289,7 +326,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/Loader.ts#L71">data/Loader.ts:71</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Loader.ts#L71">data/Loader.ts:71</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -310,7 +347,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/Loader.ts#L75">data/Loader.ts:75</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Loader.ts#L75">data/Loader.ts:75</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -331,7 +368,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/Loader.ts#L70">data/Loader.ts:70</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/Loader.ts#L70">data/Loader.ts:70</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -360,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/CatalogLoader.ts#L37">data/CatalogLoader.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/CatalogLoader.ts#L37">data/CatalogLoader.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -399,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/SemesterListLoader.ts#L28">data/SemesterListLoader.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/SemesterListLoader.ts#L28">data/SemesterListLoader.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -420,6 +457,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="loadtimematrix" class="tsd-anchor"></a>
+					<h3>load<wbr>Time<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Time<wbr>Matrix<span class="tsd-signature-symbol">(</span>force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/BuildingLoader.ts#L31">data/BuildingLoader.ts:31</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Try to load the walking time matrix between buildings from localStorage.
+										If it expires or does not exist,
+									load a fresh one from the data backend and store it in localStorage.</p>
+								</div>
+								<p>storage key: &quot;timeMatrix&quot;</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> force: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="parsesemesterdata" class="tsd-anchor"></a>
 					<h3>parse<wbr>Semester<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -429,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/CatalogLoader.ts#L89">data/CatalogLoader.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/CatalogLoader.ts#L89">data/CatalogLoader.ts:89</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -443,6 +511,28 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="requestbuildinglist" class="tsd-anchor"></a>
+					<h3>request<wbr>Building<wbr>List</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Building<wbr>List<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/BuildingLoader.ts#L99">data/BuildingLoader.ts:99</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>request from remote and store in localStorage</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="requestsemesterdata" class="tsd-anchor"></a>
 					<h3>request<wbr>Semester<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -452,7 +542,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/CatalogLoader.ts#L66">data/CatalogLoader.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/CatalogLoader.ts#L66">data/CatalogLoader.ts:66</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -475,7 +565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/SemesterListLoader.ts#L47">data/SemesterListLoader.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/SemesterListLoader.ts#L47">data/SemesterListLoader.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -493,6 +583,28 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="requesttimematrix" class="tsd-anchor"></a>
+					<h3>request<wbr>Time<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">request<wbr>Time<wbr>Matrix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/BuildingLoader.ts#L73">data/BuildingLoader.ts:73</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>request from remote and store in localStorage</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="savecatalog" class="tsd-anchor"></a>
 					<h3>save<wbr>Catalog</h3>
@@ -503,7 +615,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/Awesome-SchedulAR/blob/b98f9c8/src/data/CatalogLoader.ts#L56">data/CatalogLoader.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/77b2001/src/data/CatalogLoader.ts#L56">data/CatalogLoader.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -528,13 +640,25 @@
 						<a href="_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="_components_maincontent_.html">"components/<wbr>Main<wbr>Content"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_components_urlmodal_.html">"components/URLModal"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_data_buildingloader_.html">"data/<wbr>Building<wbr>Loader"</a>
+						<a href="_main_.html">"main"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="_main_.html">"main"</a>
+						<a href="_store_index_.html">"store/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_store_profile_.html">"store/profile"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_store_watch_.html">"store/watch"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -565,6 +689,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/data.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 						<a href="../interfaces/data.expirable.html" class="tsd-kind-icon">Expirable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
@@ -573,11 +700,17 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/data.semesterlistjson.html" class="tsd-kind-icon">Semester<wbr>ListJSON</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/data.timematrixjson.html" class="tsd-kind-icon">Time<wbr>MatrixJSON</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="data.html#defaultvalidator" class="tsd-kind-icon">default<wbr>Validator</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="data.html#getapi" class="tsd-kind-icon">get<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="data.html#loadbuildinglist" class="tsd-kind-icon">load<wbr>Building<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="data.html#loadfromcache" class="tsd-kind-icon">load<wbr>From<wbr>Cache</a>
@@ -589,13 +722,22 @@
 						<a href="data.html#loadsemesterlist" class="tsd-kind-icon">load<wbr>Semester<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="data.html#loadtimematrix" class="tsd-kind-icon">load<wbr>Time<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="data.html#parsesemesterdata" class="tsd-kind-icon">parse<wbr>Semester<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="data.html#requestbuildinglist" class="tsd-kind-icon">request<wbr>Building<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="data.html#requestsemesterdata" class="tsd-kind-icon">request<wbr>Semester<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="data.html#requestsemesterlist" class="tsd-kind-icon">request<wbr>Semester<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="data.html#requesttimematrix" class="tsd-kind-icon">request<wbr>Time<wbr>Matrix</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="data.html#savecatalog" class="tsd-kind-icon">save<wbr>Catalog</a>
