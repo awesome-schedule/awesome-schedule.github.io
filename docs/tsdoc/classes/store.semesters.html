@@ -104,12 +104,14 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#currentsemester" class="tsd-kind-icon">current<wbr>Semester</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#lastupdate" class="tsd-kind-icon">last<wbr>Update</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#pendingpromise" class="tsd-kind-icon">pending<wbr>Promise</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#semesters" class="tsd-kind-icon">semesters</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#cancel" class="tsd-kind-icon">cancel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#loadsemesters" class="tsd-kind-icon">load<wbr>Semesters</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="store.semesters.html#selectsemester" class="tsd-kind-icon">select<wbr>Semester</a></li>
 							</ul>
@@ -126,7 +128,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/store.semesterstate.html">SemesterState</a>.<a href="../interfaces/store.semesterstate.html#currentsemester">currentSemester</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/2825ed6/src/store/semester.ts#L21">store/semester.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L23">store/semester.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -137,7 +139,17 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/store.semesterstate.html">SemesterState</a>.<a href="../interfaces/store.semesterstate.html#lastupdate">lastUpdate</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/2825ed6/src/store/semester.ts#L22">store/semester.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L24">store/semester.ts:24</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="pendingpromise" class="tsd-anchor"></a>
+					<h3>pending<wbr>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Promise<span class="tsd-signature-symbol">:</span> <a href="../interfaces/utils.cancelablepromise.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L25">store/semester.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,13 +160,30 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/store.semesterstate.html">SemesterState</a>.<a href="../interfaces/store.semesterstate.html#semesters">semesters</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/2825ed6/src/store/semester.ts#L20">store/semester.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L22">store/semester.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="cancel" class="tsd-anchor"></a>
+					<h3>cancel</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">cancel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L42">store/semester.ts:42</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="loadsemesters" class="tsd-anchor"></a>
 					<h3>load<wbr>Semesters</h3>
@@ -165,7 +194,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/2825ed6/src/store/semester.ts#L27">store/semester.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L30">store/semester.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -187,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/2825ed6/src/store/semester.ts#L42">store/semester.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/3fdda19/src/store/semester.ts#L50">store/semester.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -270,7 +299,13 @@
 								<a href="store.semesters.html#lastupdate" class="tsd-kind-icon">last<wbr>Update</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="store.semesters.html#pendingpromise" class="tsd-kind-icon">pending<wbr>Promise</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="store.semesters.html#semesters" class="tsd-kind-icon">semesters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="store.semesters.html#cancel" class="tsd-kind-icon">cancel</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="store.semesters.html#loadsemesters" class="tsd-kind-icon">load<wbr>Semesters</a>
