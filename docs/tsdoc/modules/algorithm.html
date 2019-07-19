@@ -105,6 +105,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter"><a href="algorithm.html#graph" class="tsd-kind-icon">Graph</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="algorithm.html#meetingdate" class="tsd-kind-icon">Meeting<wbr>Date</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="algorithm.html#rawalgocourse" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Course</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="algorithm.html#rawalgoschedule" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Schedule</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="algorithm.html#sortfunctions" class="tsd-kind-icon">Sort<wbr>Functions</a></li>
@@ -114,6 +115,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="algorithm.html#dfs" class="tsd-kind-icon">DFS</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="algorithm.html#depthfirstsearchrec" class="tsd-kind-icon">depth<wbr>First<wbr>Search<wbr>Rec</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="algorithm.html#dsatur" class="tsd-kind-icon">dsatur</a></li>
@@ -133,7 +135,7 @@
 					<div class="tsd-signature tsd-kind-icon">Graph<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/algorithm.vertex.html" class="tsd-signature-type">Vertex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><a href="../classes/algorithm.vertex.html" class="tsd-signature-type">Vertex</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Graph.ts#L57">algorithm/Graph.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Graph.ts#L57">algorithm/Graph.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -143,12 +145,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="rawalgocourse" class="tsd-anchor"></a>
-					<h3>Raw<wbr>Algo<wbr>Course</h3>
-					<div class="tsd-signature tsd-kind-icon">Raw<wbr>Algo<wbr>Course<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a><span class="tsd-signature-symbol">]</span></div>
+					<a name="meetingdate" class="tsd-anchor"></a>
+					<h3>Meeting<wbr>Date</h3>
+					<div class="tsd-signature tsd-kind-icon">Meeting<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleGenerator.ts#L65">algorithm/ScheduleGenerator.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleGenerator.ts#L52">algorithm/ScheduleGenerator.ts:52</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="rawalgocourse" class="tsd-anchor"></a>
+					<h3>Raw<wbr>Algo<wbr>Course</h3>
+					<div class="tsd-signature tsd-kind-icon">Raw<wbr>Algo<wbr>Course<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/algorithm.timearray.html" class="tsd-signature-type">TimeArray</a><span class="tsd-signature-symbol">, </span><a href="algorithm.html#meetingdate" class="tsd-signature-type">MeetingDate</a><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleGenerator.ts#L68">algorithm/ScheduleGenerator.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -158,9 +170,10 @@
 						</div>
 						<p>0: key of this course
 							1: an array of section indices
-						2: TimeArray</p>
+							2: TimeArray
+						3: Start and end date</p>
 						<p>Example:</p>
-						<pre><code class="language-js">[<span class="hljs-string">"span20205"</span>, [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [[<span class="hljs-number">600</span>, <span class="hljs-number">650</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">600</span>, <span class="hljs-number">650</span>, <span class="hljs-number">3</span>], [], [], []]]</code></pre>
+						<pre><code class="language-js">[<span class="hljs-string">"span20205"</span>, [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>], [[<span class="hljs-number">600</span>, <span class="hljs-number">650</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">600</span>, <span class="hljs-number">650</span>, <span class="hljs-number">3</span>], [], [], []], [<span class="hljs-number">8</span>, <span class="hljs-number">28</span>, <span class="hljs-number">12</span>, <span class="hljs-number">26</span>]]</code></pre>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -169,7 +182,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raw<wbr>Algo<wbr>Schedule<span class="tsd-signature-symbol">:</span> <a href="algorithm.html#rawalgocourse" class="tsd-signature-type">RawAlgoCourse</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleGenerator.ts#L70">algorithm/ScheduleGenerator.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleGenerator.ts#L73">algorithm/ScheduleGenerator.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sort<wbr>Functions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L23">algorithm/ScheduleEvaluator.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L23">algorithm/ScheduleEvaluator.ts:23</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -199,7 +212,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L174">algorithm/ScheduleEvaluator.ts:174</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L174">algorithm/ScheduleEvaluator.ts:174</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -219,7 +232,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L93">algorithm/ScheduleEvaluator.ts:93</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L93">algorithm/ScheduleEvaluator.ts:93</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -250,7 +263,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L148">algorithm/ScheduleEvaluator.ts:148</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L148">algorithm/ScheduleEvaluator.ts:148</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -279,7 +292,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L109">algorithm/ScheduleEvaluator.ts:109</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L109">algorithm/ScheduleEvaluator.ts:109</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -310,7 +323,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L131">algorithm/ScheduleEvaluator.ts:131</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L131">algorithm/ScheduleEvaluator.ts:131</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -340,7 +353,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleEvaluator.ts#L74">algorithm/ScheduleEvaluator.ts:74</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleEvaluator.ts#L74">algorithm/ScheduleEvaluator.ts:74</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -370,7 +383,7 @@
 					<div class="tsd-signature tsd-kind-icon">Time<wbr>Block<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/ScheduleGenerator.ts#L26">algorithm/ScheduleGenerator.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/ScheduleGenerator.ts#L26">algorithm/ScheduleGenerator.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -386,6 +399,46 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="dfs" class="tsd-anchor"></a>
+					<h3>DFS</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">DFS<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, adjList<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">[]</span>, visited<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Graph.ts#L64">algorithm/Graph.ts:64</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>perform depth first search to find a connected component</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>the start node is not marked as visited</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>adjList: <span class="tsd-signature-type">Int16Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>visited: <span class="tsd-signature-type">Uint8Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>node indices belonging to the connected component found</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="colordepthsearch" class="tsd-anchor"></a>
 					<h3>color<wbr>Depth<wbr>Search</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -395,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L153">algorithm/Coloring.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L153">algorithm/Coloring.ts:153</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L214">algorithm/Coloring.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L214">algorithm/Coloring.ts:214</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -474,7 +527,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L58">algorithm/Coloring.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L58">algorithm/Coloring.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -515,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L24">algorithm/Coloring.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L24">algorithm/Coloring.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -581,7 +634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L124">algorithm/Coloring.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L124">algorithm/Coloring.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -625,7 +678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/30b6ebe/src/algorithm/Coloring.ts#L177">algorithm/Coloring.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/426c39a/src/algorithm/Coloring.ts#L177">algorithm/Coloring.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -657,6 +710,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_main_.html">"main"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -717,6 +773,9 @@
 						<a href="algorithm.html#graph" class="tsd-kind-icon">Graph</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="algorithm.html#meetingdate" class="tsd-kind-icon">Meeting<wbr>Date</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="algorithm.html#rawalgocourse" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Course</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -727,6 +786,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="algorithm.html#timeblock" class="tsd-kind-icon">Time<wbr>Block</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="algorithm.html#dfs" class="tsd-kind-icon">DFS</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a>
