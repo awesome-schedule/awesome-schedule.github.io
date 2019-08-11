@@ -134,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L19">store/profile.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L23">store/profile.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="store.profile.html" class="tsd-signature-type">Profile</a></h4>
@@ -150,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L18">store/profile.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L22">store/profile.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -170,7 +170,7 @@
 					<div class="tsd-signature tsd-kind-icon">profiles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L19">store/profile.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L23">store/profile.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -181,13 +181,13 @@
 					<a name="addprofile" class="tsd-anchor"></a>
 					<h3>add<wbr>Profile</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Profile<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fallbackName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Profile<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fallbackName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, sw<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L108">store/profile.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L114">store/profile.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +196,7 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>note</dt>
-									<dd><p>you need to call loadProfile() manually</p>
+									<dd><p>you need to call loadProfile() manually if you set <code>sw</code> to <code>true</code></p>
 									</dd>
 								</dl>
 							</div>
@@ -209,6 +209,13 @@
 									<h5>fallbackName: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>the fallback name if the raw does not contain the name of the profile</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> sw: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whether to switch to the newly added schedule
+										by setting <code>current</code> to the name of the newly added profile</p>
 									</div>
 								</li>
 							</ul>
@@ -226,7 +233,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L90">store/profile.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L94">store/profile.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -262,7 +269,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L29">store/profile.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L33">store/profile.ts:33</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -290,13 +297,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/profile.ts#L71">store/profile.ts:71</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/profile.ts#L75">store/profile.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>rename a profile.
-									note that name duplication is not checked! This check is done in <a href="components_tabs.exportview.html#finishedit">ExportView.finishEdit</a></p>
+									note that name duplication is not checked! This check is done in [[ExportView.finishEdit]]</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -336,9 +343,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -420,6 +424,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -468,7 +473,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

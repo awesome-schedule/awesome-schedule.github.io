@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/workers/SearchWorker.ts#L39">workers/SearchWorker.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/workers/SearchWorker.ts#L51">workers/SearchWorker.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SearchResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/workers/SearchWorker.ts#L38">workers/SearchWorker.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/workers/SearchWorker.ts#L50">workers/SearchWorker.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -140,9 +140,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -172,6 +169,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workers_searchworker_.course.html" class="tsd-kind-icon">Course</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
@@ -187,11 +187,11 @@
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#course" class="tsd-kind-icon">Course</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workers_searchworker_.section.html" class="tsd-kind-icon">Section</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#section" class="tsd-kind-icon">Section</a>
+						<a href="../modules/_workers_searchworker_.html#meeting" class="tsd-kind-icon">Meeting</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#_searcher" class="tsd-kind-icon">_<wbr>Searcher</a>
@@ -200,10 +200,13 @@
 						<a href="../modules/_workers_searchworker_.html#coursedict" class="tsd-kind-icon">course<wbr>Dict</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#descripsearcher" class="tsd-kind-icon">descrip<wbr>Searcher</a>
+						<a href="../modules/_workers_searchworker_.html#descriptionsearcher" class="tsd-kind-icon">description<wbr>Searcher</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#instrsearcher" class="tsd-kind-icon">instr<wbr>Searcher</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workers_searchworker_.html#searcheropts" class="tsd-kind-icon">searcher<wbr>Opts</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#titlesearcher" class="tsd-kind-icon">title<wbr>Searcher</a>
@@ -216,9 +219,6 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#resolveoverlap" class="tsd-kind-icon">resolve<wbr>Overlap</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#searcheropts" class="tsd-kind-icon">searcher<wbr>Opts</a>
 					</li>
 				</ul>
 			</nav>
@@ -237,6 +237,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -285,7 +286,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

@@ -92,6 +92,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_app_.html#note" class="tsd-kind-icon">note</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_app_.html#version" class="tsd-kind-icon">version</a></li>
 							</ul>
 						</section>
@@ -99,6 +100,8 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_app_.html#checkversion" class="tsd-kind-icon">check<wbr>Version</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_app_.html#releasenote" class="tsd-kind-icon">release<wbr>Note</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_app_.html#triggerversionmodal" class="tsd-kind-icon">trigger<wbr>Version<wbr>Modal</a></li>
 							</ul>
 						</section>
 					</div>
@@ -107,12 +110,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="note" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> note</h3>
+					<div class="tsd-signature tsd-kind-icon">note<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;loading release note...&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/App.ts#L39">App.ts:39</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="version" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> version</h3>
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"6.5"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;6.5&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/App.ts#L36">App.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/App.ts#L38">App.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +142,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/App.ts#L41">App.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/App.ts#L44">App.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -139,6 +152,51 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="releasenote" class="tsd-anchor"></a>
+					<h3>release<wbr>Note</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">release<wbr>Note<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/App.ts#L63">App.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get release note for current version &amp;&amp; render.
+									Part of this function can be seen as an extremely-lightweight MarkDown renderer.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>author</dt>
+									<dd><p>Kaiying Cat</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="triggerversionmodal" class="tsd-anchor"></a>
+					<h3>trigger<wbr>Version<wbr>Modal</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">trigger<wbr>Version<wbr>Modal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/App.ts#L53">App.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -158,9 +216,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_main_.html">"main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -194,10 +249,19 @@
 						<a href="../classes/_app_.app.html" class="tsd-kind-icon">App</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_app_.html#note" class="tsd-kind-icon">note</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_app_.html#version" class="tsd-kind-icon">version</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_app_.html#checkversion" class="tsd-kind-icon">check<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_app_.html#releasenote" class="tsd-kind-icon">release<wbr>Note</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_app_.html#triggerversionmodal" class="tsd-kind-icon">trigger<wbr>Version<wbr>Modal</a>
 					</li>
 				</ul>
 			</nav>
@@ -216,6 +280,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -264,7 +329,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

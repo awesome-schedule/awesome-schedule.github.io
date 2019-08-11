@@ -91,6 +91,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.filterstatejson.html#allowclosed" class="tsd-kind-icon">allow<wbr>Closed</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.filterstatejson.html#allowwaitlist" class="tsd-kind-icon">allow<wbr>Waitlist</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.filterstatejson.html#refschedule" class="tsd-kind-icon">ref<wbr>Schedule</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="store.filterstatejson.html#sortoptions" class="tsd-kind-icon">sort<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="store.filterstatejson.html#timeslots" class="tsd-kind-icon">time<wbr>Slots</a></li>
 							</ul>
@@ -107,7 +108,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.filterstatebase.html">FilterStateBase</a>.<a href="store.filterstatebase.html#allowclosed">allowClosed</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/filter.ts#L19">store/filter.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/filter.ts#L24">store/filter.ts:24</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -118,7 +119,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.filterstatebase.html">FilterStateBase</a>.<a href="store.filterstatebase.html#allowwaitlist">allowWaitlist</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/filter.ts#L18">store/filter.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/filter.ts#L23">store/filter.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="refschedule" class="tsd-anchor"></a>
+					<h3>ref<wbr>Schedule</h3>
+					<div class="tsd-signature tsd-kind-icon">ref<wbr>Schedule<span class="tsd-signature-symbol">:</span> <a href="models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><a href="models.sectionjson.html" class="tsd-signature-type">SectionJSON</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/filter.ts#L34">store/filter.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -128,18 +139,18 @@
 					<div class="tsd-signature tsd-kind-icon">sort<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="algorithm.evaluatoroptions.html" class="tsd-signature-type">EvaluatorOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/filter.ts#L27">store/filter.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/filter.ts#L33">store/filter.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="timeslots" class="tsd-anchor"></a>
 					<h3>time<wbr>Slots</h3>
-					<div class="tsd-signature tsd-kind-icon">time<wbr>Slots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">time<wbr>Slots<span class="tsd-signature-symbol">:</span> <a href="../modules/store.html#timeslot" class="tsd-signature-type">TimeSlot</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.filterstatebase.html">FilterStateBase</a>.<a href="store.filterstatebase.html#timeslots">timeSlots</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/store/filter.ts#L17">store/filter.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/store/filter.ts#L22">store/filter.ts:22</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,9 +170,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -208,6 +216,9 @@
 								<a href="store.filterstatejson.html#allowwaitlist" class="tsd-kind-icon">allow<wbr>Waitlist</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="store.filterstatejson.html#refschedule" class="tsd-kind-icon">ref<wbr>Schedule</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="store.filterstatejson.html#sortoptions" class="tsd-kind-icon">sort<wbr>Options</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
@@ -234,6 +245,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -282,7 +294,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

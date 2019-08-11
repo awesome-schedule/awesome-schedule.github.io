@@ -73,11 +73,11 @@
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>A <strong>pure</strong> component for</p>
+						<ol>
+							<li>displaying the list of courses that are match the query string when searching</li>
+							<li>displaying the list of courses currently selected</li>
+						</ol>
 					</div>
-					<ol>
-						<li>displaying the list of courses that are match the query string when searching</li>
-						<li>displaying the list of courses currently selected</li>
-					</ol>
 					<dl class="tsd-comment-tags">
 						<dt>author</dt>
 						<dd><p>Hanzhi Zhou, Kaiying Cat</p>
@@ -113,9 +113,11 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#courses" class="tsd-kind-icon">courses</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#expandonentering" class="tsd-kind-icon">expand<wbr>OnEntering</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#isentering" class="tsd-kind-icon">is<wbr>Entering</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#matches" class="tsd-kind-icon">matches</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#schedule" class="tsd-kind-icon">schedule</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#showany" class="tsd-kind-icon">show<wbr>Any</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="components.classlist.html#showclasslisttitle" class="tsd-kind-icon">show<wbr>Classlist<wbr>Title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="components.classlist.html#vue" class="tsd-kind-icon">Vue</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -147,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">collapsed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L57">components/ClassList.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L61">components/ClassList.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">courses<span class="tsd-signature-symbol">:</span> <a href="models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L32">components/ClassList.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L32">components/ClassList.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -187,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">expand<wbr>OnEntering<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L48">components/ClassList.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L52">components/ClassList.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -202,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>Entering<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L40">components/ClassList.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L44">components/ClassList.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -212,12 +214,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="matches" class="tsd-anchor"></a>
+					<h3>matches</h3>
+					<div class="tsd-signature tsd-kind-icon">matches<span class="tsd-signature-symbol">:</span> <a href="../modules/models.html#searchmatch" class="tsd-signature-type">SearchMatch</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L36">components/ClassList.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the array of matches corresponding to the array of courses</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="schedule" class="tsd-anchor"></a>
 					<h3>schedule</h3>
 					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> <a href="models.schedule.html" class="tsd-signature-type">Schedule</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L36">components/ClassList.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L40">components/ClassList.ts:40</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -232,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">show<wbr>Any<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L44">components/ClassList.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L48">components/ClassList.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -247,7 +264,17 @@
 					<div class="tsd-signature tsd-kind-icon">show<wbr>Classlist<wbr>Title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L49">components/ClassList.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L53">components/ClassList.ts:53</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="vue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> Vue</h3>
+					<div class="tsd-signature tsd-kind-icon">Vue<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">VueConstructor</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in /home/travis/build/awesome-schedule/plannable/node_modules/vue/types/vue.d.ts:128</li>
 						</ul>
 					</aside>
 				</section>
@@ -264,7 +291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L83">components/ClassList.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L87">components/ClassList.ts:87</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
@@ -294,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L79">components/ClassList.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L83">components/ClassList.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -320,7 +347,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L117">components/ClassList.ts:117</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L121">components/ClassList.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -350,7 +377,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L143">components/ClassList.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L147">components/ClassList.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -376,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L136">components/ClassList.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L140">components/ClassList.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,7 +433,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L127">components/ClassList.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L131">components/ClassList.ts:131</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -437,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L59">components/ClassList.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L63">components/ClassList.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -463,7 +490,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/eb40d7a/src/components/ClassList.ts#L64">components/ClassList.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/207e3a7/src/components/ClassList.ts#L68">components/ClassList.ts:68</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -495,9 +522,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meta_.html">"models/<wbr>Meta"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -545,6 +569,9 @@
 								<a href="components.classlist.html#isentering" class="tsd-kind-icon">is<wbr>Entering</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="components.classlist.html#matches" class="tsd-kind-icon">matches</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="components.classlist.html#schedule" class="tsd-kind-icon">schedule</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -552,6 +579,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="components.classlist.html#showclasslisttitle" class="tsd-kind-icon">show<wbr>Classlist<wbr>Title</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="components.classlist.html#vue" class="tsd-kind-icon">Vue</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="components.classlist.html#separatedcourses" class="tsd-kind-icon">separated<wbr>Courses</a>
@@ -605,6 +635,9 @@
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="components.urlmodal.html" class="tsd-kind-icon">URLModal</a>
 					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="components.versionmodal.html" class="tsd-kind-icon">Version<wbr>Modal</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -622,6 +655,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -670,7 +704,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
