@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">match<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/e3594f8/src/workers/SearchWorker.ts#L51">workers/SearchWorker.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/ae533c4/src/workers/SearchWorker.ts#L40">workers/SearchWorker.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -120,7 +120,7 @@
 					<div class="tsd-signature tsd-kind-icon">result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SearchResult</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/e3594f8/src/workers/SearchWorker.ts#L50">workers/SearchWorker.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/ae533c4/src/workers/SearchWorker.ts#L39">workers/SearchWorker.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,10 +136,31 @@
 						<a href="../modules/_app_.html">"<wbr>App"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_algorithm_searcher_.html">"algorithm/<wbr>Searcher"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_components_stepper_.html">"components/<wbr>Stepper"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_config_.html">"config"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_database_catalogdb_.html">"database/<wbr>CatalogDB"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_main_.html">"main"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_models_meeting_.html">"models/<wbr>Meeting"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_models_meta_.html">"models/<wbr>Meta"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_homepage_.html">"routes/<wbr>Home<wbr>Page"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_index_.html">"routes/index"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
@@ -172,6 +193,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_workers_searchworker_.course.html" class="tsd-kind-icon">Course</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workers_searchworker_.coursemap.html" class="tsd-kind-icon">Course<wbr>Map</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
@@ -188,16 +212,16 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_workers_searchworker_.section.html" class="tsd-kind-icon">Section</a>
+						<a href="_workers_searchworker_.scores.html" class="tsd-kind-icon">Scores</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_workers_searchworker_.sectionmap.html" class="tsd-kind-icon">Section<wbr>Map</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#meeting" class="tsd-kind-icon">Meeting</a>
+						<a href="../modules/_workers_searchworker_.html#section" class="tsd-kind-icon">Section</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#_searcher" class="tsd-kind-icon">_<wbr>Searcher</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_workers_searchworker_.html#coursedict" class="tsd-kind-icon">course<wbr>Dict</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#descriptionsearcher" class="tsd-kind-icon">description<wbr>Searcher</a>
@@ -216,6 +240,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#postmessage" class="tsd-kind-icon">post<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workers_searchworker_.html#processcourseresults" class="tsd-kind-icon">process<wbr>Course<wbr>Results</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_workers_searchworker_.html#processsectionresults" class="tsd-kind-icon">process<wbr>Section<wbr>Results</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
 						<a href="../modules/_workers_searchworker_.html#resolveoverlap" class="tsd-kind-icon">resolve<wbr>Overlap</a>
