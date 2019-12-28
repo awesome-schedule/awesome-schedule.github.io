@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Vertex | awesome-schedule</title>
+	<title>Vertex | plannable</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">awesome-schedule</a>
+					<a href="../index.html" class="title">plannable</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The vertex of the graph.
+						<p>The vertex of a graph.
 						It holds many attributes that are modified <strong>in-place</strong> when running a graph algorithm</p>
 					</div>
 				</div>
@@ -121,13 +121,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Vertex<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="algorithm.vertex.html" class="tsd-signature-type">Vertex</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Vertex<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, depth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="algorithm.vertex.html" class="tsd-signature-type">Vertex</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/algorithm/Graph.ts#L20">algorithm/Graph.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/algorithm/Graph.ts#L22">src/algorithm/Graph.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -142,6 +142,14 @@
 										</div>
 									</div>
 								</li>
+								<li>
+									<h5>depth: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>depth of the node relative to the root</p>
+										</div>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="algorithm.vertex.html" class="tsd-signature-type">Vertex</a></h4>
 						</li>
@@ -153,10 +161,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="depth" class="tsd-anchor"></a>
 					<h3>depth</h3>
-					<div class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<div class="tsd-signature tsd-kind-icon">depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/algorithm/Graph.ts#L16">algorithm/Graph.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/algorithm/Graph.ts#L27">src/algorithm/Graph.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">path<wbr>Depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/algorithm/Graph.ts#L20">algorithm/Graph.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/algorithm/Graph.ts#L22">src/algorithm/Graph.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -186,7 +194,7 @@
 					<div class="tsd-signature tsd-kind-icon">val<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/algorithm/Graph.ts#L24">algorithm/Graph.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/algorithm/Graph.ts#L27">src/algorithm/Graph.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -201,7 +209,7 @@
 					<div class="tsd-signature tsd-kind-icon">visited<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/algorithm/Graph.ts#L12">algorithm/Graph.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/algorithm/Graph.ts#L18">src/algorithm/Graph.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -214,37 +222,46 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"<wbr>App"</a>
+						<a href="../modules/_app_.html">&quot;<wbr>App&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_algorithm_searcher_.html">"algorithm/<wbr>Searcher"</a>
+						<a href="../modules/_algorithm_searcher_.html">&quot;algorithm/<wbr>Searcher&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_components_stepper_.html">"components/<wbr>Stepper"</a>
+						<a href="../modules/_components_stepper_.html">&quot;components/<wbr>Stepper&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_config_.html">"config"</a>
+						<a href="../modules/_config_.html">&quot;config&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_colorschemes_.html">"data/<wbr>Color<wbr>Schemes"</a>
+						<a href="../modules/_config_example_.html">&quot;config.example&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_database_catalogdb_.html">"database/<wbr>CatalogDB"</a>
+						<a href="../modules/_data_colorschemes_.html">&quot;data/<wbr>Color<wbr>Schemes&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_database_catalogdb_.html">&quot;database/<wbr>CatalogDB&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meeting_.html">"models/<wbr>Meeting"</a>
+						<a href="../modules/_main_.html">&quot;main&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routes_homepage_.html">"routes/<wbr>Home<wbr>Page"</a>
+						<a href="../modules/_models_generatedschedule_.html">&quot;models/<wbr>Generated<wbr>Schedule&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routes_index_.html">"routes/index"</a>
+						<a href="../modules/_models_meeting_.html">&quot;models/<wbr>Meeting&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
+						<a href="../modules/_models_proposedschedule_.html">&quot;models/<wbr>Proposed<wbr>Schedule&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_homepage_.html">&quot;routes/<wbr>Home<wbr>Page&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_index_.html">&quot;routes/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_workers_searchworker_.html">&quot;workers/<wbr>Search<wbr>Worker&quot;</a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/algorithm.html">algorithm</a>
@@ -328,14 +345,8 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/algorithm.html#timearray" class="tsd-kind-icon">Time<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/algorithm.html#dfs" class="tsd-kind-icon">DFS</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="../modules/algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/algorithm.html#colorspread" class="tsd-kind-icon">color<wbr>Spread</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/algorithm.html#computeconflict" class="tsd-kind-icon">compute<wbr>Conflict</a>

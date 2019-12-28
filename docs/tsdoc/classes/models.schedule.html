@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Schedule | awesome-schedule</title>
+	<title>Schedule | plannable</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">awesome-schedule</a>
+					<a href="../index.html" class="title">plannable</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -86,6 +86,14 @@
 				<ul class="tsd-hierarchy">
 					<li>
 						<span class="target">Schedule</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="_models_proposedschedule_.proposedschedule.html" class="tsd-signature-type">ProposedSchedule</a>
+							</li>
+							<li>
+								<a href="_models_generatedschedule_.generatedschedule.html" class="tsd-signature-type">GeneratedSchedule</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -105,7 +113,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#all" class="tsd-kind-icon">All</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#_preview" class="tsd-kind-icon">_preview</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#colorslots" class="tsd-kind-icon">color<wbr>Slots</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#current" class="tsd-kind-icon">current</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#dateselector" class="tsd-kind-icon">date<wbr>Selector</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#dateseparators" class="tsd-kind-icon">date<wbr>Separators</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="models.schedule.html#days" class="tsd-kind-icon">days</a></li>
@@ -124,36 +131,42 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#_computeblockpositions" class="tsd-kind-icon">_compute<wbr>Block<wbr>Positions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#_computeschedule" class="tsd-kind-icon">_compute<wbr>Schedule</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#addevent" class="tsd-kind-icon">add<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="models.schedule.html#_copy" class="tsd-kind-icon">_copy</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#allequals" class="tsd-kind-icon">all<wbr>Equals</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#clean" class="tsd-kind-icon">clean</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#cleanschedule" class="tsd-kind-icon">clean<wbr>Schedule</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#computeblockpositions" class="tsd-kind-icon">compute<wbr>Block<wbr>Positions</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#computeschedule" class="tsd-kind-icon">compute<wbr>Schedule</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#constructadjlist" class="tsd-kind-icon">construct<wbr>Adj<wbr>List</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#constructdateseparator" class="tsd-kind-icon">construct<wbr>Date<wbr>Separator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#constructdateseparator" class="tsd-kind-icon">construct<wbr>Date<wbr>Separator</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#copy" class="tsd-kind-icon">copy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#deleteevent" class="tsd-kind-icon">delete<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#empty" class="tsd-kind-icon">empty</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#equals" class="tsd-kind-icon">equals</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#fromjson" class="tsd-kind-icon">fromJSON</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#getsectiongroup" class="tsd-kind-icon">get<wbr>Section<wbr>Group</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#has" class="tsd-kind-icon">has</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#hassection" class="tsd-kind-icon">has<wbr>Section</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#hover" class="tsd-kind-icon">hover</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#hoverevent" class="tsd-kind-icon">hover<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#isanysection" class="tsd-kind-icon">is<wbr>Any<wbr>Section</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#iscourseempty" class="tsd-kind-icon">is<wbr>Course<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#isgroup" class="tsd-kind-icon">is<wbr>Group</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#place" class="tsd-kind-icon">place</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#placehelper" class="tsd-kind-icon">place<wbr>Helper</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#preview" class="tsd-kind-icon">preview</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="models.schedule.html#randevents" class="tsd-kind-icon">rand<wbr>Events</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#remove" class="tsd-kind-icon">remove</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#removepreview" class="tsd-kind-icon">remove<wbr>Preview</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#tojson" class="tsd-kind-icon">toJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#ungroup" class="tsd-kind-icon">ungroup</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#unhover" class="tsd-kind-icon">unhover</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#unhoverevent" class="tsd-kind-icon">unhover<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="models.schedule.html#update" class="tsd-kind-icon">update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.schedule.html#compressjson" class="tsd-kind-icon">compressJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.schedule.html#decompressjson" class="tsd-kind-icon">decompressJSON</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="models.schedule.html#fromjson-1" class="tsd-kind-icon">fromJSON</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-class"><a href="models.schedule.html#current" class="tsd-kind-icon">current</a></li>
 							</ul>
 						</section>
 					</div>
@@ -165,13 +178,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Schedule<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">?: </span><a href="../modules/algorithm.html#rawalgocourse" class="tsd-signature-type">RawAlgoCourse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a>, events<span class="tsd-signature-symbol">?: </span><a href="models.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Schedule<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">?: </span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a>, events<span class="tsd-signature-symbol">?: </span><a href="models.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L257">models/Schedule.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L139">src/models/Schedule.ts:139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -182,7 +195,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> raw: <a href="../modules/algorithm.html#rawalgocourse" class="tsd-signature-type">RawAlgoCourse</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> raw: <a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> events: <a href="models.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></h5>
@@ -201,17 +214,17 @@
 					<div class="tsd-signature tsd-kind-icon">All<span class="tsd-signature-symbol">:</span> <a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L207">models/Schedule.ts:207</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L89">src/models/Schedule.ts:89</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="_preview" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _preview</h3>
-					<div class="tsd-signature tsd-kind-icon">_preview<span class="tsd-signature-symbol">:</span> <a href="models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
+					<div class="tsd-signature tsd-kind-icon">_preview<span class="tsd-signature-symbol">:</span> <a href="models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> =&nbsp;null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L256">models/Schedule.ts:256</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L138">src/models/Schedule.ts:138</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -223,10 +236,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="colorslots" class="tsd-anchor"></a>
 					<h3>color<wbr>Slots</h3>
-					<div class="tsd-signature tsd-kind-icon">color<wbr>Slots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">color<wbr>Slots<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;Array.from({ length: Schedule.colors.length }, () &#x3D;&gt; new Set&lt;string&gt;())</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L233">models/Schedule.ts:233</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L115">src/models/Schedule.ts:115</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,39 +249,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="current" class="tsd-anchor"></a>
-					<h3>current</h3>
-					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L229">models/Schedule.ts:229</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>a computed object that&#39;s updated by the <code>computeSchedule</code> method</p>
-						</div>
-						<p>ids are the list of ids selected for a given course</p>
-					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>courses<span class="tsd-signature-symbol">: </span><a href="models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>ids<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="dateselector" class="tsd-anchor"></a>
 					<h3>date<wbr>Selector</h3>
 					<div class="tsd-signature tsd-kind-icon">date<wbr>Selector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;-1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L251">models/Schedule.ts:251</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L133">src/models/Schedule.ts:133</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -283,7 +269,7 @@
 					<div class="tsd-signature tsd-kind-icon">date<wbr>Separators<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L247">models/Schedule.ts:247</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L129">src/models/Schedule.ts:129</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,10 +284,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="days" class="tsd-anchor"></a>
 					<h3>days</h3>
-					<div class="tsd-signature tsd-kind-icon">days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></div>
+					<div class="tsd-signature tsd-kind-icon">days<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> =&nbsp;[[], [], [], [], [], [], []]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L211">models/Schedule.ts:211</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L93">src/models/Schedule.ts:93</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,7 +302,7 @@
 					<div class="tsd-signature tsd-kind-icon">events<span class="tsd-signature-symbol">:</span> <a href="models.event.html" class="tsd-signature-type">Event</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L262">models/Schedule.ts:262</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L144">src/models/Schedule.ts:144</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -326,7 +312,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Compute<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L237">models/Schedule.ts:237</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L119">src/models/Schedule.ts:119</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -341,7 +327,7 @@
 					<div class="tsd-signature tsd-kind-icon">separated<wbr>All<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L257">models/Schedule.ts:257</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L139">src/models/Schedule.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -356,10 +342,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="totalcredit" class="tsd-anchor"></a>
 					<h3>total<wbr>Credit</h3>
-					<div class="tsd-signature tsd-kind-icon">total<wbr>Credit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<div class="tsd-signature tsd-kind-icon">total<wbr>Credit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L223">models/Schedule.ts:223</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L105">src/models/Schedule.ts:105</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -374,7 +360,7 @@
 					<div class="tsd-signature tsd-kind-icon">colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof string[]</span><span class="tsd-signature-symbol"> =&nbsp;colorSchemes[0].colors</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L62">models/Schedule.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L61">src/models/Schedule.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -384,7 +370,7 @@
 					<div class="tsd-signature tsd-kind-icon">combine<wbr>Sections<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L59">models/Schedule.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L58">src/models/Schedule.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -394,7 +380,7 @@
 					<div class="tsd-signature tsd-kind-icon">multi<wbr>Select<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L60">models/Schedule.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L59">src/models/Schedule.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -404,7 +390,7 @@
 					<div class="tsd-signature tsd-kind-icon">saved<wbr>Colors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L61">models/Schedule.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L60">src/models/Schedule.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -429,7 +415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L622">models/Schedule.ts:622</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L430">src/models/Schedule.ts:430</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,60 +446,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L427">models/Schedule.ts:427</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L234">src/models/Schedule.ts:234</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>synchronous version of <code>computeSchedule</code></p>
-								</div>
-							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addevent" class="tsd-anchor"></a>
-					<h3>add<wbr>Event</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Event<span class="tsd-signature-symbol">(</span>days<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, display<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, title<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, room<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, description<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="_copy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> _copy</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">_copy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L344">models/Schedule.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L158">src/models/Schedule.ts:158</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>add an event to this schedule</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>throws</dt>
-									<dd><p>error if an existing event conflicts with this event</p>
-									</dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>days: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>display: <span class="tsd-signature-type">boolean</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> title: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> room: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> description: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -527,7 +480,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L841">models/Schedule.ts:841</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L677">src/models/Schedule.ts:677</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -558,7 +511,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L817">models/Schedule.ts:817</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L653">src/models/Schedule.ts:653</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -575,7 +528,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L748">models/Schedule.ts:748</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L547">src/models/Schedule.ts:547</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -598,7 +551,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L599">models/Schedule.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L420">src/models/Schedule.ts:420</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -620,7 +573,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L411">models/Schedule.ts:411</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L221">src/models/Schedule.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -665,7 +618,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L580">models/Schedule.ts:580</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L401">src/models/Schedule.ts:401</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,17 +637,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="constructdateseparator" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> construct<wbr>Date<wbr>Separator</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<h3>construct<wbr>Date<wbr>Separator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">construct<wbr>Date<wbr>Separator<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L507">models/Schedule.ts:507</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L324">src/models/Schedule.ts:324</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -708,52 +661,24 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="copy" class="tsd-anchor"></a>
-					<h3>copy</h3>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> copy</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>deepCopyEvent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a></li>
+						<li class="tsd-signature tsd-kind-icon">copy<span class="tsd-signature-symbol">(</span>deepCopyEvent<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_models_proposedschedule_.proposedschedule.html" class="tsd-signature-type">ProposedSchedule</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L788">models/Schedule.ts:788</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>get a copy of this schedule</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> deepCopyEvent: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="models.schedule.html" class="tsd-signature-type">Schedule</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="deleteevent" class="tsd-anchor"></a>
-					<h3>delete<wbr>Event</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<wbr>Event<span class="tsd-signature-symbol">(</span>days<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L362">models/Schedule.ts:362</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L156">src/models/Schedule.ts:156</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>days: <span class="tsd-signature-type">string</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> deepCopyEvent: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_models_proposedschedule_.proposedschedule.html" class="tsd-signature-type">ProposedSchedule</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -767,7 +692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L824">models/Schedule.ts:824</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L660">src/models/Schedule.ts:660</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -784,7 +709,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L828">models/Schedule.ts:828</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L664">src/models/Schedule.ts:664</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -797,45 +722,17 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="fromjson" class="tsd-anchor"></a>
-					<h3>fromJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fromJSON<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">?: </span><a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L759">models/Schedule.ts:759</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>instantiate a <code>Schedule</code> object from its JSON representation</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> obj: <a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="getcolor" class="tsd-anchor"></a>
-					<h3>get<wbr>Color</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Color<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/models.hashable.html" class="tsd-signature-type">Hashable</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L288">models/Schedule.ts:288</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L177">src/models/Schedule.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -860,6 +757,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getsectiongroup" class="tsd-anchor"></a>
+					<h3>get<wbr>Section<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Section<wbr>Group<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L620">src/models/Schedule.ts:620</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>section: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the group index corresponding to the given section</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="has" class="tsd-anchor"></a>
 					<h3>has</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -869,7 +795,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L808">models/Schedule.ts:808</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L585">src/models/Schedule.ts:585</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -895,6 +821,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hassection" class="tsd-anchor"></a>
+					<h3>has<wbr>Section</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Section<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L597">src/models/Schedule.ts:597</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>returns whether a given section exists in this schedule (All)</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>section: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="hover" class="tsd-anchor"></a>
 					<h3>hover</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -904,7 +861,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L384">models/Schedule.ts:384</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L200">src/models/Schedule.ts:200</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -921,28 +878,84 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="hoverevent" class="tsd-anchor"></a>
-					<h3>hover<wbr>Event</h3>
+					<a name="isanysection" class="tsd-anchor"></a>
+					<h3>is<wbr>Any<wbr>Section</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">hover<wbr>Event<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, strong<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Any<wbr>Section<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L372">models/Schedule.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L613">src/models/Schedule.ts:613</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>whether the given course has <code>Any Section</code> selected</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iscourseempty" class="tsd-anchor"></a>
+					<h3>is<wbr>Course<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Course<wbr>Empty<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L605">src/models/Schedule.ts:605</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> strong: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if none of the sections of this course is selected</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isgroup" class="tsd-anchor"></a>
+					<h3>is<wbr>Group</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Group<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L630">src/models/Schedule.ts:630</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>whether multiple groups exist for a given course</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -956,7 +969,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L681">models/Schedule.ts:681</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L489">src/models/Schedule.ts:489</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -989,7 +1002,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L718">models/Schedule.ts:718</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L526">src/models/Schedule.ts:526</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1018,7 +1031,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L335">models/Schedule.ts:335</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L195">src/models/Schedule.ts:195</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1031,43 +1044,9 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="randevents" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rand<wbr>Events</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">rand<wbr>Events<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxDuration<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, minDuration<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L865">models/Schedule.ts:865</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>add some random event to the schedule. For testing purposes only</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> num: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;20</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> maxDuration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;120</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> minDuration: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;20</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="remove" class="tsd-anchor"></a>
-					<h3>remove</h3>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> remove</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
 						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
@@ -1075,14 +1054,9 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L738">models/Schedule.ts:738</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L153">src/models/Schedule.ts:153</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Remove a course (and all its sections) from the schedule</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1103,7 +1077,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L330">models/Schedule.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L190">src/models/Schedule.ts:190</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1125,7 +1099,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L766">models/Schedule.ts:766</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L558">src/models/Schedule.ts:558</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1134,6 +1108,34 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="ungroup" class="tsd-anchor"></a>
+					<h3>ungroup</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">ungroup<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L638">src/models/Schedule.ts:638</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>combine all groups</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1147,30 +1149,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L398">models/Schedule.ts:398</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="unhoverevent" class="tsd-anchor"></a>
-					<h3>unhover<wbr>Event</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unhover<wbr>Event<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L380">models/Schedule.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L208">src/models/Schedule.ts:208</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1185,26 +1164,17 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="update" class="tsd-anchor"></a>
-					<h3>update</h3>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, remove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, section<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, group<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, remove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L304">models/Schedule.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L152">src/models/Schedule.ts:152</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Update a section in the schedule</p>
-									<ul>
-										<li>If the section is <strong>already in</strong> the schedule, delete it from the schedule</li>
-										<li>If the section is <strong>not</strong> in the schedule, add it to the schedule</li>
-									</ul>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -1214,10 +1184,10 @@
 									<h5>section: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> remove: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>whether to remove the key if the set of sections is empty</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> group: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> remove: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1228,13 +1198,13 @@
 					<a name="compressjson" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> compressJSON</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">compressJSON<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">compressJSON<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L65">models/Schedule.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L64">src/models/Schedule.ts:64</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1243,7 +1213,7 @@
 									<h5>obj: <a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><a href="../interfaces/models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1257,7 +1227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L82">models/Schedule.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L75">src/models/Schedule.ts:75</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1270,41 +1240,44 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="fromjson-1" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> fromJSON</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">fromJSON<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">?: </span><a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/8686df5/src/models/Schedule.ts#L105">models/Schedule.ts:105</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>instantiate a <code>Schedule</code> object from its JSON representation.
-									the <code>computeSchedule</code> method will be invoked after instantiation</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> obj: <a href="../interfaces/models.schedulejson.html" class="tsd-signature-type">ScheduleJSON</a></h5>
-								</li>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-class">
+					<a name="current" class="tsd-anchor"></a>
+					<h3>current</h3>
+					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L111">src/models/Schedule.ts:111</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>a computed object that&#39;s updated by the <code>computeSchedule</code> method</p>
+						</div>
+						<p>ids are the list of ids selected for a given course</p>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="current.courses" class="tsd-anchor"></a>
+						<h3>courses</h3>
+						<div class="tsd-signature tsd-kind-icon">courses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L111">src/models/Schedule.ts:111</a></li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><a href="models.schedule.html" class="tsd-signature-type">Schedule</a><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>NotiMsg, whose level might be one of the following</p>
-							<ol>
-								<li>success: a schedule is successfully parsed from the JSON object</li>
-								<li>warn: a schedule is successfully parsed, but some of the courses/sections recorded no longer exist
-								in the catalog</li>
-								<li>error: the object passed in is falsy</li>
-							</ol>
-						</li>
-					</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+						<a name="current.ids" class="tsd-anchor"></a>
+						<h3>ids</h3>
+						<div class="tsd-signature tsd-kind-icon">ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/a4df13b/src/models/Schedule.ts#L111">src/models/Schedule.ts:111</a></li>
+							</ul>
+						</aside>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -1315,37 +1288,46 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"<wbr>App"</a>
+						<a href="../modules/_app_.html">&quot;<wbr>App&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_algorithm_searcher_.html">"algorithm/<wbr>Searcher"</a>
+						<a href="../modules/_algorithm_searcher_.html">&quot;algorithm/<wbr>Searcher&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_components_stepper_.html">"components/<wbr>Stepper"</a>
+						<a href="../modules/_components_stepper_.html">&quot;components/<wbr>Stepper&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_config_.html">"config"</a>
+						<a href="../modules/_config_.html">&quot;config&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_data_colorschemes_.html">"data/<wbr>Color<wbr>Schemes"</a>
+						<a href="../modules/_config_example_.html">&quot;config.example&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_database_catalogdb_.html">"database/<wbr>CatalogDB"</a>
+						<a href="../modules/_data_colorschemes_.html">&quot;data/<wbr>Color<wbr>Schemes&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_main_.html">"main"</a>
+						<a href="../modules/_database_catalogdb_.html">&quot;database/<wbr>CatalogDB&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_models_meeting_.html">"models/<wbr>Meeting"</a>
+						<a href="../modules/_main_.html">&quot;main&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routes_homepage_.html">"routes/<wbr>Home<wbr>Page"</a>
+						<a href="../modules/_models_generatedschedule_.html">&quot;models/<wbr>Generated<wbr>Schedule&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_routes_index_.html">"routes/index"</a>
+						<a href="../modules/_models_meeting_.html">&quot;models/<wbr>Meeting&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_workers_searchworker_.html">"workers/<wbr>Search<wbr>Worker"</a>
+						<a href="../modules/_models_proposedschedule_.html">&quot;models/<wbr>Proposed<wbr>Schedule&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_homepage_.html">&quot;routes/<wbr>Home<wbr>Page&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_routes_index_.html">&quot;routes/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_workers_searchworker_.html">&quot;workers/<wbr>Search<wbr>Worker&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/algorithm.html">algorithm</a>
@@ -1399,9 +1381,6 @@
 								<a href="models.schedule.html#colorslots" class="tsd-kind-icon">color<wbr>Slots</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="models.schedule.html#current" class="tsd-kind-icon">current</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="models.schedule.html#dateselector" class="tsd-kind-icon">date<wbr>Selector</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1440,8 +1419,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="models.schedule.html#_computeschedule" class="tsd-kind-icon">_compute<wbr>Schedule</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#addevent" class="tsd-kind-icon">add<wbr>Event</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="models.schedule.html#_copy" class="tsd-kind-icon">_copy</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#allequals" class="tsd-kind-icon">all<wbr>Equals</a>
@@ -1461,14 +1440,11 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="models.schedule.html#constructadjlist" class="tsd-kind-icon">construct<wbr>Adj<wbr>List</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#constructdateseparator" class="tsd-kind-icon">construct<wbr>Date<wbr>Separator</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#copy" class="tsd-kind-icon">copy</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#deleteevent" class="tsd-kind-icon">delete<wbr>Event</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#empty" class="tsd-kind-icon">empty</a>
@@ -1476,20 +1452,29 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#equals" class="tsd-kind-icon">equals</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#fromjson" class="tsd-kind-icon">fromJSON</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="models.schedule.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
+								<a href="models.schedule.html#getsectiongroup" class="tsd-kind-icon">get<wbr>Section<wbr>Group</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#has" class="tsd-kind-icon">has</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.schedule.html#hassection" class="tsd-kind-icon">has<wbr>Section</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#hover" class="tsd-kind-icon">hover</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#hoverevent" class="tsd-kind-icon">hover<wbr>Event</a>
+								<a href="models.schedule.html#isanysection" class="tsd-kind-icon">is<wbr>Any<wbr>Section</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.schedule.html#iscourseempty" class="tsd-kind-icon">is<wbr>Course<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="models.schedule.html#isgroup" class="tsd-kind-icon">is<wbr>Group</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="models.schedule.html#place" class="tsd-kind-icon">place</a>
@@ -1499,9 +1484,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#preview" class="tsd-kind-icon">preview</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="models.schedule.html#randevents" class="tsd-kind-icon">rand<wbr>Events</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#remove" class="tsd-kind-icon">remove</a>
@@ -1513,10 +1495,10 @@
 								<a href="models.schedule.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#unhover" class="tsd-kind-icon">unhover</a>
+								<a href="models.schedule.html#ungroup" class="tsd-kind-icon">ungroup</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="models.schedule.html#unhoverevent" class="tsd-kind-icon">unhover<wbr>Event</a>
+								<a href="models.schedule.html#unhover" class="tsd-kind-icon">unhover</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="models.schedule.html#update" class="tsd-kind-icon">update</a>
@@ -1527,8 +1509,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="models.schedule.html#decompressjson" class="tsd-kind-icon">decompressJSON</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="models.schedule.html#fromjson-1" class="tsd-kind-icon">fromJSON</a>
+							<li class=" tsd-kind-object-literal tsd-parent-kind-class">
+								<a href="models.schedule.html#current" class="tsd-kind-icon">current</a>
 							</li>
 						</ul>
 					</li>
@@ -1574,12 +1556,6 @@
 						<a href="../modules/models.html#coursematchfield" class="tsd-kind-icon">Course<wbr>Match<wbr>Field</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#coursestatus" class="tsd-kind-icon">Course<wbr>Status</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="../modules/models.html#coursetype" class="tsd-kind-icon">Course<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="../modules/models.html#day" class="tsd-kind-icon">Day</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -1601,19 +1577,7 @@
 						<a href="../modules/models.html#days" class="tsd-kind-icon">DAYS</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#types" class="tsd-kind-icon">TYPES</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#types_parse" class="tsd-kind-icon">TYPES_<wbr>PARSE</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="../modules/models.html#daytoint" class="tsd-kind-icon">day<wbr>ToInt</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#semesterdataexpirationtime" class="tsd-kind-icon">semester<wbr>Data<wbr>Expiration<wbr>Time</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/models.html#semesterlistexpirationtime" class="tsd-kind-icon">semester<wbr>List<wbr>Expiration<wbr>Time</a>
 					</li>
 				</ul>
 			</nav>
