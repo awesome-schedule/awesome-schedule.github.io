@@ -120,8 +120,8 @@
 				</a>
 				<p>If you use AppImage, you need to add execution permission before launching the file</p>
 				<pre><code class="language-bash">chmod +x plannable-x.x.x.AppImage</code></pre>
-				<p>If you use snap, you need to add the <code>--dangerous</code> flag when installing the snap package</p>
-				<pre><code><span class="hljs-selector-tag">sudo</span> <span class="hljs-selector-tag">snap</span> <span class="hljs-selector-tag">install</span> <span class="hljs-selector-tag">--dangerous</span> <span class="hljs-selector-tag">plannable_x</span><span class="hljs-selector-class">.x</span><span class="hljs-selector-class">.x_amd64</span><span class="hljs-selector-class">.snap</span></code></pre>
+				<p>If you use snap, you can install plannable from the snap store</p>
+				<pre><code>sudo snap <span class="hljs-keyword">install</span> plannable</code></pre>
 				<a href="#development" id="development" style="color: inherit; text-decoration: none;">
 					<h2>Development</h2>
 				</a>
@@ -134,11 +134,9 @@
 				<ul>
 					<li>Node.js &gt;= 10.16</li>
 				</ul>
-				<p>Clone the repository and data</p>
+				<p>Clone the repository and update data</p>
 				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable
-<span class="hljs-built_in">cd</span> plannable/scripts
-git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/data
-<span class="hljs-built_in">cd</span> ..</code></pre>
+npm run updatedata</code></pre>
 				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
 				<pre><code class="language-bash">npm install -g @vue/cli http-server
 npm install
@@ -191,40 +189,16 @@ npm run serve</code></pre>
 						<a href="modules/_app_.html">&quot;<wbr>App&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_algorithm_searcher_.html">&quot;algorithm/<wbr>Searcher&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_components_stepper_.html">&quot;components/<wbr>Stepper&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_config_.html">&quot;config&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_config_example_.html">&quot;config.example&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_data_colorschemes_.html">&quot;data/<wbr>Color<wbr>Schemes&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_database_catalogdb_.html">&quot;database/<wbr>CatalogDB&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_main_.html">&quot;main&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_models_generatedschedule_.html">&quot;models/<wbr>Generated<wbr>Schedule&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_models_meeting_.html">&quot;models/<wbr>Meeting&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_models_proposedschedule_.html">&quot;models/<wbr>Proposed<wbr>Schedule&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_routes_homepage_.html">&quot;routes/<wbr>Home<wbr>Page&quot;</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_routes_index_.html">&quot;routes/index&quot;</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_workers_searchworker_.html">&quot;workers/<wbr>Search<wbr>Worker&quot;</a>
@@ -243,6 +217,9 @@ npm run serve</code></pre>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/models.html">models</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/routes.html">routes</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/store.html">store</a>
