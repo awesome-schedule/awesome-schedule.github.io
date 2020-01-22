@@ -114,7 +114,7 @@
 					<div class="tsd-signature tsd-kind-icon">Course<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"TBA"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Open"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Closed"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"Wait List"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L108">src/config.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L108">src/config.ts:108</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -124,7 +124,7 @@
 					<div class="tsd-signature tsd-kind-icon">Course<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">keyof object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L107">src/config.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L107">src/config.ts:107</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -137,7 +137,7 @@
 					<div class="tsd-signature tsd-kind-icon">TYPES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;Object.freeze({&#x27;-1&#x27;: &#x27;&#x27;,0: &#x27;Clinical&#x27;,1: &#x27;Discussion&#x27;,2: &#x27;Drill&#x27;,3: &#x27;Independent Study&#x27;,4: &#x27;Laboratory&#x27;,5: &#x27;Lecture&#x27;,6: &#x27;Practicum&#x27;,7: &#x27;Seminar&#x27;,8: &#x27;Studio&#x27;,9: &#x27;Workshop&#x27;})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L113">src/config.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L113">src/config.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">TYPES_<wbr>PARSE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;Object.freeze({&#x27;&#x27;: -1,Clinical: 0,CLN: 0,Discussion: 1,DIS: 1,Drill: 2,DRL: 2,&#x27;Independent Study&#x27;: 3,IND: 3,Laboratory: 4,LAB: 4,Lecture: 5,LEC: 5,Practicum: 6,PRA: 6,Seminar: 7,SEM: 7,Studio: 8,STO: 8,Workshop: 9,WKS: 9})</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L130">src/config.ts:130</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L130">src/config.ts:130</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">backend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{/*** Name of the backend*/name: &#x27;Hoosmyprofessor&#x27;,/*** API endpoint for uploading/overwriting profiles on remote*/up: &#x27;https://match.msnatuva.org/courses/api/save_plannable_profile/&#x27;,/*** API endpoint for downloading profiles from remote*/down: &#x27;https://match.msnatuva.org/courses/api/get_plannable_profile/&#x27;,/*** API endpoint for editing the properties of the profile (e.g. name)*/edit: &#x27;https://match.msnatuva.org/courses/api/edit_plannable_profile/&#x27;} as const</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L14">src/config.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L14">src/config.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +229,7 @@
 					<div class="tsd-signature tsd-kind-icon">dataend<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{/*** an async function that fetches the array of buildings* @returns a FastSearcher instance constructed from the array of buildings*/buildings: requestBuildingSearcher,/*** an async function that fetches the distance matrix (equivalently, the walking time) between the buildings.* matrix[i * len + j] represents the distance between the ith building and jth building in the array of buildings fetched by dataend.buildings* @returns the distance matrix, in Int32Array*/distances: requestTimeMatrix,/*** an async function that fetches the list of the semesters*/semesters: requestSemesterList,/*** an async function that fetches all courses corresponding to the given semester* @returns a catalog object built from the courses*/courses: requestCourses} as const</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L36">src/config.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L36">src/config.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -297,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">enable<wbr>Key<wbr>Conversion<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L158">src/config.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L158">src/config.ts:158</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +313,7 @@
 					<div class="tsd-signature tsd-kind-icon">external<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{enableDetails: true,/*** for the given semester id and section id, open an external webpage showing the detail of that section*/viewDetails(semesterId: string, secId: number) {window.open(&#x27;https://rabi.phys.virginia.edu/mySIS/CS2/sectiontip.php?Semester&#x3D;&#x27; +semesterId +&#x27;&amp;ClassNumber&#x3D;&#x27; +secId,&#x27;_blank&#x27;,&#x27;width&#x3D;650,height&#x3D;700,scrollbars&#x3D;yes&#x27;);},enableGrades: true,/*** for the given course, open an external webpage showing the past grades of that course*/viewGrades(course: CourseFields) {window.open(&#x60;https://vagrades.com/uva/${course.department.toUpperCase()}${course.number}&#x60;,&#x27;_blank&#x27;,&#x27;width&#x3D;650,height&#x3D;700,scrollbars&#x3D;yes&#x27;);}} as const</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L62">src/config.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L62">src/config.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,7 +339,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L67">src/config.ts:67</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L67">src/config.ts:67</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -368,7 +368,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L81">src/config.ts:81</a></li>
+												<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L81">src/config.ts:81</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -394,7 +394,7 @@
 					<div class="tsd-signature tsd-kind-icon">key<wbr>Regex<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/([a-z]{1,5})([0-9]{1,5})([0-9])$/i</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L164">src/config.ts:164</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L164">src/config.ts:164</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -411,7 +411,7 @@
 					<div class="tsd-signature tsd-kind-icon">semester<wbr>Data<wbr>Expiration<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;2 * 3600 * 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L104">src/config.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L104">src/config.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -421,7 +421,7 @@
 					<div class="tsd-signature tsd-kind-icon">semester<wbr>List<wbr>Expiration<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;86400 * 1000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L103">src/config.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L103">src/config.ts:103</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -436,7 +436,7 @@
 					<div class="tsd-signature tsd-kind-icon">ui<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> =&nbsp;{sideBarWidth: 19,sideMargin: 3,tabBarWidthMobile: 10,tabBarWidth: 3} as const</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L93">src/config.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L93">src/config.ts:93</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -475,7 +475,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L173">src/config.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L173">src/config.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -497,7 +497,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L237">src/config.ts:237</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L237">src/config.ts:237</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -520,7 +520,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L202">src/config.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L202">src/config.ts:202</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -543,7 +543,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L207">src/config.ts:207</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L207">src/config.ts:207</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -566,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L413">src/config.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L413">src/config.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,7 +594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/c028dd1/src/config.ts#L189">src/config.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f7007b1/src/config.ts#L189">src/config.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
