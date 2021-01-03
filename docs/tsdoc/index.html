@@ -138,11 +138,11 @@
 				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable
 npm run updatedata</code></pre>
 				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
-				<pre><code class="language-bash">npm install -g @vue/cli http-server
+				<pre><code class="language-bash">npm install -g @vue/cli
 npm install
 npm run serve</code></pre>
-				<p>You need to serve the static files in scripts/data, because we only load local data in local development mode. To do so, you can run</p>
-				<pre><code class="language-bash">bash scripts/run.sh</code></pre>
+				<p>You need to serve the static files in scripts/data, because we only load local data in local development mode. To do so, open a new terminal and run</p>
+				<pre><code class="language-bash">npm run data</code></pre>
 				<p>in the project root, which will basically open a static http server listening to port <code>8000</code> with cross origin header.</p>
 				<p>Then you can visit the development server at <a href="http://127.0.0.1:8080/">http://127.0.0.1:8080</a>.</p>
 				<a href="#built-with" id="built-with" style="color: inherit; text-decoration: none;">

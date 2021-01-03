@@ -71,22 +71,9 @@
 		<div class="col-8 col-content">
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
-					<dl class="tsd-comment-tags">
-						<dt>license</dt>
-						<dd><p>MIT
-							Adapted from <a href="https://github.com/aceakash/string-similarity" class="external">https://github.com/aceakash/string-similarity</a>, with optimizations:</p>
-							<ol>
-								<li>Cache the string length</li>
-								<li>No need to use .has for map</li>
-								<li>Pre-process the target list of strings for repeated searches (see <a href="../classes/algorithm.fastsearcher.html">FastSearcher</a>)
-								About 40% faster than the original one.</li>
-							</ol>
-						</dd>
-						<dt>param</dt>
-						<dd></dd>
-						<dt>param</dt>
-						<dd></dd>
-					</dl>
+					<div class="lead">
+						<p>The struture of the objects used to store search results</p>
+					</div>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-type-parameters">
@@ -133,9 +120,14 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f3233cf/src/algorithm/Searcher.ts#L22">src/algorithm/Searcher.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/55fb60f/src/algorithm/Searcher.ts#L19">src/algorithm/Searcher.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>some arbitrary data associated with this item</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="index" class="tsd-anchor"></a>
@@ -143,9 +135,14 @@
 					<div class="tsd-signature tsd-kind-icon">index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f3233cf/src/algorithm/Searcher.ts#L20">src/algorithm/Searcher.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/55fb60f/src/algorithm/Searcher.ts#L15">src/algorithm/Searcher.ts:15</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>index of the item in the original list</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="item" class="tsd-anchor"></a>
@@ -153,9 +150,14 @@
 					<div class="tsd-signature tsd-kind-icon">item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f3233cf/src/algorithm/Searcher.ts#L21">src/algorithm/Searcher.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/55fb60f/src/algorithm/Searcher.ts#L17">src/algorithm/Searcher.ts:17</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>original_list[index]</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="matches" class="tsd-anchor"></a>
@@ -163,9 +165,14 @@
 					<div class="tsd-signature tsd-kind-icon">matches<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f3233cf/src/algorithm/Searcher.ts#L19">src/algorithm/Searcher.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/55fb60f/src/algorithm/Searcher.ts#L13">src/algorithm/Searcher.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>an array of pairs indicating the indices of match. [[1,2], [7,9]] means that the indices [1, 2) and [7, 9) of the string are matched</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="score" class="tsd-anchor"></a>
@@ -173,9 +180,14 @@
 					<div class="tsd-signature tsd-kind-icon">score<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/f3233cf/src/algorithm/Searcher.ts#L18">src/algorithm/Searcher.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/55fb60f/src/algorithm/Searcher.ts#L11">src/algorithm/Searcher.ts:11</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the score of this result</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -304,7 +316,7 @@
 						<a href="../modules/algorithm.html#timearray" class="tsd-kind-icon">Time<wbr>Array</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../modules/algorithm.html#colordepthsearch" class="tsd-kind-icon">color<wbr>Depth<wbr>Search</a>
+						<a href="../modules/algorithm.html#calculatemaxdepth" class="tsd-kind-icon">calculate<wbr>Max<wbr>Depth</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/algorithm.html#computeconflict" class="tsd-kind-icon">compute<wbr>Conflict</a>
