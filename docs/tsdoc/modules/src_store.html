@@ -1,0 +1,1016 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>src/store | plannable</title>
+	<meta name="description" content="Documentation for plannable">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">plannable</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="src_store.html">src/store</a>
+				</li>
+			</ul>
+			<h1>Module src/store</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The Store module provides methods to save, retrieve and manipulate store.
+							It gathers all children modules and store their references in a single store class,
+						which is provided as a Mixin</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>References</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="src_store.html#semesterstorage" class="tsd-kind-icon">Semester<wbr>Storage</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="src_store.html#storemodule" class="tsd-kind-icon">Store<wbr>Module</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="src_store.html#compressjson" class="tsd-kind-icon">compressJSON</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="src_store.html#parsefromurl" class="tsd-kind-icon">parse<wbr>FromURL</a></li>
+								<li class="tsd-kind-reference tsd-parent-kind-module"><a href="src_store.html#savestatus" class="tsd-kind-icon">save<wbr>Status</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.display.html" class="tsd-kind-icon">Display</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.filterstore.html" class="tsd-kind-icon">Filter<wbr>Store</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.modal.html" class="tsd-kind-icon">Modal</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.notification.html" class="tsd-kind-icon">Notification</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.palette.html" class="tsd-kind-icon">Palette</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.profile.html" class="tsd-kind-icon">Profile</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.schedulestore.html" class="tsd-kind-icon">Schedule<wbr>Store</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.semesters.html" class="tsd-kind-icon">Semesters</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.status.html" class="tsd-kind-icon">Status</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.store.html" class="tsd-kind-icon">Store</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/src_store.watchfactory.html" class="tsd-kind-icon">Watch<wbr>Factory</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.ancientstorage.html" class="tsd-kind-icon">Ancient<wbr>Storage</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendbaseresponse.html" class="tsd-kind-icon">Backend<wbr>Base<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backenddeleterequest.html" class="tsd-kind-icon">Backend<wbr>Delete<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backenddeleteresponse.html" class="tsd-kind-icon">Backend<wbr>Delete<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendfailedresponse.html" class="tsd-kind-icon">Backend<wbr>Failed<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendlistitem.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendlistrequest.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendlistresponse.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendprofile.html" class="tsd-kind-icon">Backend<wbr>Profile</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendrenamerequest.html" class="tsd-kind-icon">Backend<wbr>Rename<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backendrenameresponse.html" class="tsd-kind-icon">Backend<wbr>Rename<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backenduploadrequest.html" class="tsd-kind-icon">Backend<wbr>Upload<wbr>Request</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.backenduploadresponse.html" class="tsd-kind-icon">Backend<wbr>Upload<wbr>Response</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.comparecandidate.html" class="tsd-kind-icon">Compare<wbr>Candidate</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-kind-icon">Detailed<wbr>Evaluator<wbr>Options</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.detailedsortoption.html" class="tsd-kind-icon">Detailed<wbr>Sort<wbr>Option</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.displaystate.html" class="tsd-kind-icon">Display<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.filterstate.html" class="tsd-kind-icon">Filter<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.filterstatebase.html" class="tsd-kind-icon">Filter<wbr>State<wbr>Base</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.filterstatejson.html" class="tsd-kind-icon">Filter<wbr>StateJSON</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.legacyschedulejson.html" class="tsd-kind-icon">Legacy<wbr>ScheduleJSON</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.legacystorage.html" class="tsd-kind-icon">Legacy<wbr>Storage</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.localprofileentry.html" class="tsd-kind-icon">Local<wbr>Profile<wbr>Entry</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.notiitem.html" class="tsd-kind-icon">Noti<wbr>Item</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/src_store.notimsg.html" class="tsd-kind-icon">Noti<wbr>Msg</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.notistate.html" class="tsd-kind-icon">Noti<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.palettestate.html" class="tsd-kind-icon">Palette<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.profileversion.html" class="tsd-kind-icon">Profile<wbr>Version</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.schedulestate.html" class="tsd-kind-icon">Schedule<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.schedulestatebase.html" class="tsd-kind-icon">Schedule<wbr>State<wbr>Base</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.schedulestatejson.html" class="tsd-kind-icon">Schedule<wbr>StateJSON</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.semesterstate.html" class="tsd-kind-icon">Semester<wbr>State</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_store.semesterstorage-1.html" class="tsd-kind-icon">Semester<wbr>Storage</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.sidebarstatus.html" class="tsd-kind-icon">Sidebar<wbr>Status</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_store.sidebars.html" class="tsd-kind-icon">Sidebars</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/src_store.storageitem.html" class="tsd-kind-icon">Storage<wbr>Item</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Type aliases</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#consolelevel" class="tsd-kind-icon">Console<wbr>Level</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="src_store.html#displayjsonshort" class="tsd-kind-icon">DisplayJSONShort</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#noticlass" class="tsd-kind-icon">Noti<wbr>Class</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter"><a href="src_store.html#storemodule-1" class="tsd-kind-icon">Store<wbr>Module</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="src_store.html#timeslot" class="tsd-kind-icon">Time<wbr>Slot</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="src_store.html#timeslotshort" class="tsd-kind-icon">Time<wbr>Slot<wbr>Short</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#clas" class="tsd-kind-icon">CLAS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#cons" class="tsd-kind-icon">CONS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#levels" class="tsd-kind-icon">LEVELS</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#compare" class="tsd-kind-icon">compare</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#pendingstatussave" class="tsd-kind-icon">pending<wbr>Status<wbr>Save</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#_savestatus" class="tsd-kind-icon">_save<wbr>Status</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#bound" class="tsd-kind-icon">bound</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="src_store.html#compressjson-1" class="tsd-kind-icon">compressJSON</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#getdefaultoptions" class="tsd-kind-icon">get<wbr>Default<wbr>Options</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#isancient" class="tsd-kind-icon">is<wbr>Ancient</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#islegacy" class="tsd-kind-icon">is<wbr>Legacy</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="src_store.html#parsefromurl-1" class="tsd-kind-icon">parse<wbr>FromURL</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="src_store.html#savestatus-1" class="tsd-kind-icon">save<wbr>Status</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported"><a href="src_store.html#defaultoptions" class="tsd-kind-icon">default<wbr>Options</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>References</h2>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="semesterstorage" class="tsd-anchor"></a>
+					<h3>Semester<wbr>Storage</h3>
+					Re-exports <a href="../interfaces/src_store.semesterstorage-1.html">SemesterStorage</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="storemodule" class="tsd-anchor"></a>
+					<h3>Store<wbr>Module</h3>
+					Re-exports <a href="src_store.html#storemodule-1">StoreModule</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="compressjson" class="tsd-anchor"></a>
+					<h3>compressJSON</h3>
+					Re-exports <a href="src_store.html#compressjson-1">compressJSON</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="parsefromurl" class="tsd-anchor"></a>
+					<h3>parse<wbr>FromURL</h3>
+					Re-exports <a href="src_store.html#parsefromurl-1">parseFromURL</a>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-module">
+					<a name="savestatus" class="tsd-anchor"></a>
+					<h3>save<wbr>Status</h3>
+					Re-exports <a href="src_store.html#savestatus-1">saveStatus</a>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+					<a name="consolelevel" class="tsd-anchor"></a>
+					<h3>Console<wbr>Level</h3>
+					<div class="tsd-signature tsd-kind-icon">Console<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"info"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"error"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"warn"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/notification.ts#L12">src/store/notification.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the noti level type corresponds to the three different log levels available in Console</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p>console.info</p>
+							</dd>
+							<dt>see</dt>
+							<dd><p>console.warn</p>
+							</dd>
+							<dt>see</dt>
+							<dd><p>console.error</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="displayjsonshort" class="tsd-anchor"></a>
+					<h3>DisplayJSONShort</h3>
+					<div class="tsd-signature tsd-kind-icon">DisplayJSONShort<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/display.ts#L45">src/store/display.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+					<a name="noticlass" class="tsd-anchor"></a>
+					<h3>Noti<wbr>Class</h3>
+					<div class="tsd-signature tsd-kind-icon">Noti<wbr>Class<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"info"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"danger"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"success"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"warning"</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/notification.ts#L16">src/store/notification.ts:16</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the noti class type corresponds to the bootstrap color classes</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+					<a name="storemodule-1" class="tsd-anchor"></a>
+					<h3>Store<wbr>Module</h3>
+					<div class="tsd-signature tsd-kind-icon">Store<wbr>Module&lt;State, JSONState&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">State</span><span class="tsd-signature-symbol"> &amp; </span><a href="../interfaces/src_store.storageitem.html" class="tsd-signature-type">StorageItem</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">JSONState</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L104">src/store/store.ts:104</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A Store Module must have</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>State</h4>
+						</li>
+						<li>
+							<h4>JSONState</h4>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>the JSON representation of its state</p>
+									<p>and the three methods defined by <a href="../interfaces/src_store.storageitem.html">StorageItem</a></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="timeslot" class="tsd-anchor"></a>
+					<h3>Time<wbr>Slot</h3>
+					<div class="tsd-signature tsd-kind-icon">Time<wbr>Slot<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L73">src/store/filter.ts:73</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>index 0 - 6: whether Mo - Su are selected</p>
+						</div>
+						<p>7: start time, of 24 hour format</p>
+						<p>8: end time, of 24 hour format</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="timeslotshort" class="tsd-anchor"></a>
+					<h3>Time<wbr>Slot<wbr>Short</h3>
+					<div class="tsd-signature tsd-kind-icon">Time<wbr>Slot<wbr>Short<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L84">src/store/filter.ts:84</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="clas" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> CLAS</h3>
+					<div class="tsd-signature tsd-kind-icon">CLAS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = Object.freeze({info: &#x27;info&#x27;,error: &#x27;danger&#x27;,warn: &#x27;warning&#x27;,success: &#x27;success&#x27;}) as { [x in ConsoleLevel | &#x27;success&#x27;]: NotiClass }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/notification.ts#L57">src/store/notification.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>map console types to bootstrap css classes</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="cons" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> CONS</h3>
+					<div class="tsd-signature tsd-kind-icon">CONS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = Object.freeze({info: &#x27;info&#x27;,danger: &#x27;error&#x27;,success: &#x27;info&#x27;,warning: &#x27;warn&#x27;}) as { [x in NotiClass]: ConsoleLevel }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/notification.ts#L67">src/store/notification.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>map bootstrap css classes to notification type</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="levels" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> LEVELS</h3>
+					<div class="tsd-signature tsd-kind-icon">LEVELS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> = Object.freeze({info: 0,success: 1,warning: 2,danger: 3})</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/notification.ts#L74">src/store/notification.ts:74</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="compare" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> compare</h3>
+					<div class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">:</span> <a href="../interfaces/src_store.comparecandidate.html" class="tsd-signature-type">CompareCandidate</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L184">src/store/store.ts:184</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+					<a name="pendingstatussave" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> pending<wbr>Status<wbr>Save</h3>
+					<div class="tsd-signature tsd-kind-icon">pending<wbr>Status<wbr>Save<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L114">src/store/store.ts:114</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="_savestatus" class="tsd-anchor"></a>
+					<h3>_save<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">_save<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L129">src/store/store.ts:129</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="bound" class="tsd-anchor"></a>
+					<h3>bound</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">bound<span class="tsd-signature-symbol">(</span>num<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, low<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, high<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/display.ts#L41">src/store/display.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>num: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>low: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>high: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="compressjson-1" class="tsd-anchor"></a>
+					<h3>compressJSON</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">compressJSON<span class="tsd-signature-symbol">(</span>jsonString<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/src_models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/src_models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L448">src/store/store.ts:448</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See <a href="src_store.html#parsefromurl">parseFromURL</a>
+									convert JSON string to tuple of tuples to reduce the num of chars</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>author</dt>
+									<dd><p>Zichao Hu</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>jsonString: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/src_models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><a href="../interfaces/src_models.scheduleall.html" class="tsd-signature-type">ScheduleAll</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">-1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="getdefaultoptions" class="tsd-anchor"></a>
+					<h3>get<wbr>Default<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-signature-type">DetailedEvaluatorOptions</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L188">src/store/filter.ts:188</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>get a copy of the default options</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-signature-type">DetailedEvaluatorOptions</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="isancient" class="tsd-anchor"></a>
+					<h3>is<wbr>Ancient</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Ancient<span class="tsd-signature-symbol">(</span>parsed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">parsed</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">AncientStorage</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L106">src/store/store.ts:106</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parsed: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">parsed</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">AncientStorage</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="islegacy" class="tsd-anchor"></a>
+					<h3>is<wbr>Legacy</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Legacy<span class="tsd-signature-symbol">(</span>parsed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">parsed</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">LegacyStorage</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L110">src/store/store.ts:110</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parsed: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">parsed</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">LegacyStorage</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="parsefromurl-1" class="tsd-anchor"></a>
+					<h3>parse<wbr>FromURL</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>FromURL<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_store.semesterstorage-1.html" class="tsd-signature-type">SemesterStorage</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L471">src/store/store.ts:471</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>author</dt>
+									<dd><p>Zichao Hu, Hanzhi Zhou</p>
+									</dd>
+									<dt>note</dt>
+									<dd><p>JSON decompression requires the catalog of the semester to be pre-loaded,
+										because the reference schedule conversion in filter requires it</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>config: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_store.semesterstorage-1.html" class="tsd-signature-type">SemesterStorage</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="savestatus-1" class="tsd-anchor"></a>
+					<h3>save<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Status<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L121">src/store/store.ts:121</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>save all store modules to localStorage</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>this function needs to be separated from the <a href="../classes/src_store.store.html">Store</a> class because it is used in the [[schedule]] sub-module,
+										and the [[schedule]] sub-module does not have access to the <a href="../classes/src_store.store.html">Store</a> class</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+					<a name="defaultoptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> default<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L89">src/store/filter.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>a list of sort options with default values assigned</p>
+						</div>
+					</div>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="defaultoptions.mode" class="tsd-anchor"></a>
+						<h3>mode</h3>
+						<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <a href="../enums/src_algorithm.sortmode.html#combined" class="tsd-signature-type">combined</a><span class="tsd-signature-symbol"> = SortMode.combined</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L155">src/store/filter.ts:155</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="defaultoptions.sortby" class="tsd-anchor"></a>
+						<h3>sort<wbr>By</h3>
+						<div class="tsd-signature tsd-kind-icon">sort<wbr>By<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"distance"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"variance"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"compactness"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"lunchTime"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"noEarly"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"similarity"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>exclusive<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">"distance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"variance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"compactness"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lunchTime"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"noEarly"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol">; </span>title<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [{name: &#x27;distance&#x27;,enabled: true,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;Walking Distance&#x27;,description: &#x27;Avoid long distance walking between classes&#x27;},{name: &#x27;variance&#x27;,enabled: true,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;Variance&#x27;,description: &#x27;Balance the class time each day&#x27;},{name: &#x27;compactness&#x27;,enabled: false,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;Vertical compactness&#x27;,description: &#x27;Make classes back-to-back&#x27;},{name: &#x27;lunchTime&#x27;,enabled: false,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;Lunch Time&#x27;,description: &#x27;Leave spaces for lunch&#x27;},{name: &#x27;noEarly&#x27;,enabled: false,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;No Early&#x27;,description: &#x27;Start my day as late as possible&#x27;},{name: &#x27;similarity&#x27;,enabled: false,reverse: false,weight: 1,exclusive: [&#x27;IamFeelingLucky&#x27;],title: &#x27;Similarity&#x27;,description: &#x27;Similar to a selected schedule&#x27;},{name: &#x27;IamFeelingLucky&#x27;,enabled: false,reverse: false,weight: 1,exclusive: [&#x27;variance&#x27;, &#x27;compactness&#x27;, &#x27;lunchTime&#x27;, &#x27;noEarly&#x27;, &#x27;distance&#x27;],title: &#x60;I&#x27;m Feeling Lucky&#x60;,description: &#x27;Sort randomly&#x27;}]</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L90">src/store/filter.ts:90</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="defaultoptions.fromjson" class="tsd-anchor"></a>
+						<h3>fromJSON</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<li class="tsd-signature tsd-kind-icon">fromJSON<span class="tsd-signature-symbol">(</span>raw<span class="tsd-signature-symbol">?: </span><a href="../interfaces/src_algorithm.evaluatoroptions.html" class="tsd-signature-type">EvaluatorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-signature-type">DetailedEvaluatorOptions</a></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L167">src/store/filter.ts:167</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> raw: <a href="../interfaces/src_algorithm.evaluatoroptions.html" class="tsd-signature-type">EvaluatorOptions</a></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-signature-type">DetailedEvaluatorOptions</a></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="defaultoptions.tojson" class="tsd-anchor"></a>
+						<h3>toJSON</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal tsd-is-not-exported">
+							<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/src_algorithm.sortmode.html" class="tsd-signature-type">SortMode</a><span class="tsd-signature-symbol">; </span>sortBy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"variance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"compactness"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lunchTime"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"noEarly"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"distance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"similarity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/filter.ts#L156">src/store/filter.ts:156</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>mode<span class="tsd-signature-symbol">: </span><a href="../enums/src_algorithm.sortmode.html" class="tsd-signature-type">SortMode</a><span class="tsd-signature-symbol">; </span>sortBy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"variance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"compactness"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lunchTime"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"noEarly"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"distance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"similarity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>mode<span class="tsd-signature-symbol">: </span><a href="../enums/src_algorithm.sortmode.html" class="tsd-signature-type">SortMode</a></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>sort<wbr>By<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>enabled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"variance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"compactness"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"lunchTime"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"noEarly"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"distance"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"similarity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"IamFeelingLucky"</span><span class="tsd-signature-symbol">; </span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>weight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">[]</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src.html">src</a>
+					</li>
+					<li class=" tsd-kind-namespace tsd-is-not-exported">
+						<a href="src.html">src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_app.html">src/<wbr>App</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_algorithm.html">src/algorithm</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_components.html">src/components</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_components_tabs.html">src/components/tabs</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_config.html">src/config</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_data.html">src/data</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_main.html">src/main</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_models.html">src/models</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_routes.html">src/routes</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="src_store.html">src/store</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_utils.html">src/utils</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="src_workers.html">src/workers</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="src_store.html#semesterstorage" class="tsd-kind-icon">Semester<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="src_store.html#storemodule" class="tsd-kind-icon">Store<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="src_store.html#compressjson" class="tsd-kind-icon">compressJSON</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="src_store.html#parsefromurl" class="tsd-kind-icon">parse<wbr>FromURL</a>
+					</li>
+					<li class=" tsd-kind-reference tsd-parent-kind-module">
+						<a href="src_store.html#savestatus" class="tsd-kind-icon">save<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.display.html" class="tsd-kind-icon">Display</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.filterstore.html" class="tsd-kind-icon">Filter<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.modal.html" class="tsd-kind-icon">Modal</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.notification.html" class="tsd-kind-icon">Notification</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.palette.html" class="tsd-kind-icon">Palette</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.profile.html" class="tsd-kind-icon">Profile</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.schedulestore.html" class="tsd-kind-icon">Schedule<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.semesters.html" class="tsd-kind-icon">Semesters</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.status.html" class="tsd-kind-icon">Status</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.store.html" class="tsd-kind-icon">Store</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_store.watchfactory.html" class="tsd-kind-icon">Watch<wbr>Factory</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.ancientstorage.html" class="tsd-kind-icon">Ancient<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendbaseresponse.html" class="tsd-kind-icon">Backend<wbr>Base<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backenddeleterequest.html" class="tsd-kind-icon">Backend<wbr>Delete<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backenddeleteresponse.html" class="tsd-kind-icon">Backend<wbr>Delete<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendfailedresponse.html" class="tsd-kind-icon">Backend<wbr>Failed<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendlistitem.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendlistrequest.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendlistresponse.html" class="tsd-kind-icon">Backend<wbr>List<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendprofile.html" class="tsd-kind-icon">Backend<wbr>Profile</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendrenamerequest.html" class="tsd-kind-icon">Backend<wbr>Rename<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backendrenameresponse.html" class="tsd-kind-icon">Backend<wbr>Rename<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backenduploadrequest.html" class="tsd-kind-icon">Backend<wbr>Upload<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.backenduploadresponse.html" class="tsd-kind-icon">Backend<wbr>Upload<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.comparecandidate.html" class="tsd-kind-icon">Compare<wbr>Candidate</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.detailedevaluatoroptions.html" class="tsd-kind-icon">Detailed<wbr>Evaluator<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.detailedsortoption.html" class="tsd-kind-icon">Detailed<wbr>Sort<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.displaystate.html" class="tsd-kind-icon">Display<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.filterstate.html" class="tsd-kind-icon">Filter<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.filterstatebase.html" class="tsd-kind-icon">Filter<wbr>State<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.filterstatejson.html" class="tsd-kind-icon">Filter<wbr>StateJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.legacyschedulejson.html" class="tsd-kind-icon">Legacy<wbr>ScheduleJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.legacystorage.html" class="tsd-kind-icon">Legacy<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.localprofileentry.html" class="tsd-kind-icon">Local<wbr>Profile<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.notiitem.html" class="tsd-kind-icon">Noti<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../interfaces/src_store.notimsg.html" class="tsd-kind-icon">Noti<wbr>Msg</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.notistate.html" class="tsd-kind-icon">Noti<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.palettestate.html" class="tsd-kind-icon">Palette<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.profileversion.html" class="tsd-kind-icon">Profile<wbr>Version</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.schedulestate.html" class="tsd-kind-icon">Schedule<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.schedulestatebase.html" class="tsd-kind-icon">Schedule<wbr>State<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.schedulestatejson.html" class="tsd-kind-icon">Schedule<wbr>StateJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.semesterstate.html" class="tsd-kind-icon">Semester<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/src_store.semesterstorage-1.html" class="tsd-kind-icon">Semester<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.sidebarstatus.html" class="tsd-kind-icon">Sidebar<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../interfaces/src_store.sidebars.html" class="tsd-kind-icon">Sidebars</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../interfaces/src_store.storageitem.html" class="tsd-kind-icon">Storage<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#consolelevel" class="tsd-kind-icon">Console<wbr>Level</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="src_store.html#displayjsonshort" class="tsd-kind-icon">DisplayJSONShort</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#noticlass" class="tsd-kind-icon">Noti<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="src_store.html#storemodule-1" class="tsd-kind-icon">Store<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="src_store.html#timeslot" class="tsd-kind-icon">Time<wbr>Slot</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="src_store.html#timeslotshort" class="tsd-kind-icon">Time<wbr>Slot<wbr>Short</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#clas" class="tsd-kind-icon">CLAS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#cons" class="tsd-kind-icon">CONS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#levels" class="tsd-kind-icon">LEVELS</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#compare" class="tsd-kind-icon">compare</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#pendingstatussave" class="tsd-kind-icon">pending<wbr>Status<wbr>Save</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#_savestatus" class="tsd-kind-icon">_save<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#bound" class="tsd-kind-icon">bound</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="src_store.html#compressjson-1" class="tsd-kind-icon">compressJSON</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#getdefaultoptions" class="tsd-kind-icon">get<wbr>Default<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#isancient" class="tsd-kind-icon">is<wbr>Ancient</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#islegacy" class="tsd-kind-icon">is<wbr>Legacy</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="src_store.html#parsefromurl-1" class="tsd-kind-icon">parse<wbr>FromURL</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="src_store.html#savestatus-1" class="tsd-kind-icon">save<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_store.html#defaultoptions" class="tsd-kind-icon">default<wbr>Options</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
