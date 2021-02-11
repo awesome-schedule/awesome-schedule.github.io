@@ -104,23 +104,13 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#background" class="tsd-kind-icon">background</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#duration" class="tsd-kind-icon">duration</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#end" class="tsd-kind-icon">end</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#endmin" class="tsd-kind-icon">end<wbr>Min</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#foreground" class="tsd-kind-icon">foreground</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#foregroundlight" class="tsd-kind-icon">foreground<wbr>Light</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#left" class="tsd-kind-icon">left</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#meeting" class="tsd-kind-icon">meeting</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#section" class="tsd-kind-icon">section</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#start" class="tsd-kind-icon">start</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#startmin" class="tsd-kind-icon">start<wbr>Min</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#strong" class="tsd-kind-icon">strong</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_models.scheduleblock.html#width" class="tsd-kind-icon">width</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_models.scheduleblock.html#conflict" class="tsd-kind-icon">conflict</a></li>
 							</ul>
 						</section>
 					</div>
@@ -132,13 +122,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Schedule<wbr>Block<span class="tsd-signature-symbol">(</span>background<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, section<span class="tsd-signature-symbol">: </span><a href="src_models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><a href="src_models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol"> | </span><a href="src_models.event.html" class="tsd-signature-type">Event</a>, foreground<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, foregroundLight<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="src_models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Schedule<wbr>Block<span class="tsd-signature-symbol">(</span>background<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startMin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endMin<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, section<span class="tsd-signature-symbol">: </span><a href="src_models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><a href="src_models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol"> | </span><a href="src_models.event.html" class="tsd-signature-type">Event</a>, meeting<span class="tsd-signature-symbol">?: </span><a href="../interfaces/src_models.meeting.html" class="tsd-signature-type">Meeting</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="src_models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L39">src/models/ScheduleBlock.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L32">src/models/ScheduleBlock.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -154,18 +144,18 @@
 									</div>
 								</li>
 								<li>
-									<h5>start: <span class="tsd-signature-type">string</span></h5>
+									<h5>startMin: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>start time in 24hr format: <code>13:00</code></p>
+											<p>start time of this block, in minutes from 00:00</p>
 										</div>
 									</div>
 								</li>
 								<li>
-									<h5>end: <span class="tsd-signature-type">string</span></h5>
+									<h5>endMin: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
-											<p>end time in 24hr format: <code>15:00</code></p>
+											<p>end time of this block, in minutes from 00:00</p>
 										</div>
 									</div>
 								</li>
@@ -178,10 +168,12 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> foreground: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;#fff&quot;</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> foregroundLight: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;#eee&quot;</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> meeting: <a href="../interfaces/src_models.meeting.html" class="tsd-signature-type">Meeting</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>if <code>section</code> is a Course/Section, this is an instance of <a href="../interfaces/src_models.meeting.html">Meeting</a>, otherwise undefined</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="src_models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a></h4>
@@ -197,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">background<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L48">src/models/ScheduleBlock.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L42">src/models/ScheduleBlock.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -207,77 +199,47 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="duration" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> duration</h3>
-					<div class="tsd-signature tsd-kind-icon">duration<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L24">src/models/ScheduleBlock.ts:24</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>duration of the block, in minutes</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="end" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> end</h3>
-					<div class="tsd-signature tsd-kind-icon">end<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L50">src/models/ScheduleBlock.ts:50</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>end time in 24hr format: <code>15:00</code></p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="endmin" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> end<wbr>Min</h3>
 					<div class="tsd-signature tsd-kind-icon">end<wbr>Min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L39">src/models/ScheduleBlock.ts:39</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="foreground" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> foreground</h3>
-					<div class="tsd-signature tsd-kind-icon">foreground<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L52">src/models/ScheduleBlock.ts:52</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="foregroundlight" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> foreground<wbr>Light</h3>
-					<div class="tsd-signature tsd-kind-icon">foreground<wbr>Light<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L53">src/models/ScheduleBlock.ts:53</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="left" class="tsd-anchor"></a>
-					<h3>left</h3>
-					<div class="tsd-signature tsd-kind-icon">left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L28">src/models/ScheduleBlock.ts:28</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L44">src/models/ScheduleBlock.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the left of the block relative to the column, a decimal between 0 and 1</p>
+							<p>end time of this block, in minutes from 00:00</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="left" class="tsd-anchor"></a>
+					<h3>left</h3>
+					<div class="tsd-signature tsd-kind-icon">left<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1.0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L24">src/models/ScheduleBlock.ts:24</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the relative distance of the block to the column&#39;s left border, a decimal between 0 and 1</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="meeting" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> meeting</h3>
+					<div class="tsd-signature tsd-kind-icon">meeting<span class="tsd-signature-symbol">:</span> <a href="../interfaces/src_models.meeting.html" class="tsd-signature-type">Meeting</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L46">src/models/ScheduleBlock.ts:46</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>if <code>section</code> is a Course/Section, this is an instance of <a href="../interfaces/src_models.meeting.html">Meeting</a>, otherwise undefined</p>
 						</div>
 					</div>
 				</section>
@@ -287,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">section<span class="tsd-signature-symbol">:</span> <a href="src_models.section.html" class="tsd-signature-type">Section</a><span class="tsd-signature-symbol"> | </span><a href="src_models.course.html" class="tsd-signature-type">Course</a><span class="tsd-signature-symbol"> | </span><a href="src_models.event.html" class="tsd-signature-type">Event</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L51">src/models/ScheduleBlock.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L45">src/models/ScheduleBlock.ts:45</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -297,29 +259,19 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="start" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> start</h3>
-					<div class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L49">src/models/ScheduleBlock.ts:49</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>start time in 24hr format: <code>13:00</code></p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="startmin" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> start<wbr>Min</h3>
 					<div class="tsd-signature tsd-kind-icon">start<wbr>Min<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L38">src/models/ScheduleBlock.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L43">src/models/ScheduleBlock.ts:43</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>start time of this block, in minutes from 00:00</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="strong" class="tsd-anchor"></a>
@@ -327,7 +279,7 @@
 					<div class="tsd-signature tsd-kind-icon">strong<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L36">src/models/ScheduleBlock.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L32">src/models/ScheduleBlock.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -339,54 +291,17 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="width" class="tsd-anchor"></a>
 					<h3>width</h3>
-					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1.0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L32">src/models/ScheduleBlock.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/models/ScheduleBlock.ts#L28">src/models/ScheduleBlock.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the width of the block relative to the column, a decimal between 0 and 1</p>
+							<p>the width of the block relative to the column width, a decimal between 0 and 1</p>
 						</div>
 					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="conflict" class="tsd-anchor"></a>
-					<h3>conflict</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">conflict<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="src_models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a>, includeEnd<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/models/ScheduleBlock.ts#L65">src/models/ScheduleBlock.ts:65</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>returns whether this block has conflict with another block</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>other: <a href="src_models.scheduleblock.html" class="tsd-signature-type">ScheduleBlock</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> includeEnd: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>whether to treat end-point touch as conflict</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -472,28 +387,16 @@
 								<a href="src_models.scheduleblock.html#background" class="tsd-kind-icon">background</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#duration" class="tsd-kind-icon">duration</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#end" class="tsd-kind-icon">end</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_models.scheduleblock.html#endmin" class="tsd-kind-icon">end<wbr>Min</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#foreground" class="tsd-kind-icon">foreground</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#foregroundlight" class="tsd-kind-icon">foreground<wbr>Light</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_models.scheduleblock.html#left" class="tsd-kind-icon">left</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#section" class="tsd-kind-icon">section</a>
+								<a href="src_models.scheduleblock.html#meeting" class="tsd-kind-icon">meeting</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#start" class="tsd-kind-icon">start</a>
+								<a href="src_models.scheduleblock.html#section" class="tsd-kind-icon">section</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_models.scheduleblock.html#startmin" class="tsd-kind-icon">start<wbr>Min</a>
@@ -503,9 +406,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_models.scheduleblock.html#width" class="tsd-kind-icon">width</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="src_models.scheduleblock.html#conflict" class="tsd-kind-icon">conflict</a>
 							</li>
 						</ul>
 					</li>
@@ -532,9 +432,6 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/src_models.schedulejson.html" class="tsd-kind-icon">ScheduleJSON</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../interfaces/src_models.searchworker.html" class="tsd-kind-icon">Search<wbr>Worker</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/src_models.sectionfields.html" class="tsd-kind-icon">Section<wbr>Fields</a>
 					</li>
@@ -557,7 +454,13 @@
 						<a href="../modules/src_models.html#eventjson" class="tsd-kind-icon">EventJSON</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/src_models.html#scheduledays" class="tsd-kind-icon">Schedule<wbr>Days</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/src_models.html#searchmatch" class="tsd-kind-icon">Search<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_models.html#searchresult" class="tsd-kind-icon">Search<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/src_models.html#searchworkerresult" class="tsd-kind-icon">Search<wbr>Worker<wbr>Result</a>
@@ -614,7 +517,6 @@
 				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>

@@ -72,10 +72,10 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>represents all courses in a schedule, stored as <code>(key, set of sections)</code> pair</p>
+						<p>represents all courses in a schedule, usually stored as <code>(key, array of set of sections)</code> pair</p>
 					</div>
-					<p>Note that if <strong>section</strong> is -1, it means that all sections are allowed.
-					Otherwise, <strong>section</strong> should be a Set/array of object corresponding to each section</p>
+					<p>If <strong>section</strong> is -1, it means that all sections are allowed.
+					Otherwise, <strong>section</strong> should be an array of groups, and each group should be an array/set of sections</p>
 					<dl class="tsd-comment-tags">
 						<dt>remarks</dt>
 						<dd><p>This field is called <code>All</code> (yes, with the first letter capitalized) due to historical reasons</p>
@@ -87,11 +87,11 @@
 				<h3>Type parameters</h3>
 				<ul class="tsd-type-parameters">
 					<li>
-						<h4>T</h4>
+						<h4>T = <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
 								<p>the type of the container used for the set of sections.
-								By default, this is a set of numbers, corresponding to the <code>id</code> field of each section</p>
+								By default, this is a array of set of numbers, corresponding to the <code>id</code> field of each section</p>
 							</div>
 						</div>
 					</li>
@@ -110,10 +110,10 @@
 				<div class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">[</span>courseKey: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></div>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>represents all courses in a schedule, stored as <code>(key, set of sections)</code> pair</p>
+						<p>represents all courses in a schedule, usually stored as <code>(key, array of set of sections)</code> pair</p>
 					</div>
-					<p>Note that if <strong>section</strong> is -1, it means that all sections are allowed.
-					Otherwise, <strong>section</strong> should be a Set/array of object corresponding to each section</p>
+					<p>If <strong>section</strong> is -1, it means that all sections are allowed.
+					Otherwise, <strong>section</strong> should be an array of groups, and each group should be an array/set of sections</p>
 					<dl class="tsd-comment-tags">
 						<dt>remarks</dt>
 						<dd><p>This field is called <code>All</code> (yes, with the first letter capitalized) due to historical reasons</p>
@@ -220,9 +220,6 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="src_models.schedulejson.html" class="tsd-kind-icon">ScheduleJSON</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="src_models.searchworker.html" class="tsd-kind-icon">Search<wbr>Worker</a>
-					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="src_models.sectionfields.html" class="tsd-kind-icon">Section<wbr>Fields</a>
 					</li>
@@ -245,7 +242,13 @@
 						<a href="../modules/src_models.html#eventjson" class="tsd-kind-icon">EventJSON</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/src_models.html#scheduledays" class="tsd-kind-icon">Schedule<wbr>Days</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/src_models.html#searchmatch" class="tsd-kind-icon">Search<wbr>Match</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_models.html#searchresult" class="tsd-kind-icon">Search<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/src_models.html#searchworkerresult" class="tsd-kind-icon">Search<wbr>Worker<wbr>Result</a>

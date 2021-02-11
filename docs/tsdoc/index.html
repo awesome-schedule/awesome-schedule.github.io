@@ -96,7 +96,7 @@
 				</a>
 				<p><a href="https://plannable.org/">https://plannable.org/</a></p>
 				<p>Our website consists of only front-end components, i.e. all the scripts run in your browser and data are stored locally. It fetches data from <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou&#39;s list</a> on page load and store it in browser cache.</p>
-				<p>However, optional backend storage features are available. Users can choose to login to a third-party website and stores their plannable profiles. This enables cross-device profile syncing. We currently support <a href="https://match.msnatuva.org">Hoosmyprofessor</a>. If you wish to provide such service, please refer to our <a href="./docs/Backend%20Specification.md">backend specification</a> for more details. </p>
+				<p>However, optional backend storage features are available. Users can choose to login to a third-party website and store their plannable profiles. This enables cross-device profile syncing. We currently support <a href="https://match.msnatuva.org">Hoosmyprofessor</a>. If you wish to provide such service, please refer to our <a href="./docs/Backend%20Specification.md">backend specification</a> for more details.</p>
 				<a href="#mirror" id="mirror" style="color: inherit; text-decoration: none;">
 					<h2>Mirror</h2>
 				</a>
@@ -107,11 +107,11 @@
 				<blockquote>
 					<p>powered by electron</p>
 				</blockquote>
-				<p>The desktop app of plannable can be downloaded from <a href="https://github.com/awesome-schedule/plannable/releases">releases</a>. </p>
+				<p>The desktop app of plannable can be downloaded from <a href="https://github.com/awesome-schedule/plannable/releases">releases</a>.</p>
 				<a href="#note-for-windows-and-macos-users" id="note-for-windows-and-macos-users" style="color: inherit; text-decoration: none;">
 					<h3>Note for Windows and MacOS users</h3>
 				</a>
-				<p>Your operating system may block the execution of the app because it is unrecognized/unsigned. We do not have the signed certificates which cost at least 200$ per year. You can proceed safely because there is no security risk. </p>
+				<p>Your operating system may block the execution of the app because it is unrecognized/unsigned. We do not have the signed certificates which cost at least 200$ per year. You can proceed safely because there is no security risk.</p>
 				<a href="#note-for-linux-users" id="note-for-linux-users" style="color: inherit; text-decoration: none;">
 					<h3>Note for Linux users</h3>
 				</a>
@@ -123,38 +123,45 @@
 					<h2>Development</h2>
 				</a>
 				<blockquote>
-					<p>Note: We recommend <a href="https://code.visualstudio.com/">VS Code</a> for development</p>
+					<p>Note: We recommend <a href="https://code.visualstudio.com/">VS Code</a> and a Unix-like environment for development</p>
 				</blockquote>
+				<a href="#note-for-windows-users" id="note-for-windows-users" style="color: inherit; text-decoration: none;">
+					<h3>Note for Windows users</h3>
+				</a>
+				<p>Most of our scripts assumed a bash-like shell. If you&#39;re using windows, you can use git bash, cygwin, or WSL bash shell. Make sure to change npm&#39;s default shell by using</p>
+				<pre><code class="language-bash">npm config <span class="hljs-built_in">set</span> script-shell YOURSHELL</code></pre>
 				<a href="#install-dependencies-and-launch-development-server" id="install-dependencies-and-launch-development-server" style="color: inherit; text-decoration: none;">
 					<h3>Install Dependencies and Launch Development Server</h3>
 				</a>
+				<blockquote>
+					<p>On Linux, you may need to increase you system file watcher limit</p>
+				</blockquote>
 				<ul>
-					<li>Node.js &gt;= 10.16</li>
+					<li>  Node.js &gt;= 12.x</li>
 				</ul>
-				<p>Clone the repository and update data. The <code>updatedata</code> script will automatically clone <code>https://github.com/awesome-schedule/data</code> into <code>scripts</code> so the data can be access locally. </p>
+				<p>Clone the repository. The <code>updatedata</code> script will automatically clone <code>https://github.com/awesome-schedule/data</code> into <code>scripts</code> so the data (e.g. course catalog) can be access locally. The <code>getwasm</code> script will clone the pre-build wasm binary. Note that if you want to build wasm yourself, please refer to the Build WASM section below.</p>
 				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable
-npm run updatedata</code></pre>
-				<p>Install Vue cli and other dependencies. Then, launch the development server</p>
-				<pre><code class="language-bash">npm install -g @vue/cli
-npm install
+npm run updatedata
+npm run getwasm</code></pre>
+				<p>Install dependencies and launch the development server</p>
+				<pre><code class="language-bash">npm install
 npm run serve</code></pre>
-				<p>You need to serve the static files in scripts/data, because we only load local data in local development mode. To do so, open a new terminal and run</p>
-				<pre><code class="language-bash">npm run data</code></pre>
-				<p>in the project root, which will open a static http server listening to port <code>8000</code> with cross origin headers. This static server must run on <code>localhost:8000</code>. </p>
+				<p>You need to serve the static files in scripts/data, because we only load local data in local development mode. To do so, open a new terminal and run <code>npm run data</code>. This will open a static http server listening to port <code>8000</code> with cross origin headers. This static server must run on <code>localhost:8000</code>.</p>
 				<p>Then you can visit the development server shown in the terminal.</p>
 				<a href="#build-desktop-app" id="build-desktop-app" style="color: inherit; text-decoration: none;">
 					<h3>Build Desktop App</h3>
 				</a>
-				<p>You can use <code>npx electron .</code> to launch the native application powered by electron. </p>
-				<p>You can use <code>npx electron-builder --win</code> (or <code>--mac</code>, <code>--linux</code>) to build the native executable for your platform. </p>
-				<a href="#built-with" id="built-with" style="color: inherit; text-decoration: none;">
-					<h2>Built With</h2>
+				<p>You can use <code>npx electron .</code> to launch the native application powered by electron.</p>
+				<p>You can use <code>npx electron-builder --win</code> (or <code>--mac</code>, <code>--linux</code>) to build the native executable for your platform.</p>
+				<a href="#build-wasm" id="build-wasm" style="color: inherit; text-decoration: none;">
+					<h3>Build WASM</h3>
 				</a>
-				<ul>
-					<li><a href="https://www.typescriptlang.org">TypeScript</a></li>
-					<li><a href="https://vuejs.org">Vue.js</a></li>
-					<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
-				</ul>
+				<p>Make sure that you have <a href="https://emscripten.org/docs/getting_started/downloads.html">Emscripten</a> installed. Also make sure that emsdk_env.sh is sourced before running the following scripts.</p>
+				<p>Before you can build the binary, you need to compile GLPK first. This only needs to be done once.</p>
+				<pre><code class="language-bash">npm run getglpk</code></pre>
+				<p>Then, each time you modify any cpp file, you can simply do</p>
+				<pre><code class="language-bash">npm run wasm -- dev</code></pre>
+				<p>to build the wasm binary and js glue code, which will be moved to public/js.</p>
 				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
 					<h2>Contributors</h2>
 				</a>
@@ -169,12 +176,12 @@ npm run serve</code></pre>
 				<p>Some efforts have been made to make it easier to integrate plannable with other universities. If you want to use plannable to create course-scheduling websites for other universities, you probably need to:</p>
 				<ol>
 					<li>Fork this repository</li>
-					<li>Overwrite src/config.ts with your custom configuration. See src/config.example.ts for reference</li>
+					<li>Overwrite src/config.ts with your custom configuration. See <a href="src/config.example.ts">src/config.example.ts</a> for reference</li>
 					<li>Write your custom data loader that returns the correct objects in config.ts</li>
-					<li>Make some tweaks to the source code in other places if needed. </li>
+					<li>Make some tweaks to the source code in other places if needed.</li>
 					<li>Build and deploy to some other places</li>
 				</ol>
-				<p>If you have questions when integrating plannable with other schools or want to deploy your favor of plannable to a subdomain of plannable (e.g. yourschool.plannable.org), feel free to contact us by GitHub issue or email. </p>
+				<p>If you have questions when integrating plannable with other schools or want to deploy your favor of plannable to a subdomain of plannable (e.g. yourschool.plannable.org), feel free to contact us by GitHub issue or email.</p>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>

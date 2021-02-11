@@ -89,6 +89,7 @@
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_data.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_data.coursetableitem.html" class="tsd-kind-icon">Course<wbr>Table<wbr>Item</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module"><a href="../interfaces/src_data.expirable.html" class="tsd-kind-icon">Expirable</a></li>
+								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter"><a href="../interfaces/src_data.fallbackable.html" class="tsd-kind-icon">Fall<wbr>Backable</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_data.fallbackoptions.html" class="tsd-kind-icon">Fallback<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported"><a href="../interfaces/src_data.loaderoptions.html" class="tsd-kind-icon">Loader<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported"><a href="../interfaces/src_data.semesterlistjson.html" class="tsd-kind-icon">Semester<wbr>ListJSON</a></li>
@@ -126,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">Section<wbr>Table<wbr>Item<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Omit</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_models.sectionfields.html" class="tsd-signature-type">SectionFields</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"course"</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/CatalogDB.ts#L19">src/data/CatalogDB.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/CatalogDB.ts#L19">src/data/CatalogDB.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -143,7 +144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L153">src/data/Loader.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L13">src/data/Loader.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -166,18 +167,18 @@
 					<a name="fallback" class="tsd-anchor"></a>
 					<h3>fallback</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">fallback&lt;T, P&gt;<span class="tsd-signature-symbol">(</span>temp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span>, __namedParameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>succMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>timeoutTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>errMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>warnMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fallback&lt;T&gt;<span class="tsd-signature-symbol">(</span>temp<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, __namedParameters<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">{ </span>succMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>timeoutTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>errMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>warnMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_store.notimsg.html" class="tsd-signature-type">NotiMsg</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L128">src/data/Loader.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L140">src/data/Loader.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Await the promise on temp.new (represents a pending request to load new data) to resolve. If timed out, return the old data on temp.old.</p>
+									<p>Await the promise on temp.new to resolve. If timed out, return the old data on temp.old.</p>
 								</div>
 							</div>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -185,24 +186,13 @@
 								<li>
 									<h4>T</h4>
 								</li>
-								<li>
-									<h4>P<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>temp: <span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>temp: <a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter">
-											<h5>new<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a></h5>
-										</li>
-									</ul>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> __namedParameters: <span class="tsd-signature-symbol">{ </span>succMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>timeoutTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>errMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>warnMsg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> = {}</span></h5>
@@ -222,7 +212,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L130">src/data/Loader.ts:130</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L142">src/data/Loader.ts:142</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -244,7 +234,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L130">src/data/Loader.ts:130</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L142">src/data/Loader.ts:142</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/BuildingLoader.ts#L68">src/data/BuildingLoader.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/BuildingLoader.ts#L68">src/data/BuildingLoader.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,13 +291,13 @@
 					<a name="loadfromcache" class="tsd-anchor"></a>
 					<h3>load<wbr>From<wbr>Cache</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>From<wbr>Cache&lt;T, T_JSON&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, construct<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>expireTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol">; </span>parse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>store<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>From<wbr>Cache&lt;T, T_JSON&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, request<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, construct<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">T</span>, __namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>expireTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>force<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>validator<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">x</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">T_JSON</span><span class="tsd-signature-symbol">; </span>parse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>store<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L72">src/data/Loader.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L84">src/data/Loader.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -425,7 +415,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L78">src/data/Loader.ts:78</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L90">src/data/Loader.ts:90</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -447,7 +437,7 @@
 												<li class="tsd-description">
 													<aside class="tsd-sources">
 														<ul>
-															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Loader.ts#L79">src/data/Loader.ts:79</a></li>
+															<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L91">src/data/Loader.ts:91</a></li>
 														</ul>
 													</aside>
 													<h4 class="tsd-parameters-title">Parameters</h4>
@@ -463,15 +453,7 @@
 									</ul>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a><span class="tsd-signature-symbol"> }</span></h4>
-							<ul class="tsd-parameters">
-								<li class="tsd-parameter">
-									<h5>new<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li class="tsd-parameter">
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> old<span class="tsd-signature-symbol">?: </span><a href="" class="tsd-signature-type">T</a></h5>
-								</li>
-							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -479,13 +461,13 @@
 					<a name="loadsemesterdata" class="tsd-anchor"></a>
 					<h3>load<wbr>Semester<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">load<wbr>Semester<wbr>Data<span class="tsd-signature-symbol">(</span>semester<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_models.semesterjson.html" class="tsd-signature-type">SemesterJSON</a>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">load<wbr>Semester<wbr>Data<span class="tsd-signature-symbol">(</span>semester<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_models.semesterjson.html" class="tsd-signature-type">SemesterJSON</a>, force<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/CatalogLoader.ts#L28">src/data/CatalogLoader.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/CatalogLoader.ts#L88">src/data/CatalogLoader.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -510,7 +492,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>new<span class="tsd-signature-symbol">: </span><a href="../interfaces/src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>old<span class="tsd-signature-symbol">?: </span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_utils.cancelablepromise-2.html#promise" class="tsd-signature-type">Promise</a><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/src_data.fallbackable.html" class="tsd-signature-type">FallBackable</a><span class="tsd-signature-symbol">&lt;</span><a href="../classes/src_models.catalog.html" class="tsd-signature-type">Catalog</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -524,7 +506,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/SemesterListLoader.ts#L25">src/data/SemesterListLoader.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/SemesterListLoader.ts#L25">src/data/SemesterListLoader.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -554,7 +536,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/BuildingLoader.ts#L30">src/data/BuildingLoader.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/BuildingLoader.ts#L30">src/data/BuildingLoader.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -585,7 +567,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/CatalogLoader.ts#L77">src/data/CatalogLoader.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/CatalogLoader.ts#L35">src/data/CatalogLoader.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -608,7 +590,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/CatalogLoader.ts#L61">src/data/CatalogLoader.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/CatalogLoader.ts#L19">src/data/CatalogLoader.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -689,6 +671,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/src_data.expirable.html" class="tsd-kind-icon">Expirable</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../interfaces/src_data.fallbackable.html" class="tsd-kind-icon">Fall<wbr>Backable</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../interfaces/src_data.fallbackoptions.html" class="tsd-kind-icon">Fallback<wbr>Options</a>

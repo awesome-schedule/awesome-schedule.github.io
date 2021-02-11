@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SemesterStorage | plannable</title>
+	<title>FallBackable | plannable</title>
 	<meta name="description" content="Documentation for plannable">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/src_store.html">src/store</a>
+					<a href="../modules/src_data.html">src/data</a>
 				</li>
 				<li>
-					<a href="src_store.semesterstorage-1.html">SemesterStorage</a>
+					<a href="src_data.fallbackable.html">FallBackable</a>
 				</li>
 			</ul>
-			<h1>Interface SemesterStorage</h1>
+			<h1>Interface FallBackable&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -72,20 +72,23 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>the latest storage format of plannable</p>
+						<p>an object that can be used as the <code>temp</code> argument of the <a href="../modules/src_data.html#fallback">fallback</a> function</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="src_data.expirable.html" class="tsd-signature-type">Expirable</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">SemesterStorage</span>
-							</li>
-						</ul>
+						<span class="target">FallBackable</span>
 					</li>
 				</ul>
 			</section>
@@ -96,13 +99,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#currentsemester" class="tsd-kind-icon">current<wbr>Semester</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#display" class="tsd-kind-icon">display</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#filter" class="tsd-kind-icon">filter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="src_store.semesterstorage-1.html#modified" class="tsd-kind-icon">modified</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#palette" class="tsd-kind-icon">palette</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_store.semesterstorage-1.html#schedule" class="tsd-kind-icon">schedule</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_data.fallbackable.html#new" class="tsd-kind-icon">new</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="src_data.fallbackable.html#old" class="tsd-kind-icon">old</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,80 +109,34 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="currentsemester" class="tsd-anchor"></a>
-					<h3>current<wbr>Semester</h3>
-					<div class="tsd-signature tsd-kind-icon">current<wbr>Semester<span class="tsd-signature-symbol">:</span> <a href="src_models.semesterjson.html" class="tsd-signature-type">SemesterJSON</a></div>
+					<a name="new" class="tsd-anchor"></a>
+					<h3>new</h3>
+					<div class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">:</span> <a href="src_utils.cancelablepromise-2.html" class="tsd-signature-type">CancelablePromise</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L34">src/store/store.ts:34</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="display" class="tsd-anchor"></a>
-					<h3>display</h3>
-					<div class="tsd-signature tsd-kind-icon">display<span class="tsd-signature-symbol">:</span> <a href="src_store.displaystate.html" class="tsd-signature-type">DisplayState</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L35">src/store/store.ts:35</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="filter" class="tsd-anchor"></a>
-					<h3>filter</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">:</span> <a href="src_store.filterstatejson.html" class="tsd-signature-type">FilterStateJSON</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L36">src/store/store.ts:36</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="modified" class="tsd-anchor"></a>
-					<h3>modified</h3>
-					<div class="tsd-signature tsd-kind-icon">modified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="src_data.expirable.html">Expirable</a>.<a href="src_data.expirable.html#modified">modified</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/data/Expirable.ts#L13">src/data/Expirable.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L44">src/data/Loader.ts:44</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>the JSON representation of a Date object, representing the time when this expirable object is created</p>
+							<p>represents a pending request to load new data</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3>name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="old" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> old</h3>
+					<div class="tsd-signature tsd-kind-icon">old<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">T</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L33">src/store/store.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/data/Loader.ts#L46">src/data/Loader.ts:46</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="palette" class="tsd-anchor"></a>
-					<h3>palette</h3>
-					<div class="tsd-signature tsd-kind-icon">palette<span class="tsd-signature-symbol">:</span> <a href="src_store.palettestate.html" class="tsd-signature-type">PaletteState</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L38">src/store/store.ts:38</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="schedule" class="tsd-anchor"></a>
-					<h3>schedule</h3>
-					<div class="tsd-signature tsd-kind-icon">schedule<span class="tsd-signature-symbol">:</span> <a href="src_store.schedulestatejson.html" class="tsd-signature-type">ScheduleStateJSON</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/1058825/src/store/store.ts#L37">src/store/store.ts:37</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>represents already loaded old data (probably retrieved from cache)</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -215,7 +167,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/src_config.html">src/config</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/src_data.html">src/data</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -227,7 +179,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/src_routes.html">src/routes</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/src_store.html">src/store</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -240,36 +192,75 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/src_data.catalogdb.html" class="tsd-kind-icon">CatalogDB</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="src_data.buildinglistjson.html" class="tsd-kind-icon">Building<wbr>ListJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="src_data.coursetableitem.html" class="tsd-kind-icon">Course<wbr>Table<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="src_data.expirable.html" class="tsd-kind-icon">Expirable</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module">
-						<a href="src_store.semesterstorage-1.html" class="tsd-kind-icon">Semester<wbr>Storage</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="src_data.fallbackable.html" class="tsd-kind-icon">Fall<wbr>Backable</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#currentsemester" class="tsd-kind-icon">current<wbr>Semester</a>
+								<a href="src_data.fallbackable.html#new" class="tsd-kind-icon">new</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#display" class="tsd-kind-icon">display</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#filter" class="tsd-kind-icon">filter</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="src_store.semesterstorage-1.html#modified" class="tsd-kind-icon">modified</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#palette" class="tsd-kind-icon">palette</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="src_store.semesterstorage-1.html#schedule" class="tsd-kind-icon">schedule</a>
+								<a href="src_data.fallbackable.html#old" class="tsd-kind-icon">old</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_data.fallbackoptions.html" class="tsd-kind-icon">Fallback<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="src_data.loaderoptions.html" class="tsd-kind-icon">Loader<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="src_data.semesterlistjson.html" class="tsd-kind-icon">Semester<wbr>ListJSON</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="src_data.timematrixjson.html" class="tsd-kind-icon">Time<wbr>MatrixJSON</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/src_data.html#sectiontableitem" class="tsd-kind-icon">Section<wbr>Table<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/src_data.html#defaultvalidator" class="tsd-kind-icon">default<wbr>Validator</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/src_data.html#fallback" class="tsd-kind-icon">fallback</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/src_data.html#loadbuildingsearcher" class="tsd-kind-icon">load<wbr>Building<wbr>Searcher</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/src_data.html#loadfromcache" class="tsd-kind-icon">load<wbr>From<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/src_data.html#loadsemesterdata" class="tsd-kind-icon">load<wbr>Semester<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/src_data.html#loadsemesterlist" class="tsd-kind-icon">load<wbr>Semester<wbr>List</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/src_data.html#loadtimematrix" class="tsd-kind-icon">load<wbr>Time<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_data.html#retrievefromdb" class="tsd-kind-icon">retrieve<wbr>FromDB</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_data.html#savetodb" class="tsd-kind-icon">save<wbr>ToDB</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
