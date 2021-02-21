@@ -139,8 +139,8 @@
 				<ul>
 					<li>  Node.js &gt;= 12.x</li>
 				</ul>
-				<p>Clone the repository. The <code>updatedata</code> script will automatically clone <code>https://github.com/awesome-schedule/data</code> into <code>scripts</code> so the data (e.g. course catalog) can be access locally. The <code>getwasm</code> script will clone the pre-build wasm binary. Note that if you want to build wasm yourself, please refer to the Build WASM section below.</p>
-				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable
+				<p>Clone this repository. The <code>updatedata</code> script will automatically clone <code>https://github.com/awesome-schedule/data</code> into <code>scripts</code> so the data (e.g. course catalog) can be access locally. The <code>getwasm</code> script will clone the pre-build wasm binary. Note that if you want to build wasm yourself, please refer to the Build WASM section below.</p>
+				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable &amp;&amp; <span class="hljs-built_in">cd</span> plannable
 npm run updatedata
 npm run getwasm</code></pre>
 				<p>Install dependencies and launch the development server</p>
@@ -153,12 +153,15 @@ npm run serve</code></pre>
 				</a>
 				<p>You can use <code>npx electron .</code> to launch the native application powered by electron.</p>
 				<p>You can use <code>npx electron-builder --win</code> (or <code>--mac</code>, <code>--linux</code>) to build the native executable for your platform.</p>
-				<a href="#build-wasm" id="build-wasm" style="color: inherit; text-decoration: none;">
-					<h3>Build WASM</h3>
+				<a href="#build-webassembly-wasm" id="build-webassembly-wasm" style="color: inherit; text-decoration: none;">
+					<h3>Build WebAssembly (WASM)</h3>
 				</a>
+				<blockquote>
+					<p>Plannable utilizes WASM to speed up some of its compute-intensive part</p>
+				</blockquote>
 				<p>Make sure that you have <a href="https://emscripten.org/docs/getting_started/downloads.html">Emscripten</a> installed. Also make sure that emsdk_env.sh is sourced before running the following scripts.</p>
-				<p>Before you can build the binary, you need to compile GLPK first. This only needs to be done once.</p>
-				<pre><code class="language-bash">npm run getglpk</code></pre>
+				<p>Before you can build the binary, you need to download dependencies (parallel-hashmap and GLPK) and compile GLPK. This only needs to be done once, with the following script:</p>
+				<pre><code class="language-bash">npm run getdep</code></pre>
 				<p>Then, each time you modify any cpp file, you can simply do</p>
 				<pre><code class="language-bash">npm run wasm -- dev</code></pre>
 				<p>to build the wasm binary and js glue code, which will be moved to public/js.</p>
@@ -232,9 +235,6 @@ npm run serve</code></pre>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/src_utils.html">src/utils</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/src_workers.html">src/workers</a>
 					</li>
 				</ul>
 			</nav>

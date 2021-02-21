@@ -104,6 +104,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="src_store.detailedsortoption.html#description" class="tsd-kind-icon">description</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="src_store.detailedsortoption.html#enabled" class="tsd-kind-icon">enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="src_store.detailedsortoption.html#exclusive" class="tsd-kind-icon">exclusive</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="src_store.detailedsortoption.html#idx" class="tsd-kind-icon">idx</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="src_store.detailedsortoption.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported"><a href="src_store.detailedsortoption.html#reverse" class="tsd-kind-icon">reverse</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="src_store.detailedsortoption.html#title" class="tsd-kind-icon">title</a></li>
@@ -121,7 +122,7 @@
 					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/store/filter.ts#L55">src/store/filter.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/store/filter.ts#L55">src/store/filter.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,7 +138,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="src_algorithm.sortoption.html">SortOption</a>.<a href="src_algorithm.sortoption.html#enabled">enabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/ScheduleEvaluator.ts#L25">src/algorithm/ScheduleEvaluator.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/ScheduleEvaluator.ts#L30">src/algorithm/ScheduleEvaluator.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -149,10 +150,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 					<a name="exclusive" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> exclusive</h3>
-					<div class="tsd-signature tsd-kind-icon">exclusive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">keyof </span><a href="../modules/src_algorithm.html#sortfunctions" class="tsd-signature-type">SortFunctions</a><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">exclusive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><a href="../modules/src_algorithm.html#sortfunctionnames" class="tsd-signature-type">SortFunctionNames</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/store/filter.ts#L47">src/store/filter.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/store/filter.ts#L47">src/store/filter.ts:47</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -162,13 +163,29 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+					<a name="idx" class="tsd-anchor"></a>
+					<h3>idx</h3>
+					<div class="tsd-signature tsd-kind-icon">idx<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="src_algorithm.sortoption.html">SortOption</a>.<a href="src_algorithm.sortoption.html#idx">idx</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/ScheduleEvaluator.ts#L34">src/algorithm/ScheduleEvaluator.ts:34</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>a unique index for this sort option</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><a href="../modules/src_algorithm.html#sortfunctions" class="tsd-signature-type">SortFunctions</a></div>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <a href="../modules/src_algorithm.html#sortfunctionnames" class="tsd-signature-type">SortFunctionNames</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="src_algorithm.sortoption.html">SortOption</a>.<a href="src_algorithm.sortoption.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/ScheduleEvaluator.ts#L23">src/algorithm/ScheduleEvaluator.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/ScheduleEvaluator.ts#L28">src/algorithm/ScheduleEvaluator.ts:28</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,7 +201,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="src_algorithm.sortoption.html">SortOption</a>.<a href="src_algorithm.sortoption.html#reverse">reverse</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/ScheduleEvaluator.ts#L27">src/algorithm/ScheduleEvaluator.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/ScheduleEvaluator.ts#L32">src/algorithm/ScheduleEvaluator.ts:32</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/store/filter.ts#L51">src/store/filter.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/store/filter.ts#L51">src/store/filter.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -215,7 +232,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="src_algorithm.sortoption.html">SortOption</a>.<a href="src_algorithm.sortoption.html#weight">weight</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/ScheduleEvaluator.ts#L29">src/algorithm/ScheduleEvaluator.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/ScheduleEvaluator.ts#L36">src/algorithm/ScheduleEvaluator.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -271,9 +288,6 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/src_utils.html">src/utils</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/src_workers.html">src/workers</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -291,6 +305,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
 								<a href="src_store.detailedsortoption.html#exclusive" class="tsd-kind-icon">exclusive</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
+								<a href="src_store.detailedsortoption.html#idx" class="tsd-kind-icon">idx</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited tsd-is-not-exported">
 								<a href="src_store.detailedsortoption.html#name" class="tsd-kind-icon">name</a>

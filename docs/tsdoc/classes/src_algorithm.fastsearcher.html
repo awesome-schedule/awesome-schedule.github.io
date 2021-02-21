@@ -109,23 +109,15 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#data" class="tsd-kind-icon">data</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#idxoffsets" class="tsd-kind-icon">idx<wbr>Offsets</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#indices" class="tsd-kind-icon">indices</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#items" class="tsd-kind-icon">items</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#maxtokenlen" class="tsd-kind-icon">max<wbr>Token<wbr>Len</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#originals" class="tsd-kind-icon">originals</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#tokenids" class="tsd-kind-icon">token<wbr>Ids</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#uniquetokens" class="tsd-kind-icon">unique<wbr>Tokens</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#ptr" class="tsd-kind-icon">ptr</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#comparetwostrings" class="tsd-kind-icon">compare<wbr>Two<wbr>Strings</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="src_algorithm.fastsearcher.html#constructquerygrams" class="tsd-kind-icon">construct<wbr>Query<wbr>Grams</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#findbestmatch" class="tsd-kind-icon">find<wbr>Best<wbr>Match</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#swsearch" class="tsd-kind-icon">sWSearch</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#swsearchexact" class="tsd-kind-icon">sWSearch<wbr>Exact</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="src_algorithm.fastsearcher.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 							</ul>
 						</section>
@@ -138,26 +130,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Fast<wbr>Searcher<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, toStr<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="src_algorithm.fastsearcher.html" class="tsd-signature-type">FastSearcher</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Fast<wbr>Searcher<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, toStr<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="src_algorithm.fastsearcher.html" class="tsd-signature-type">FastSearcher</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L32">src/algorithm/Searcher.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L47">src/algorithm/Searcher.ts:47</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>the list of strings to search from</p>
-										</div>
-									</div>
+									<h5>items: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> toStr: <span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = x &#x3D;&gt; x as any</span></h5>
@@ -182,11 +167,6 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> data: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> = &#x27;&#x27; as any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>some arbitrary data that will be passed to each search result</p>
-										</div>
-									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="src_algorithm.fastsearcher.html" class="tsd-signature-type">FastSearcher</a></h4>
@@ -202,176 +182,60 @@
 					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">K</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L41">src/algorithm/Searcher.ts:41</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>some arbitrary data that will be passed to each search result</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="idxoffsets" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> idx<wbr>Offsets</h3>
-					<div class="tsd-signature tsd-kind-icon">idx<wbr>Offsets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint32Array</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L27">src/algorithm/Searcher.ts:27</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="indices" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> indices</h3>
-					<div class="tsd-signature tsd-kind-icon">indices<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint32Array</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L28">src/algorithm/Searcher.ts:28</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="items" class="tsd-anchor"></a>
-					<h3>items</h3>
-					<div class="tsd-signature tsd-kind-icon">items<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L39">src/algorithm/Searcher.ts:39</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>the list of strings to search from</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="maxtokenlen" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> max<wbr>Token<wbr>Len</h3>
-					<div class="tsd-signature tsd-kind-icon">max<wbr>Token<wbr>Len<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L32">src/algorithm/Searcher.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L51">src/algorithm/Searcher.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="originals" class="tsd-anchor"></a>
-					<h3>originals</h3>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> originals</h3>
 					<div class="tsd-signature tsd-kind-icon">originals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L25">src/algorithm/Searcher.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L45">src/algorithm/Searcher.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="tokenids" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> token<wbr>Ids</h3>
-					<div class="tsd-signature tsd-kind-icon">token<wbr>Ids<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint32Array</span></div>
+					<a name="ptr" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> ptr</h3>
+					<div class="tsd-signature tsd-kind-icon">ptr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L29">src/algorithm/Searcher.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L47">src/algorithm/Searcher.ts:47</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="uniquetokens" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> unique<wbr>Tokens</h3>
-					<div class="tsd-signature tsd-kind-icon">unique<wbr>Tokens<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L31">src/algorithm/Searcher.ts:31</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>internal pointer to the FastSearcher instance on WASM heap</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="comparetwostrings" class="tsd-anchor"></a>
-					<h3>compare<wbr>Two<wbr>Strings</h3>
+					<a name="findbestmatch" class="tsd-anchor"></a>
+					<h3>find<wbr>Best<wbr>Match</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">compare<wbr>Two<wbr>Strings<span class="tsd-signature-symbol">(</span>bigrams<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span>, freqCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint16Array</span>, first<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, second<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Best<wbr>Match<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L144">src/algorithm/Searcher.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L93">src/algorithm/Searcher.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Adapted from <a href="https://github.com/aceakash/string-similarity" class="external">https://github.com/aceakash/string-similarity</a>, with optimizations</p>
-								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>bigrams: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>freqCount: <span class="tsd-signature-type">Uint16Array</span></h5>
-								</li>
-								<li>
-									<h5>first: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>second: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="constructquerygrams" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> construct<wbr>Query<wbr>Grams</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">construct<wbr>Query<wbr>Grams<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, gramLen<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L91">src/algorithm/Searcher.ts:91</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>query: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>gramLen: <span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Uint16Array</span><span class="tsd-signature-symbol">]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findbestmatch" class="tsd-anchor"></a>
-					<h3>find<wbr>Best<wbr>Match</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Best<wbr>Match<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L115">src/algorithm/Searcher.ts:115</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
 									<h5>query: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -379,71 +243,28 @@
 					<a name="swsearch" class="tsd-anchor"></a>
 					<h3>sWSearch</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">sWSearch<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, gramLen<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, threshold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxWindow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_algorithm.searchresult.html" class="tsd-signature-type">SearchResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">sWSearch<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, numResults<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, gramLen<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, threshold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_algorithm.searchresult.html" class="tsd-signature-type">SearchResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L177">src/algorithm/Searcher.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L63">src/algorithm/Searcher.ts:63</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>approximate sliding window search, accelerated by inverted index</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>query: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gramLen: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> threshold: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0.03</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxWindow: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_algorithm.searchresult.html" class="tsd-signature-type">SearchResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="swsearchexact" class="tsd-anchor"></a>
-					<h3>sWSearch<wbr>Exact</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">sWSearch<wbr>Exact<span class="tsd-signature-symbol">(</span>query<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, gramLen<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, maxWindow<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/src_algorithm.searchresult.html" class="tsd-signature-type">SearchResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L277">src/algorithm/Searcher.ts:277</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>exact sliding window search</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>query: <span class="tsd-signature-type">string</span></h5>
+									<h5>numResults: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> gramLen: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></h5>
-									<div class="tsd-comment tsd-typography">
-									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxWindow: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> threshold: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0.1</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/src_algorithm.searchresult.html" class="tsd-signature-type">SearchResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -460,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5c742f8/src/algorithm/Searcher.ts#L334">src/algorithm/Searcher.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/awesome-schedule/plannable/blob/5ab39aa/src/algorithm/Searcher.ts#L102">src/algorithm/Searcher.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -514,9 +335,6 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/src_utils.html">src/utils</a>
 					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/src_workers.html">src/workers</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
@@ -535,41 +353,17 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_algorithm.fastsearcher.html#data" class="tsd-kind-icon">data</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#idxoffsets" class="tsd-kind-icon">idx<wbr>Offsets</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#indices" class="tsd-kind-icon">indices</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="src_algorithm.fastsearcher.html#items" class="tsd-kind-icon">items</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#maxtokenlen" class="tsd-kind-icon">max<wbr>Token<wbr>Len</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="src_algorithm.fastsearcher.html#originals" class="tsd-kind-icon">originals</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#tokenids" class="tsd-kind-icon">token<wbr>Ids</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#uniquetokens" class="tsd-kind-icon">unique<wbr>Tokens</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="src_algorithm.fastsearcher.html#comparetwostrings" class="tsd-kind-icon">compare<wbr>Two<wbr>Strings</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="src_algorithm.fastsearcher.html#constructquerygrams" class="tsd-kind-icon">construct<wbr>Query<wbr>Grams</a>
+								<a href="src_algorithm.fastsearcher.html#ptr" class="tsd-kind-icon">ptr</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="src_algorithm.fastsearcher.html#findbestmatch" class="tsd-kind-icon">find<wbr>Best<wbr>Match</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="src_algorithm.fastsearcher.html#swsearch" class="tsd-kind-icon">sWSearch</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="src_algorithm.fastsearcher.html#swsearchexact" class="tsd-kind-icon">sWSearch<wbr>Exact</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="src_algorithm.fastsearcher.html#tojson" class="tsd-kind-icon">toJSON</a>
@@ -583,9 +377,6 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="src_algorithm.schedulegenerator.html" class="tsd-kind-icon">Schedule<wbr>Generator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../interfaces/src_algorithm.emmodule.html" class="tsd-kind-icon">EMModule</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-module">
 						<a href="../interfaces/src_algorithm.evaluatoroptions.html" class="tsd-kind-icon">Evaluator<wbr>Options</a>
@@ -602,20 +393,20 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/src_algorithm.html#meetingdate" class="tsd-kind-icon">Meeting<wbr>Date</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/src_algorithm.html#ptr" class="tsd-kind-icon">Ptr</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/src_algorithm.html#rawalgocourse" class="tsd-kind-icon">Raw<wbr>Algo<wbr>Course</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
-						<a href="../modules/src_algorithm.html#sortfunctions" class="tsd-kind-icon">Sort<wbr>Functions</a>
+						<a href="../modules/src_algorithm.html#sortfunctionnames" class="tsd-kind-icon">Sort<wbr>Function<wbr>Names</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="../modules/src_algorithm.html#timearray" class="tsd-kind-icon">Time<wbr>Array</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
-						<a href="../modules/src_algorithm.html#modulepromise" class="tsd-kind-icon">Module<wbr>Promise</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_algorithm.html#allocatestr" class="tsd-kind-icon">allocate<wbr>Str</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/src_algorithm.html#checktimeconflict" class="tsd-kind-icon">check<wbr>Time<wbr>Conflict</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="../modules/src_algorithm.html#computeblockpositions" class="tsd-kind-icon">compute<wbr>Block<wbr>Positions</a>
@@ -623,10 +414,10 @@
 					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/src_algorithm.html#computeconflict" class="tsd-kind-icon">compute<wbr>Conflict</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="../modules/src_algorithm.html#computetimearrlens" class="tsd-kind-icon">compute<wbr>Time<wbr>Arr<wbr>Lens</a>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/src_algorithm.html#preparequery" class="tsd-kind-icon">prepare<wbr>Query</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/src_algorithm.html#timearraytocompact" class="tsd-kind-icon">time<wbr>Array<wbr>ToCompact</a>
 					</li>
 					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
@@ -661,11 +452,10 @@
 				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 			</ul>
 		</div>
 	</div>
