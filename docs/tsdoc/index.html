@@ -123,9 +123,11 @@
 					<h3>Note for Linux users</h3>
 				</a>
 				<p>If you use AppImage, you need to add execution permission before launching the file</p>
-				<pre><code class="language-bash">chmod +x plannable-x.x.x.AppImage</code></pre>
+				<pre><code class="language-bash">chmod +x plannable-x.x.x.AppImage
+</code></pre>
 				<p>If you use snap, you can install plannable from the snap store</p>
-				<pre><code>sudo snap <span class="hljs-keyword">install</span> plannable</code></pre>
+				<pre><code>sudo snap <span class="hljs-keyword">install</span> plannable
+</code></pre>
 				<a href="#development" id="development" style="color: inherit; text-decoration: none;">
 					<h2>Development</h2>
 				</a>
@@ -136,7 +138,8 @@
 					<h3>Note for Windows users</h3>
 				</a>
 				<p>Most of our scripts assumed a bash-like shell. If you&#39;re using windows, you can use git bash, cygwin, or WSL bash shell. Make sure to change npm&#39;s default shell by using</p>
-				<pre><code class="language-bash">npm config <span class="hljs-built_in">set</span> script-shell YOURSHELL</code></pre>
+				<pre><code class="language-bash">npm config <span class="hljs-built_in">set</span> script-shell YOURSHELL
+</code></pre>
 				<a href="#install-dependencies-and-launch-development-server" id="install-dependencies-and-launch-development-server" style="color: inherit; text-decoration: none;">
 					<h3>Install Dependencies and Launch Development Server</h3>
 				</a>
@@ -149,10 +152,12 @@
 				<p>Clone this repository. The <code>updatedata</code> script will automatically clone <code>https://github.com/awesome-schedule/data</code> into <code>scripts</code> so the data (e.g. course catalog) can be access locally. The <code>getwasm</code> script will clone the pre-build wasm binary. Note that if you want to build wasm yourself, please refer to the Build WASM section below.</p>
 				<pre><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/awesome-schedule/plannable &amp;&amp; <span class="hljs-built_in">cd</span> plannable
 npm run updatedata
-npm run getwasm</code></pre>
+npm run getwasm
+</code></pre>
 				<p>Install dependencies and launch the development server</p>
 				<pre><code class="language-bash">npm install
-npm run serve</code></pre>
+npm run serve
+</code></pre>
 				<p>You need to serve the static files in scripts/data, because we only load local data in local development mode. To do so, open a new terminal and run <code>npm run data</code>. This will open a static http server listening to port <code>8000</code> with cross origin headers. This static server must run on <code>localhost:8000</code>.</p>
 				<p>Then you can visit the development server shown in the terminal.</p>
 				<a href="#build-desktop-app" id="build-desktop-app" style="color: inherit; text-decoration: none;">
@@ -168,9 +173,11 @@ npm run serve</code></pre>
 				</blockquote>
 				<p>Make sure that you have <a href="https://emscripten.org/docs/getting_started/downloads.html">Emscripten</a> installed. Also make sure that emsdk_env.sh is sourced before running the following scripts.</p>
 				<p>Before you can build the binary, you need to download dependencies (parallel-hashmap and GLPK) and compile GLPK. This only needs to be done once, with the following script:</p>
-				<pre><code class="language-bash">npm run getdep</code></pre>
+				<pre><code class="language-bash">npm run getdep
+</code></pre>
 				<p>Then, each time you modify any cpp file, you can simply do</p>
-				<pre><code class="language-bash">npm run wasm -- dev</code></pre>
+				<pre><code class="language-bash">npm run wasm -- dev
+</code></pre>
 				<p>to build the wasm binary and js glue code, which will be moved to public/js.</p>
 				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
 					<h2>Contributors</h2>
@@ -233,9 +240,6 @@ npm run serve</code></pre>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/src_models.html">src/models</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/src_routes.html">src/routes</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="modules/src_store.html">src/store</a>
